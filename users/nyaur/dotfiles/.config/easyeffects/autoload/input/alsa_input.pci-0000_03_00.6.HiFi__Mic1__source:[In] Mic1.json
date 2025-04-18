@@ -1,0 +1,6 @@
+{
+    "device": "alsa_input.pci-0000_03_00.6.HiFi__Mic1__source",
+    "device-description": "Family 17h/19h/1ah HD Audio Controller Digital Microphone",
+    "device-profile": "[In] Mic1",
+    "preset-name": "Laptop Mic"
+}

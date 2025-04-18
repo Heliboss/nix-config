@@ -1,0 +1,92 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2025-04-03T08:57:58.083Z",
+    "redirects": [
+        {
+            "description": "",
+            "exampleUrl": "https://twitter.com/*",
+            "exampleResult": "https://xcancel.com/*",
+            "error": null,
+            "includePattern": "https://twitter.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://xcancel.com/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://x.com/*",
+            "exampleResult": "https://xcancel.com/*",
+            "error": null,
+            "includePattern": "https://x.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://xcancel.com/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://www.reddit.com/r/*",
+            "exampleResult": "https://redlib.perennialte.ch/r/*",
+            "error": null,
+            "includePattern": "https://www.reddit.com/r/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://www.redditmedia.com/r/*",
+            "exampleResult": "https://redlib.perennialte.ch/r/*",
+            "error": null,
+            "includePattern": "https://www.redditmedia.com/r/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://www.youtube.com/shorts/*",
+            "exampleResult": "https://www.youtube.com/watch?v=*",
+            "error": null,
+            "includePattern": "https://www.youtube.com/shorts/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.youtube.com/watch?v=$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        }
+    ]
+}
