@@ -21,4 +21,7 @@
   services.logind.extraConfig = ''
     HandlePowerKey=ignore
   '';
+
+  # Enable SysRq shortcuts
+  boot.kernel.sysctl."kernel.sysrq" = 1;
 }
