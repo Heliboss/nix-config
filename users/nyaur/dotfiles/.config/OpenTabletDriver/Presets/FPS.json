@@ -28,8 +28,8 @@
         "LockAspectRatio": false
       },
       "RelativeModeSettings": {
-        "XSensitivity": 21.0,
-        "YSensitivity": 21.0,
+        "XSensitivity": 30.0,
+        "YSensitivity": 30.0,
         "RelativeRotation": 0.0,
         "RelativeResetDelay": "00:00:00.1000000"
       },
