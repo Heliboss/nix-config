@@ -10,6 +10,7 @@
     ./pavucontrol.nix
     ./dolphin.nix
     ./dark-mode.nix
+    ./qbittorrent.nix
   ];
 
   fonts.fontconfig.enable = true;
