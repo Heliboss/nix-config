@@ -22,6 +22,7 @@
     ../common/optional/flatpak.nix
     ../common/optional/linux-tkg.nix
     ../common/optional/gnupg.nix
+    ../common/optional/tailscale.nix
   ];
 
   networking.hostName = "starflower";
