@@ -8,16 +8,6 @@ function m
   end
 end
 
-function mir
-  if count $argv > /dev/null
-    hyprctl keyword monitor $argv ,preferred,auto,1,mirror,desc:Chimei Innolux Corporation 0x14D4
-  else
-    hyprctl monitors
-    echo "Usage: mir [NAME]"
-    echo "Example: mir HDMI-A-1"
-  end
-end
-
 function mtp
   if test -d ~/Media
     fusermount -u ~/Media; rm -r ~/Media
