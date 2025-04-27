@@ -20,7 +20,7 @@ in {
     });
     kernelPatches = [
       {
-        name = "bore"
+        name = "bore";
         patch = "${path}/0001-bore.patch";
       }
       {
@@ -31,10 +31,6 @@ in {
         name = "glitched-base";
         patch = "${path}/0003-glitched-base.patch";
       }
-      #{
-      #  name = "glitched-pds";
-      #  patch = "${path}/0005-glitched-pds.patch";
-      #}
       {
         name = "fsync_legacy";
         patch = "${path}/0007-v6.14-fsync_legacy_via_futex_waitv.patch";
