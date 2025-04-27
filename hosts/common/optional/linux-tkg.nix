@@ -7,8 +7,8 @@
   linux-tkg = pkgs.fetchFromGitHub {
     owner = "Frogging-Family";
     repo = "linux-tkg";
-    rev = "dcf15eb";
-    hash = "sha256-1/2Fz49hC3SiVY3ZxVJtfgTcXrz1SA3U6GHGiFcMCyA=";
+    rev = "e27a278";
+    hash = "sha256-gie/XyFWHuR2v1m5vzfiOFhFgbmHhX/y1doJreUBQMg=";
   };
   major = "6";
   minor = "14";
@@ -20,6 +20,10 @@ in {
     });
     kernelPatches = [
       {
+        name = "bore"
+        patch = "${path}/0001-bore.patch";
+      }
+      {
         name = "clear-patches";
         patch = "${path}/0002-clear-patches.patch";
       }
@@ -27,10 +31,10 @@ in {
         name = "glitched-base";
         patch = "${path}/0003-glitched-base.patch";
       }
-      {
-        name = "glitched-pds";
-        patch = "${path}/0005-glitched-pds.patch";
-      }
+      #{
+      #  name = "glitched-pds";
+      #  patch = "${path}/0005-glitched-pds.patch";
+      #}
       {
         name = "fsync_legacy";
         patch = "${path}/0007-v6.14-fsync_legacy_via_futex_waitv.patch";
