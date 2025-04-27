@@ -20,10 +20,6 @@ in {
     });
     kernelPatches = [
       {
-        name = "add-sysctl";
-        patch = "${path}/0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch";
-      }
-      {
         name = "clear-patches";
         patch = "${path}/0002-clear-patches.patch";
       }
