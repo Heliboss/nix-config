@@ -57,6 +57,6 @@ in {
   };
 
   home.sessionVariables = {
-    inherit FLAKE;
+    NH_FLAKE = FLAKE;
   };
 }
