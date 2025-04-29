@@ -32,7 +32,7 @@
   ];
 
   swapDevices = [{
-    device = "/swapfile";
+    device = "/persist/swapfile";
     size = 7311;
   }];
 
