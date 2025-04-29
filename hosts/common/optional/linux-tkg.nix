@@ -20,10 +20,6 @@ in {
     });
     kernelPatches = [
       {
-        name = "bore";
-        patch = "${path}/0001-bore.patch";
-      }
-      {
         name = "clear-patches";
         patch = "${path}/0002-clear-patches.patch";
       }
@@ -34,6 +30,10 @@ in {
       {
         name = "fsync_legacy";
         patch = "${path}/0007-v6.14-fsync_legacy_via_futex_waitv.patch";
+      }
+      {
+        name = "prjc";
+        patch = "${path}/0009-prjc.patch";
       }
       {
         name = "misc-additions";
