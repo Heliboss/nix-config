@@ -27,7 +27,14 @@
 
   networking.hostName = "starflower";
 
-  zramSwap.memoryPercent = 200;
+  boot.kernelParams = [
+    "zswap.enabled=1"
+  ];
+
+  swapDevices = [{
+    device = "/swapfile";
+    size = 7311;
+  }];
 
   xdg.portal = {
     extraPortals = with pkgs; [

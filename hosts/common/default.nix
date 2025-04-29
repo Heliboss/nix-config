@@ -6,6 +6,4 @@
     ./nix-settings.nix
     ./sops.nix
   ];
-
-  zramSwap.enable = true;
 }
