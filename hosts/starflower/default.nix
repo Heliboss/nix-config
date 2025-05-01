@@ -23,7 +23,6 @@
     ../common/optional/flatpak.nix
     ../common/optional/linux-tkg.nix
     ../common/optional/gnupg.nix
-    ../common/optional/tailscale.nix
   ];
 
   networking.hostName = "starflower";
@@ -46,8 +45,7 @@
       fi
       echo /dev/loop0 > /sys/block/zram0/backing_dev
     '';
-    wantedBy = [ "sysinit.target" ];
-    wants = [ "swap-swapfile.swap" ];
+    wantedBy = [ "local-fs.target" ];
     path = [ "/run/current-system/sw" ];
     conflicts = [ "systemd-zram-setup@zram0.service" ];
     onSuccess = [ "systemd-zram-setup@zram0.service" ];
