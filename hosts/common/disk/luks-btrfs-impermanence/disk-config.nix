@@ -51,6 +51,10 @@
                       mountpoint = "/nix";
                       mountOptions = [ "compress-force=zstd:1" "noatime" "subvol=@nix" ];
                     };
+                    "/swap" = {
+                      mountpoint = "/swap";
+                      mountOptions = [ "compress-force=zstd:1" "noatime" "subvol=@swap" ];
+                    };
                   };
                 };
               };

@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   inputs,
   ...
@@ -27,14 +28,34 @@
 
   networking.hostName = "starflower";
 
-  boot.kernelParams = [
-    "zswap.enabled=1"
-  ];
+  zramSwap = {
+    enable = true;
+    memoryPercent = 100;
+  };
 
   swapDevices = [{
-    device = "/persist/swapfile";
+    device = "/swap/swapfile";
     size = 7311;
   }];
+
+  systemd.services.zram-loopback = {
+    description = "Attach /swap/swapfile to /dev/loop0 for zram writeback";
+    script = ''
+      if [ -z $(losetup -j /swap/swapfile) ]; then
+        losetup /dev/loop0 /swap/swapfile
+      fi
+      echo /dev/loop0 > /sys/block/zram0/backing_dev
+    '';
+    wantedBy = [ "sysinit.target" ];
+    wants = [ "swap-swapfile.swap" ];
+    path = [ "/run/current-system/sw" ];
+    conflicts = [ "systemd-zram-setup@zram0.service" ];
+    onSuccess = [ "systemd-zram-setup@zram0.service" ];
+    serviceConfig = {
+      PrivateDevices = false;
+      DeviceAllow = [ "/dev/loop-control" "/dev/loop0" ];
+    };
+  };
 
   xdg.portal = {
     extraPortals = with pkgs; [
