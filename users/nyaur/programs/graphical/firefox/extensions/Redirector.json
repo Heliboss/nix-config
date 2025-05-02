@@ -1,7 +1,24 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2025-04-03T08:57:58.083Z",
+    "createdAt": "2025-05-02T14:52:18.862Z",
     "redirects": [
+        {
+            "description": "Example redirect, try going to http://example.com/anywordhere",
+            "exampleUrl": "http://example.com/some-word-that-matches-wildcard",
+            "exampleResult": "https://google.com/search?q=some-word-that-matches-wildcard",
+            "error": null,
+            "includePattern": "http://example.com/*",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "https://google.com/search?q=$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
         {
             "description": "",
             "exampleUrl": "https://twitter.com/*",
@@ -39,12 +56,12 @@
         {
             "description": "",
             "exampleUrl": "https://www.reddit.com/r/*",
-            "exampleResult": "https://redlib.perennialte.ch/r/*",
+            "exampleResult": "https://redlib.catsarch.com/r/*",
             "error": null,
             "includePattern": "https://www.reddit.com/r/*",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
+            "redirectUrl": "https://redlib.catsarch.com/r/$1",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,
@@ -56,12 +73,12 @@
         {
             "description": "",
             "exampleUrl": "https://www.redditmedia.com/r/*",
-            "exampleResult": "https://redlib.perennialte.ch/r/*",
+            "exampleResult": "https://redlib.catsarch.com/r/*",
             "error": null,
             "includePattern": "https://www.redditmedia.com/r/*",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
+            "redirectUrl": "https://redlib.catsarch.com/r/$1",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,
