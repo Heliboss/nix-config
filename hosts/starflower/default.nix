@@ -27,32 +27,17 @@
 
   networking.hostName = "starflower";
 
-  zramSwap = {
-    enable = true;
-    memoryPercent = 100;
-  };
-
   swapDevices = [{
     device = "/swap/swapfile";
     size = 7311;
   }];
 
-  systemd.services.zram-loopback = {
-    description = "Attach /swap/swapfile to /dev/loop0 for zram writeback";
-    script = ''
-      if [ -z $(losetup -j /swap/swapfile) ]; then
-        losetup /dev/loop0 /swap/swapfile
-      fi
-      echo /dev/loop0 > /sys/block/zram0/backing_dev
-    '';
-    wantedBy = [ "local-fs.target" ];
-    path = [ "/run/current-system/sw" ];
-    conflicts = [ "systemd-zram-setup@zram0.service" ];
-    onSuccess = [ "systemd-zram-setup@zram0.service" ];
-    serviceConfig = {
-      PrivateDevices = false;
-      DeviceAllow = [ "/dev/loop-control" "/dev/loop0" ];
-    };
+  boot.kernelParams = [
+    "zswap.enabled=1"
+  ];
+
+  boot.kernel.sysctl = {
+    "vm.swappiness" = 10;
   };
 
   xdg.portal = {
