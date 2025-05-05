@@ -18,5 +18,6 @@
 
   home.file = {
     ".config/OpenTabletDriver/Presets".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/OpenTabletDriver/Presets";
+    ".config/OpenTabletDriver/Plugins".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/OpenTabletDriver/Plugins";
   };
 }
