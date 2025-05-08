@@ -9,54 +9,6 @@
       },
       "Filters": [
         {
-          "Path": "OpenTabletDriver.Plugin.NoiseReduction",
-          "Settings": [
-            {
-              "Property": "Samples",
-              "Value": 10
-            },
-            {
-              "Property": "DistanceThreshold",
-              "Value": 0.5
-            }
-          ],
-          "Enable": false
-        },
-        {
-          "Path": "TabletDriverFilters.Hawku.Smoothing",
-          "Settings": [
-            {
-              "Property": "Latency",
-              "Value": 2.0
-            },
-            {
-              "Property": "Frequency",
-              "Value": 1000.0
-            }
-          ],
-          "Enable": false
-        },
-        {
-          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_SMOOTH",
-          "Settings": [
-            {
-              "Property": "Chatter_Extermination_Strength",
-              "Value": 6.0
-            }
-          ],
-          "Enable": false
-        },
-        {
-          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_RAW",
-          "Settings": [
-            {
-              "Property": "Chatter_Extermination_Strength",
-              "Value": 1.0
-            }
-          ],
-          "Enable": false
-        },
-        {
           "Path": "TabletDriverFilters.Devocub.Antichatter",
           "Settings": [
             {
@@ -66,10 +18,6 @@
             {
               "Property": "AntichatterOffsetX",
               "Value": null
-            },
-            {
-              "Property": "AntichatterOffsetY",
-              "Value": 1.0
             },
             {
               "Property": "PredictionStrength",
@@ -84,24 +32,28 @@
               "Value": 3.0
             },
             {
-              "Property": "PredictionOffsetY",
-              "Value": 0.3
-            },
-            {
               "Property": "Frequency",
               "Value": 1000.0
             },
             {
-              "Property": "AntichatterStrength",
-              "Value": 2.0
+              "Property": "PredictionEnabled",
+              "Value": true
+            },
+            {
+              "Property": "PredictionOffsetY",
+              "Value": 0.0
+            },
+            {
+              "Property": "AntichatterOffsetY",
+              "Value": 0.0
             },
             {
               "Property": "Latency",
               "Value": 1.0
             },
             {
-              "Property": "PredictionEnabled",
-              "Value": true
+              "Property": "AntichatterStrength",
+              "Value": 5.0
             }
           ],
           "Enable": true
