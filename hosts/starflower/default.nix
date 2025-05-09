@@ -21,11 +21,12 @@
     ../common/optional/gamemode.nix
     ../common/optional/waydroid.nix
     ../common/optional/flatpak.nix
-    ../common/optional/linux-tkg.nix
     ../common/optional/gnupg.nix
   ];
 
   networking.hostName = "starflower";
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   swapDevices = [{
     device = "/swap/swapfile";
