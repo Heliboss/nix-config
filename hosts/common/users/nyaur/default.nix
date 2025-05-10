@@ -13,7 +13,7 @@
   users.users.nyaur = {
     isNormalUser = true;
     initialPassword = "123";
-    extraGroups = [ "wheel" "networkmanager" "gamemode" ];
+    extraGroups = [ "wheel" "networkmanager" "gamemode" "libvirtd" ];
     hashedPasswordFile = config.sops.secrets.nyaur.path;
   };
 

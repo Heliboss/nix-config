@@ -22,6 +22,7 @@
     ../common/optional/waydroid.nix
     ../common/optional/flatpak.nix
     ../common/optional/gnupg.nix
+    ../common/optional/virt-manager.nix
   ];
 
   networking.hostName = "starflower";
