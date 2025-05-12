@@ -41,6 +41,7 @@
     "d /persist/home/nyaur/Applications 0700 nyaur users -"
     "d /persist/home/nyaur/Source 0700 nyaur users -"
     "d /persist/home/nyaur/Projects 0700 nyaur users -"
+    "d /persist/home/nyaur/Public 0700 nyaur users -"
     "d /persist/home/nyaur/.config/nixos 0700 nyaur users -"
     "d /persist/home/nyaur/.local/share/devenv 0700 nyaur users -"
     "d /persist/home/nyaur/.local/share/nvim 0700 nyaur users -"

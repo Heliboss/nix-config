@@ -26,6 +26,7 @@
       "Applications"
       "Source"
       "Projects"
+      "Public"
     ];
     defaultDirectoryMethod = "symlink"; # Symlinks are faster than bindfs
   };
