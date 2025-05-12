@@ -28,6 +28,8 @@ require('lazy').setup({
   require 'kickstart/plugins/neo-tree',
 
   require 'custom/plugins/nvim-table',
+
+  require 'custom/plugins/golf',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
