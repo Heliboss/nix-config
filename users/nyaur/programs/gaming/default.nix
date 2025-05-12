@@ -16,6 +16,7 @@
       }
       ".local/share/anime-game-launcher"
       ".config/bitburner"
+      ".config/NecroDancer"
     ];
   };
 }
