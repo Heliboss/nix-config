@@ -15,7 +15,10 @@
         method = "symlink"; # Bindfs is too slow for Steam games
       }
       ".local/share/anime-game-launcher"
-      ".config/bitburner"
+      {
+        directory = ".config/bitburner";
+        method = "bindfs";
+      }
       ".config/NecroDancer"
     ];
   };
