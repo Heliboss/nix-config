@@ -23,6 +23,7 @@
     ../common/optional/flatpak.nix
     ../common/optional/gnupg.nix
     ../common/optional/virt-manager.nix
+    ../common/optional/zerotier.nix
   ];
 
   networking.hostName = "starflower";
