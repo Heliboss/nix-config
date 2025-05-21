@@ -65,6 +65,7 @@
     "d /persist/home/nyaur/.local/share/qBittorrent 0700 nyaur users -"
     "d /persist/home/nyaur/.config/bitburner 0700 nyaur users -"
     "d /persist/home/nyaur/.config/NecroDancer 0700 nyaur users -"
+    "d /persist/home/nyaur/.local/share/icons 0700 nyaur users -"
   ];
 
   # Gets freaky when putting this in the home manager module. Maybe a permission issue?

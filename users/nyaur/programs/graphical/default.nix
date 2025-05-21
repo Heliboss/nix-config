@@ -15,6 +15,12 @@
 
   fonts.fontconfig.enable = true;
 
+  home.persistence."/persist/home/nyaur" = {
+    directories = [
+      ".local/share/icons"
+    ];
+  };
+
   home.packages = with pkgs; [
     corefonts
     vistafonts
