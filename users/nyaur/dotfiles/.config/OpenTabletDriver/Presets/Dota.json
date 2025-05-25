@@ -3,7 +3,7 @@
     {
       "Tablet": "VEIKK S640",
       "OutputMode": {
-        "Path": "OpenTabletDriver.Desktop.Output.RelativeMode",
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
         "Settings": [],
         "Enable": true
       },
@@ -68,8 +68,8 @@
           "Rotation": 0.0
         },
         "Tablet": {
-          "Width": 152.4,
-          "Height": 101.6,
+          "Width": 60.0,
+          "Height": 60.0,
           "X": 76.2,
           "Y": 50.8,
           "Rotation": 0.0

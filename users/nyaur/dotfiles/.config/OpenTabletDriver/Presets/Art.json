@@ -7,7 +7,58 @@
         "Settings": [],
         "Enable": true
       },
-      "Filters": [],
+      "Filters": [
+        {
+          "Path": "TabletDriverFilters.Devocub.Antichatter",
+          "Settings": [
+            {
+              "Property": "AntichatterMultiplier",
+              "Value": 1.0
+            },
+            {
+              "Property": "AntichatterOffsetX",
+              "Value": null
+            },
+            {
+              "Property": "PredictionStrength",
+              "Value": 1.1
+            },
+            {
+              "Property": "PredictionSharpness",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionOffsetX",
+              "Value": 3.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            },
+            {
+              "Property": "Latency",
+              "Value": 1.0
+            },
+            {
+              "Property": "AntichatterStrength",
+              "Value": 5.0
+            },
+            {
+              "Property": "AntichatterOffsetY",
+              "Value": 0.0
+            },
+            {
+              "Property": "PredictionEnabled",
+              "Value": true
+            },
+            {
+              "Property": "PredictionOffsetY",
+              "Value": 0.0
+            }
+          ],
+          "Enable": true
+        }
+      ],
       "AbsoluteModeSettings": {
         "Display": {
           "Width": 1920.0,
@@ -49,21 +100,21 @@
         "EraserButton": null,
         "PenButtons": [
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
             "Settings": [
               {
-                "Property": "Key",
-                "Value": "Space"
+                "Property": "Button",
+                "Value": "Right"
               }
             ],
             "Enable": true
           },
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
             "Settings": [
               {
-                "Property": "Key",
-                "Value": "E"
+                "Property": "Button",
+                "Value": "Middle"
               }
             ],
             "Enable": true
