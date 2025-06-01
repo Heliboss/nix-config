@@ -61,6 +61,7 @@
       if modprobe zram; then
         echo load
       fi
+      sleep 1
       echo zstd > /sys/block/zram0/comp_algorithm
       echo /dev/loop0 > /sys/block/zram0/backing_dev
       echo 7311M > /sys/block/zram0/disksize
