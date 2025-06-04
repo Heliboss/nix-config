@@ -100,21 +100,21 @@
         "EraserButton": null,
         "PenButtons": [
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
             "Settings": [
               {
-                "Property": "Button",
-                "Value": "Right"
+                "Property": "Key",
+                "Value": "Space"
               }
             ],
             "Enable": true
           },
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.MultiKeyBinding",
             "Settings": [
               {
-                "Property": "Button",
-                "Value": "Middle"
+                "Property": "Keys",
+                "Value": "Control+S"
               }
             ],
             "Enable": true
