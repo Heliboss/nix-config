@@ -27,7 +27,6 @@ in {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "swaybg -o \"*\" -i ${FLAKE}/users/nyaur/dotfiles/.config/hypr/wallpaper/amy.jpg -m fill"
-      "sleep 1; qpwgraph -am ${FLAKE}/default.qpwgraph"
       "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/dotfiles/.config/OpenTabletDriver/Presets/FPS.json"
     ];
   };

@@ -47,19 +47,20 @@
         echo swapoff
       fi
       sleep 1
-      if losetup -d /dev/loop0; then
-        echo detach
-      fi
-      sleep 1
-      if losetup /dev/loop0 /swap/swapfile; then
-        echo loop
-      fi
       if rmmod zram; then
         echo unload
       fi
       sleep 1
       if modprobe zram; then
         echo load
+      fi
+      sleep 1
+      if losetup -d /dev/loop0; then
+        echo detach
+      fi
+      sleep 1
+      if losetup /dev/loop0 /swap/swapfile; then
+        echo loop
       fi
       sleep 1
       echo zstd > /sys/block/zram0/comp_algorithm
