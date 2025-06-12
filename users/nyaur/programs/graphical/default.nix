@@ -11,6 +11,10 @@
     ./dolphin.nix
     ./dark-mode.nix
     ./qbittorrent.nix
+    ./discord.nix
+    ./messenger.nix
+    ./spotify.nix
+    ./bitwarden.nix
   ];
 
   fonts.fontconfig.enable = true;
