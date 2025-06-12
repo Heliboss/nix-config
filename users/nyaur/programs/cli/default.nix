@@ -1,8 +1,10 @@
 {
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
+    ./extras.nix
     ./neovim.nix
     ./fastfetch.nix
     ./fish.nix
@@ -11,6 +13,8 @@
     ./git.nix
     ./yazi.nix
     ./modprobed-db.nix
+    (import ./yt-x.nix { inherit pkgs inputs; })
+    (import ./fastanime.nix { inherit pkgs inputs; })
   ];
 
   programs = {

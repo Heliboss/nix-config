@@ -10,7 +10,7 @@ in {
     (import ./default.nix { inherit inputs; })
     ./programs/graphical/hyprland
     (import ./programs/graphical { inherit config pkgs inputs; })
-    ./programs/cli
+    (import ./programs/cli { inherit pkgs inputs; })
     ./programs/gaming
     ./programs/productivity
     ./programs/creativity
