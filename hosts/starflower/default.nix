@@ -12,6 +12,7 @@
     ../common/users/nyaur
 
     ../common/optional/systemd-boot.nix
+    ../common/optional/dnscrypt-proxy.nix
     ../common/optional/graphical.nix
     ../common/optional/steam.nix
     ../common/optional/bluetooth.nix
