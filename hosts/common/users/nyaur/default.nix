@@ -66,6 +66,11 @@
     "d /persist/home/nyaur/.config/bitburner 0700 nyaur users -"
     "d /persist/home/nyaur/.config/NecroDancer 0700 nyaur users -"
     "d /persist/home/nyaur/.local/share/icons 0700 nyaur users -"
+    "d /persist/home/nyaur/.local/share/discord-screenaudio 0700 nyaur users -"
+    "d /persist/home/nyaur/.config/vesktop 0700 nyaur users -"
+    "d /persist/home/nyaur/.config/Caprine 0700 nyaur users -"
+    "d /persist/home/nyaur/.config/spotify 0700 nyaur users -"
+    "d /persist/home/nyaur/.config/discord 0700 nyaur users -"
   ];
 
   # Gets freaky when putting this in the home manager module. Maybe a permission issue?
