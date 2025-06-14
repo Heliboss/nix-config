@@ -60,4 +60,6 @@ vim.opt.expandtab = true
 -- Line numbers for netrw
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 
+vim.g.tex_flavor = 'latex'
+
 -- vim: ts=2 sts=2 sw=2 et
