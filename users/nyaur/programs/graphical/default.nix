@@ -15,6 +15,7 @@
     ./messenger.nix
     ./spotify.nix
     ./bitwarden.nix
+    ./zathura.nix
   ];
 
   fonts.fontconfig.enable = true;
