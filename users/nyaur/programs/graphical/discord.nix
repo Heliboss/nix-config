@@ -1,14 +1,11 @@
 {
-  pkgs,
-  ...
-}: {
-  home.packages = with pkgs; [
-    discord
-  ];
+  programs.vesktop = {
+    enable = true;
+  };
 
   home.persistence."/persist/home/nyaur" = {
     directories = [
-      ".config/discord"
+      ".config/vesktop"
     ];
   };
 }
