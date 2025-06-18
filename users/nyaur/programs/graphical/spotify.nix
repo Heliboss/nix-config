@@ -54,6 +54,7 @@ in {
   home.persistence."/persist/home/nyaur" = {
     directories = [
       ".config/spotify"
+      ".cache/spotify"
     ];
   };
 }
