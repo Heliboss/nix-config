@@ -71,6 +71,7 @@
     "d /persist/home/nyaur/.config/Caprine 0700 nyaur users -"
     "d /persist/home/nyaur/.config/spotify 0700 nyaur users -"
     "d /persist/home/nyaur/.config/discord 0700 nyaur users -"
+    "d /persist/home/nyaur/.cache/spotify 0700 nyaur users -"
   ];
 
   # Gets freaky when putting this in the home manager module. Maybe a permission issue?
