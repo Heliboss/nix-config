@@ -10,6 +10,9 @@
     pulse.enable = true;
     alsa.enable = true;
     jack.enable = true;
+    extraConfig.pipewire = {
+      "10-clock-rate"."context.properties"."default.clock.rate" = 44100;
+    };
   };
 
   security.polkit.enable = true;
