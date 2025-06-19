@@ -14,7 +14,6 @@
     ./discord.nix
     ./messenger.nix
     ./spotify.nix
-    ./bitwarden.nix
     ./zathura.nix
   ];
 
