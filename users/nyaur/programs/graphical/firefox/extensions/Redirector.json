@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2025-05-02T14:52:18.862Z",
+    "createdAt": "2025-06-30T02:27:45.218Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -56,12 +56,12 @@
         {
             "description": "",
             "exampleUrl": "https://www.reddit.com/r/*",
-            "exampleResult": "https://redlib.catsarch.com/r/*",
+            "exampleResult": "https://redlib.perennialte.ch/r/*",
             "error": null,
             "includePattern": "https://www.reddit.com/r/*",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://redlib.catsarch.com/r/$1",
+            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,
@@ -73,12 +73,12 @@
         {
             "description": "",
             "exampleUrl": "https://www.redditmedia.com/r/*",
-            "exampleResult": "https://redlib.catsarch.com/r/*",
+            "exampleResult": "https://redlib.perennialte.ch/r/*",
             "error": null,
             "includePattern": "https://www.redditmedia.com/r/*",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://redlib.catsarch.com/r/$1",
+            "redirectUrl": "https://redlib.perennialte.ch/r/$1",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,
