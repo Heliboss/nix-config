@@ -3,7 +3,7 @@
   ...
 }: {
   home.packages = with pkgs; [
-    prismlauncher
+    prismlauncher-unwrapped
   ];
 
   home.persistence."/persist/home/nyaur" = {
