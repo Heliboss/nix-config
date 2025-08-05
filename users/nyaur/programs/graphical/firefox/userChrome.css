@@ -1,0 +1,27 @@
+tabs {
+  counter-reset: tab-counter;
+}
+
+tab:nth-child(1) .tab-content::before,
+tab:nth-child(2) .tab-content::before,
+tab:nth-child(3) .tab-content::before,
+tab:nth-child(4) .tab-content::before,
+tab:nth-child(5) .tab-content::before,
+tab:nth-child(6) .tab-content::before,
+tab:nth-child(7) .tab-content::before,
+tab:nth-child(8) .tab-content::before {
+  counter-increment: tab-counter;
+  content: counter(tab-counter) "";
+
+  position: relative;
+  left: -4px;
+  top: 0px;
+  padding: 0px 4px;
+  border-radius: 7px;
+
+  opacity: 1;
+  background: #000000;
+
+  font-weight: bold;
+  font-size: 80%;
+}
