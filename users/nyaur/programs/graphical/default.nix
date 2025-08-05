@@ -6,10 +6,9 @@
 }: {
   imports = [
     (import ./firefox { inherit pkgs inputs; })
-    ./easyeffects.nix
+    ./easyeffects
     ./pavucontrol.nix
-    ./dolphin.nix
-    ./dark-mode.nix
+    ./dolphin
     ./qbittorrent.nix
     ./discord.nix
     ./messenger.nix

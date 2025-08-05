@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./obs.nix
-    ./krita.nix
+    ./krita
     ./gimp.nix
   ];
 
@@ -17,7 +17,7 @@
   ];
 
   home.file = {
-    ".config/OpenTabletDriver/Presets".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/OpenTabletDriver/Presets";
-    ".config/OpenTabletDriver/Plugins".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/OpenTabletDriver/Plugins";
+    ".config/OpenTabletDriver/Presets".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets";
+    ".config/OpenTabletDriver/Plugins".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Plugins";
   };
 }

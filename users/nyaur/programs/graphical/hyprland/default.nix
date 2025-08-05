@@ -4,21 +4,22 @@
   ...
 }: {
   imports = [
-    ./foot.nix
-    ./waybar.nix
+    ./foot
+    ./waybar
     ./wofi.nix
     ./swaync.nix
+    ./theme.nix
   ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
-      ${builtins.readFile ../../../dotfiles/.config/hypr/hyprland.conf}
+      ${builtins.readFile ./hypr/hyprland.conf}
     '';
   };
 
   home.file = {
-    ".config/hypr/conf".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/hypr/conf";
+    ".config/hypr/conf".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/conf";
   };
 
   xdg.portal = {

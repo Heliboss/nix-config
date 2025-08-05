@@ -4,17 +4,16 @@
   ...
 }: {
   imports = [
-    ./extras.nix
-    ./neovim.nix
+    ./neovim
     ./fastfetch.nix
-    ./fish.nix
-    ./ttyper.nix
+    ./fish
+    ./ttyper
     ./devenv.nix
     ./git.nix
     ./yazi.nix
     ./modprobed-db.nix
-    (import ./yt-x.nix { inherit pkgs inputs; })
     (import ./fastanime.nix { inherit pkgs inputs; })
+    (import ./yt-x { inherit pkgs inputs; })
   ];
 
   programs = {

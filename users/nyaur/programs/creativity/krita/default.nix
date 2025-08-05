@@ -18,6 +18,7 @@
   };
 
   home.file = {
-    ".config/kritashortcutsrc".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/dotfiles/.config/kritashortcutsrc";
+    ".config/kritashortcutsrc".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/krita/kritashortcutsrc";
+
   };
 }
