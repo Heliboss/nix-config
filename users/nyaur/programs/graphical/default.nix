@@ -26,9 +26,12 @@
   };
 
   home.packages = with pkgs; [
+    adwaita-icon-theme
     corefonts
     vistafonts
+    aporetic
     nerd-fonts.iosevka
+    nerd-fonts.jetbrains-mono
     blueberry
     playerctl
     mpv

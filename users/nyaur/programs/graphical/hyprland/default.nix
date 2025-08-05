@@ -7,6 +7,7 @@
     ./foot.nix
     ./waybar.nix
     ./wofi.nix
+    ./swaync.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -37,5 +38,6 @@
     grim
     slurp
     wl-clipboard
+    grimblast
   ];
 }
