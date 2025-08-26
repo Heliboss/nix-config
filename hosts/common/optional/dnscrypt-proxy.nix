@@ -8,7 +8,7 @@
     enable = true;
     settings = {
       server_names = [
-        "controld-block-malware-ad"
+        "controld-unfiltered"
       ];
       ipv6_servers = true;
       http3 = true;
