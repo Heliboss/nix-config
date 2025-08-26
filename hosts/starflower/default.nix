@@ -34,11 +34,7 @@
 
   zramSwap = {
     enable = true;
-    memoryPercent = 100;
-  };
-
-  boot.kernel.sysctl = {
-    "vm.swappiness" = 10;
+    memoryPercent = 200;
   };
 
   xdg.portal = {
