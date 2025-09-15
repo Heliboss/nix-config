@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -13,9 +14,15 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
     extraConfig = ''
       ${builtins.readFile ./hypr/hyprland.conf}
     '';
+    plugins = with pkgs; [
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+      inputs.hyprland-plugins.packages.${pkgs.system}.csgo-vulkan-fix
+    ];
   };
 
   home.file = {
@@ -23,9 +30,9 @@
   };
 
   xdg.portal = {
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
     ];
     config.common.default = "*";
   };

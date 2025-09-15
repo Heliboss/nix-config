@@ -38,9 +38,9 @@
   };
 
   xdg.portal = {
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
     ];
     config.common.default = "*";
   };
