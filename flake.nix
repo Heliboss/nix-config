@@ -25,7 +25,7 @@
     # on a non-impermanent setup
     nixosConfigurations = {
       # Main
-      starflower = nixpkgs.lib.nixosSystem {
+      starflower = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = {
 	  inherit inputs;
@@ -33,6 +33,7 @@
 	};
 	modules = [
           ./hosts/starflower
+          { home-manager.extraSpecialArgs = specialArgs; }
         ];
       };
     };

@@ -12,8 +12,8 @@
     ./git.nix
     ./yazi.nix
     ./modprobed-db.nix
-    (import ./fastanime.nix { inherit pkgs inputs; })
-    (import ./yt-x { inherit pkgs inputs; })
+    ./fastanime.nix
+    ./yt-x
   ];
 
   programs = {

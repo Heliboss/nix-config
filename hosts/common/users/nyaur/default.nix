@@ -82,7 +82,7 @@
   };
 
   home-manager = {
-    users.nyaur = (import ../../../../users/nyaur/${config.networking.hostName}.nix { inherit config pkgs inputs; }); # Fix infinite recursion
+    users.nyaur = (import ../../../../users/nyaur/${config.networking.hostName}.nix);
     backupFileExtension = "backup";
   };
 }

@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    (import ./firefox { inherit pkgs inputs; })
+    ./firefox
     ./easyeffects
     ./pavucontrol.nix
     ./dolphin
@@ -26,6 +26,7 @@
 
   home.packages = with pkgs; [
     adwaita-icon-theme
+    noto-fonts
     corefonts
     vistafonts
     aporetic

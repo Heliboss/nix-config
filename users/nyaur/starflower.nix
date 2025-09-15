@@ -7,14 +7,14 @@
   FLAKE = "/persist/home/nyaur/.config/nixos";
 in {
   imports = [
-    (import ./default.nix { inherit inputs; })
+    ./default.nix
     ./programs/graphical/hyprland
-    (import ./programs/graphical { inherit config pkgs inputs; })
-    (import ./programs/cli { inherit pkgs inputs; })
+    ./programs/graphical
+    ./programs/cli
     ./programs/gaming
     ./programs/productivity
     ./programs/creativity
-    (import ./programs/flatpak { inherit inputs; })
+    ./programs/flatpak
   ];
 
   home.persistence."/persist/home/nyaur" = {
