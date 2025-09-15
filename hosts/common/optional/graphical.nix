@@ -21,9 +21,9 @@
   fonts.fontDir.enable = true;
 
   # Don't shut down on power button short press
-  services.logind.extraConfig = ''
-    HandlePowerKey=ignore
-  '';
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+  };
 
   # Enable SysRq shortcuts
   boot.kernel.sysctl."kernel.sysrq" = 1;
