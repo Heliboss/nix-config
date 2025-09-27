@@ -42,7 +42,7 @@
         ];
       };
     };
-
+    # For non-NixOS
     homeConfigurations = {
       # Main
       "nyaur@starflower" = home-manager.lib.homeManagerConfiguration {
@@ -52,6 +52,7 @@
         };
         modules = [
           ./users/nyaur/starflower.nix
+          { targets.genericLinux.enable = true; }
         ];
       };
     };
