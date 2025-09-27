@@ -2,7 +2,7 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
-      ${builtins.readFile ./fish/config.fish}
+      ${builtins.readFile ./config.fish}
     '';
   };
 }

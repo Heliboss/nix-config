@@ -10,6 +10,6 @@
   ];
 
   home.file = {
-    ".config/foot/foot.ini".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/foot/foot.ini";
+    ".config/foot/foot.ini".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/foot.ini";
   };
 }
