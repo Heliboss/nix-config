@@ -1,5 +1,6 @@
 {
   lib,
+  config,
   pkgs,
   inputs,
   ...
@@ -38,11 +39,8 @@
   };
 
   xdg.portal = {
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
-    ];
-    config.common.default = "*";
+    extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
+    config.common.default = config.home-manager.users.nyaur.xdg.portal.config.common.default;
   };
 
   sops.age.keyFile = "/persist/starflower.txt";
