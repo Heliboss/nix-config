@@ -1,64 +1,13 @@
 {
   "Profiles": [
     {
-      "Tablet": "VEIKK S640",
+      "Tablet": "Huion H640P",
       "OutputMode": {
         "Path": "OpenTabletDriver.Desktop.Output.LinuxArtistMode",
         "Settings": [],
         "Enable": true
       },
-      "Filters": [
-        {
-          "Path": "TabletDriverFilters.Devocub.Antichatter",
-          "Settings": [
-            {
-              "Property": "AntichatterMultiplier",
-              "Value": 1.0
-            },
-            {
-              "Property": "AntichatterOffsetX",
-              "Value": null
-            },
-            {
-              "Property": "PredictionStrength",
-              "Value": 1.1
-            },
-            {
-              "Property": "PredictionSharpness",
-              "Value": 1.0
-            },
-            {
-              "Property": "PredictionOffsetX",
-              "Value": 3.0
-            },
-            {
-              "Property": "Frequency",
-              "Value": 1000.0
-            },
-            {
-              "Property": "Latency",
-              "Value": 1.0
-            },
-            {
-              "Property": "AntichatterStrength",
-              "Value": 5.0
-            },
-            {
-              "Property": "AntichatterOffsetY",
-              "Value": 0.0
-            },
-            {
-              "Property": "PredictionEnabled",
-              "Value": true
-            },
-            {
-              "Property": "PredictionOffsetY",
-              "Value": 0.0
-            }
-          ],
-          "Enable": true
-        }
-      ],
+      "Filters": [],
       "AbsoluteModeSettings": {
         "Display": {
           "Width": 1920.0,
@@ -68,10 +17,10 @@
           "Rotation": 0.0
         },
         "Tablet": {
-          "Width": 152.4,
-          "Height": 101.6,
-          "X": 76.2,
-          "Y": 50.8,
+          "Width": 160.0,
+          "Height": 100.0,
+          "X": 80.0,
+          "Y": 50.0,
           "Rotation": 0.0
         },
         "EnableClipping": true,
@@ -99,28 +48,17 @@
         "EraserActivationThreshold": 1.0,
         "EraserButton": null,
         "PenButtons": [
-          {
-            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
-            "Settings": [
-              {
-                "Property": "Key",
-                "Value": "Space"
-              }
-            ],
-            "Enable": true
-          },
-          {
-            "Path": "OpenTabletDriver.Desktop.Binding.MultiKeyBinding",
-            "Settings": [
-              {
-                "Property": "Keys",
-                "Value": "Control+S"
-              }
-            ],
-            "Enable": true
-          }
+          null,
+          null
         ],
-        "AuxButtons": [],
+        "AuxButtons": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "MouseButtons": [],
         "MouseScrollUp": null,
         "MouseScrollDown": null

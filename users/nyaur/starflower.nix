@@ -27,7 +27,7 @@ in {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "swaybg -o \"*\" -i ${FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper/samyo.jpg -m fill"
-      "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/FPS.json"
+      "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json"
     ];
   };
 
