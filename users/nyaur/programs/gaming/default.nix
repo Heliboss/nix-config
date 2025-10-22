@@ -14,11 +14,13 @@
         directory = ".local/share/Steam";
         method = "symlink"; # Bindfs is too slow for Steam games
       }
+      # Directories used by games
       {
         directory = ".config/bitburner";
         method = "bindfs";
       }
       ".config/NecroDancer"
+      ".local/share/Replicube"
     ];
   };
 }
