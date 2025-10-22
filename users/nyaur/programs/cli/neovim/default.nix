@@ -15,6 +15,9 @@
       gnumake
       tree-sitter
       nodePackages.nodejs
+      nodePackages.jsonlint
+      nodePackages.markdownlint-cli
+      go
     ];
   };
 
