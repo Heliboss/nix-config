@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2025-08-14T12:29:59.160Z",
+    "createdAt": "2025-10-24T13:54:38.387Z",
     "redirects": [
         {
             "description": "x redirect",
@@ -30,7 +30,7 @@
             "redirectUrl": "https://redlib.perennialte.ch/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": true,
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame"
@@ -47,7 +47,7 @@
             "redirectUrl": "https://redlib.catsarch.com/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame"
@@ -87,6 +87,40 @@
             "appliesTo": [
                 "main_frame",
                 "history"
+            ]
+        },
+        {
+            "description": "no facebook tracking links",
+            "exampleUrl": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2Fmicrosoft%2FTypeScript&h=aaa",
+            "exampleResult": "https://github.com/microsoft/TypeScript",
+            "error": null,
+            "includePattern": "https://l.(?:facebook|messenger).com/l.php\\?u\\=(.*)\\&h\\=(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "no fbclid",
+            "exampleUrl": "https://example.com/example&fbclid=aaa",
+            "exampleResult": "https://example.com/example",
+            "error": null,
+            "includePattern": "*&fbclid=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
             ]
         }
     ]
