@@ -1,10 +1,5 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}: let
-  FLAKE = "/persist/home/nyaur/.config/nixos";
+{ config, pkgs, inputs, ... }:
+let FLAKE = "/persist/home/nyaur/.config/nixos";
 in {
   imports = [
     ./default.nix
@@ -18,15 +13,13 @@ in {
   ];
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/nixos"
-    ];
+    directories = [ ".config/nixos" ];
   };
 
   # Wallpaper
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      "swaybg -o \"*\" -i ${FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper/samyo.jpg -m fill"
+      "swaybg -o '*' -i ${FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper/samyo.jpg -m fill"
       "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json"
     ];
   };
