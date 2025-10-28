@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{ config, pkgs, ... }: {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -14,21 +10,21 @@
       wget
       gnumake
       tree-sitter
+      go
       nodePackages.nodejs
       nodePackages.jsonlint
       nodePackages.markdownlint-cli
-      go
+      nil
+      nixd
     ];
   };
 
   home.file = {
-    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
+    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink
+      "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
   };
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".local/state/nvim"
-      ".local/share/nvim"
-    ];
+    directories = [ ".local/state/nvim" ".local/share/nvim" ];
   };
 }
