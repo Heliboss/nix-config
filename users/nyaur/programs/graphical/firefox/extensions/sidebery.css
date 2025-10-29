@@ -1,0 +1,22 @@
+/* globally */
+#root {
+  counter-reset: tabs;
+}
+.Tab:nth-of-type(n + 1) {
+  counter-increment: tabs;
+}
+
+/* num style */
+.Tab:nth-of-type(n):before {
+  content: counter(tabs);
+  position: absolute;
+  color: #787878;
+  font: 11px sans-serif;
+	margin: 0px 0px;
+	z-index: 2;
+}
+
+/* fix margin */
+.Tab .fav {
+  margin-left: 3px;
+}

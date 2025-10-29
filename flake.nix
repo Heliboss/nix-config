@@ -13,6 +13,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     sops-nix.url = "github:Mic92/sops-nix";
+    textfox.url = "github:adriankarlen/textfox";
     pipewire-screenaudio.url = "github:IceDBorn/pipewire-screenaudio";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     yt-x.url = "github:Benexl/yt-x";
@@ -24,7 +25,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     # Remember to set
     # environment.persistence."/persist".enable = false;
     # on a non-impermanent setup
@@ -33,10 +34,10 @@
       starflower = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = {
-	  inherit inputs;
-	  device = "/dev/nvme0n1";
-	};
-	modules = [
+          inherit inputs;
+          device = "/dev/nvme0n1";
+        };
+        modules = [
           ./hosts/starflower
           { home-manager.extraSpecialArgs = specialArgs; }
         ];
@@ -47,9 +48,7 @@
       # Main
       "nyaur@starflower" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = {
-          inherit inputs;
-        };
+        extraSpecialArgs = { inherit inputs; };
         modules = [
           ./users/nyaur/starflower.nix
           { targets.genericLinux.enable = true; }
