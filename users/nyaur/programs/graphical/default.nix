@@ -26,6 +26,7 @@
     aporetic
     nerd-fonts.iosevka
     nerd-fonts.jetbrains-mono
+    nmgui
     blueberry
     playerctl
     mpv

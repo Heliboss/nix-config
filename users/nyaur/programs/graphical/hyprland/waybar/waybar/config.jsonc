@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "left",
-  "margin": "5 2 5 0",
+  "margin": "0 0 0 0",
   "reload_style_on_change": true,
   "modules-left": [
     "group/bat",
@@ -352,7 +352,6 @@
     "format-disconnected": "󰖪",
     "format-linked": "󰈁",
     "tooltip": false,
-    "on-click": "foot nmtui",
   },
   "network#speed": {
     "format": " {bandwidthDownBits} ",
@@ -363,7 +362,7 @@
     "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
     "tooltip-format-disconnected": "Not Connected to any type of Network",
     "tooltip": true,
-    "on-click": "foot nmtui",
+    "on-click": "nmgui",
   },
   "group/blue": {
     "orientation": "inherit",
