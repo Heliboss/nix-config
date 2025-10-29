@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}: {
+{ pkgs, ... }: {
   imports = [
     ./firefox
     ./easyeffects
@@ -19,12 +14,11 @@
   fonts.fontconfig.enable = true;
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".local/share/icons"
-    ];
+    directories = [ ".local/share/icons" ];
   };
 
   home.packages = with pkgs; [
+    libnotify
     adwaita-icon-theme
     noto-fonts
     corefonts

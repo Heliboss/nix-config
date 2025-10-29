@@ -22,6 +22,18 @@ in {
       "swaybg -o '*' -i ${FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper/samyo.jpg -m fill"
       "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json"
     ];
+    workspace = [
+      "1,monitor:eDP-1"
+      "3,monitor:eDP-1"
+      "5,monitor:eDP-1"
+      "7,monitor:eDP-1"
+      "9,monitor:eDP-1"
+      "2,monitor:HDMI-A-1"
+      "4,monitor:HDMI-A-1"
+      "6,monitor:HDMI-A-1"
+      "8,monitor:HDMI-A-1"
+      "10,monitor:HDMI-A-1"
+    ];
   };
 
   # Host specific monitor configuration
