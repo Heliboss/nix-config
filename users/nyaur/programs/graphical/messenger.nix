@@ -1,24 +1,17 @@
-{
-  lib,
-  pkgs,
-  ...
-}: let
-  caprine-override = pkgs.caprine.overrideAttrs (old: rec {
+{ pkgs, ... }:
+let
+  caprine-override = pkgs.caprine.overrideAttrs (old: {
     src = pkgs.fetchFromGitHub {
       owner = "heliboss";
       repo = "caprine";
-      rev = "fb5c769";
-      hash = "sha256-G77Rmo43KJWxt/mN9/hWNfCPAmBEsL9w65i40XuS0PU=";
+      rev = "f753f68";
+      hash = "sha256-hNYGsWGmPV13bZvnngesA7pIgysqI2wFA0kUlAPZ+xY=";
     };
   });
 in {
-  home.packages = [
-    caprine-override
-  ];
+  home.packages = [ caprine-override ];
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/Caprine"
-    ];
+    directories = [ ".config/Caprine" ];
   };
 }
