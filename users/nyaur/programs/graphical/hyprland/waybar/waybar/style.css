@@ -18,9 +18,7 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0px;
-  border: 0px solid @active;
-  background: alpha(@background, 1);
+  background: @background;
   color: @active;
 }
 
@@ -29,7 +27,7 @@ tooltip {
   border-radius: 8px;
   padding: 4px;
   border: 1px solid @active;
-  background: alpha(@background, 1);
+  background: @background;
   color: @active;
 }
 
@@ -49,18 +47,16 @@ tooltip label {
 }
 
 .modules-right {
-  margin: 0px 6px 6px 6px;
-  border-radius: 4px;
-  background: alpha(@background, 0.4);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: 0px 4px 4px 4px;
   color: @active;
 }
 
 .modules-left {
   transition-property: background-color;
   transition-duration: 0.5s;
-  margin: 6px 6px 6px 6px;
-  border-radius: 4px;
-  background: alpha(@background, 0.4);
+  margin: 4px 4px 0px 4px;
   color: @active;
 }
 
@@ -76,20 +72,20 @@ tooltip label {
 #bluetooth,
 #custom-notification,
 #gcpu {
-  border-radius: 4px;
-  margin: 2px 2px 4px 2px;
-  background: alpha(@modules, 0.3);
+  border-radius: 8px;
+  margin: 2px 0px 4px 0px;
+  padding: 0px 2px 0px 2px;
+  background: alpha(@modules, 0.5);
 }
 
 #bat {
-  padding: 10px 0px 0px;
+  padding: 8px 0px 0px;
 }
 
 #battery {
   font-size: 14px;
   border-radius: 8px;
-  padding: 4px 0px;
-  margin: -6px 2px 4px 4px;
+  padding: 0px 0px 4px 2px;
 }
 
 #battery.discharging.warning {
@@ -108,42 +104,27 @@ tooltip label {
   animation-direction: alternate;
 }
 
-#battery.capacity,
-#battery.charging {
+#battery.capacity {
   font-size: 12px;
   font-weight: bold;
-  margin: -8px 0px 2px 0px;
-}
-
-#battery.capacity {
-  margin-bottom: 0px;
+  padding: 0px 0px 6px 0px;
 }
 
 #battery.charging {
-  margin-top: -4px;
+  margin-top: -2px;
+  padding: 0px 0px 8px 0px;
 }
 
 #clock {
   font-size: 14px;
   font-weight: bold;
-  padding: 6px 2px 0px 2px;
-}
-
-#idle_inhibitor {
-  margin: 0px 4px 0px 0px;
-}
-
-#custom-colorpicker {
-  font-size: 14px;
-  border-radius: 20px;
-  border: 1px solid @active;
-  padding: 0px 0px 2px 0px;
+  padding: 6px 0px 0px 0px;
 }
 
 #custom-weather.icon {
   font-size: 16px;
   margin: 0px 0px -4px 0px;
-  padding: 0px 6px 0px 0px;
+  padding: 0px 4px 0px 0px;
 }
 
 #custom-weather {
@@ -152,27 +133,29 @@ tooltip label {
 }
 
 #gcpu {
-  padding: 4px 0px 0px 0px;
+  padding: 2px 2px 0px 0px;
 }
 
 #cpu.icon {
   font-size: 18px;
-  margin: 0px 6px -2px 4px
+  margin-bottom: -4px;
 }
 
 #memory.icon {
   font-size: 12px;
-  margin: 2px 6px 0px 2px;
+  padding: 2px 2px 0px 0px;
 }
 
 #temperature.icon {
-  font-size: 14px;
-  margin: 0px 0px 0px 2px;
+  font-size: 15px;
+  margin-bottom: -2px;
+  padding: 0px 0px 0px 4px;
 }
 
 #disk.icon {
   font-size: 12px;
-  margin: 0px 2px 0px 2px;
+  margin-bottom: -2px;
+  padding: 0px 0px 0px 2px;
 }
 
 #cpu,
@@ -181,7 +164,6 @@ tooltip label {
 #disk {
   font-size: 12px;
   font-weight: bold;
-  margin: 0px 2px 0px 0px;
 }
 
 #custom-dmark {
@@ -195,18 +177,16 @@ tooltip label {
 }
 
 #workspaces {
-  margin: 0px 2px;
-  padding: 4px 0px 4px 0px;
-  border-radius: 8px;
+  font-weight: bold;
 }
 
 #workspaces button {
   transition-property: background-color;
   transition-duration: 0.5s;
-  color: @foreground;
-  background: transparent;
-  border-radius: 4px;
+  background: alpha(@modules, 0.5);
+  border-radius: 8px;
   color: alpha(@foreground, 0.3);
+  margin: 2px 2px;
 }
 
 #workspaces button.urgent {
@@ -215,10 +195,9 @@ tooltip label {
 }
 
 #workspaces button.active {
-  padding: 4px 2px;
   background: alpha(@active, 0.4);
   color: @active;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 #tray {
@@ -226,16 +205,11 @@ tooltip label {
 }
 
 #privacy-item {
-  padding: 6px 4px 6px 6px;
-}
-
-#custom-recorder {
-  font-size: 15px;
-  padding: 1px 0px 1px 2px;
+  padding: 6px 0px 6px 0px;
 }
 
 #pulseaudio.mic {
-  padding: 0px 2px 0px 2px;
+  padding: 0px 0px 0px 0px;
 }
 
 #backlight,
@@ -261,24 +235,26 @@ tooltip label {
   min-width: 6px;
   min-height: 60px;
   border-radius: 8px;
-  background-color: alpha(@background, 0.6);
+  background-color: @background;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
   border-radius: 8px;
-  background-color: lighter(@active);
+  background-color: @active;
 }
 
 #network {
-  font-size: 12px;
-  margin: 2px 0px 2px -8px;
-  padding: 0px 2px 0px 4px;
+  font-size: 13px;
+  margin: 2px 0px 2px 0px;
+  padding: 0px 4px 0px 0px;
 }
 
 #network.speed {
   font-size: 14px;
-  margin-left: 0px;
+  font-weight: bold;
+  margin-top: -4px;
+  padding: 0px 0px 0px 2px;
 }
 
 #bluetooth {
@@ -297,7 +273,7 @@ tooltip label {
 }
 
 #custom-notification {
-  padding-right: 4px;
+  padding-right: 6px;
 }
 
 @keyframes blink-active {

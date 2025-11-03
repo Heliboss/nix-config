@@ -1,13 +1,15 @@
 {
   "layer": "top",
   "position": "left",
-  "margin": "0 0 0 0",
   "reload_style_on_change": true,
+
   "modules-left": [
     "group/bat",
     "group/together",
     "group/gcpu",
   ],
+
+  // battery
   "group/bat": {
     "orientation": "inherit",
     "modules": [
@@ -33,15 +35,20 @@
       "󰂂",
       "󰁹",
     ],
+    "tooltip": false,
   },
   "battery#capacity": {
     "format": "{capacity}",
+    "tooltip": false,
   },
   "battery#charging": {
     "rotate": 270,
     "format": "",
     "format-charging": "",
+    "tooltip": false,
   },
+
+  // clock
   "group/together": {
     "orientation": "inherit",
     "modules": [
@@ -51,23 +58,7 @@
   },
   "clock": {
     "format": "{:%H\n%M}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode": "month",
-      "mode-mon-col": 3,
-      "on-scroll": 1,
-      "on-click-right": "mode",
-      "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b>{}</b></span>",
-      },
-    },
-    "actions": {
-      "on-click-right": "mode",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down",
-    },
+    "tooltip": false,
   },
   "group/utils": {
     "orientation": "inherit",
@@ -77,8 +68,6 @@
     },
     "modules": [
       "custom/dmark",
-      "idle_inhibitor",
-      "custom/colorpicker",
       "custom/weather#icon",
       "custom/weather",
     ]
@@ -92,28 +81,13 @@
   },
   "custom/weather": {
     "format": "{}",
-    "tooltip": true,
+    "tooltip": false,
     "interval": 3600,
     "exec": "wttrbar --custom-indicator '<b>{temp_C}󰔄</b>' --location mabalacat",
     "return-type": "json"
   },
-  "custom/colorpicker": {
-    "format": "{}",
-    "return-type": "json",
-    "interval": "once",
-    "exec": "~/.config/hypr/bin/colorpicker -j",
-    "on-click": "sleep 1 && ~/.config/hypr/bin/colorpicker",
-    "signal": 1
-  },
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "tooltip-format-activated": "Idle Inhibitor is active",
-    "tooltip-format-deactivated": "Idle Inhibitor is not active",
-    "format-icons": {
-      "activated": "󰔡",
-      "deactivated": "󰔢"
-    }
-  },
+
+  // info
   "group/gcpu": {
     "orientation": "inherit",
     "modules": [
@@ -132,7 +106,7 @@
   },
   "cpu": {
     "format": "{usage}󱉸",
-    "on-click": "foot btop",
+    "tooltip": false,
   },
   "memory#icon": {
     "format": "",
@@ -140,13 +114,16 @@
   },
   "memory": {
     "format": "{percentage}󱉸",
+    "tooltip": false,
   },
   "temperature#icon": {
     "format": "{icon}",
     "format-icons" : [ "", "", "", "", "" ],
+    "tooltip": false,
   },
   "temperature": {
     "format": "{temperatureC}󰔄",
+    "tooltip": false,
   },
   "group/info": {
     "orientation": "inherit",
@@ -166,13 +143,15 @@
   },
   "disk#icon": {
     "format": "󰋊",
+    "tooltip": false,
   },
   "disk": {
     "interval": 600,
     "format": "{percentage_used}󱉸",
     "path": "/",
-    "on-click": "foot gdu /",
+    "tooltip": false,
   },
+
   "modules-center": [
     "hyprland/submap",
     "hyprland/workspaces",
@@ -180,7 +159,7 @@
   "hyprland/submap": {
     "format": "󰇘",
     "max-length": 8,
-    "tooltip": true,
+    "tooltip": false,
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -198,6 +177,7 @@
       "10": "ᜐ",
     },
   },
+
   "modules-right": [
     "tray",
     "privacy",
@@ -229,12 +209,6 @@
         "tooltip-icon-size": 24,
       },
     ],
-  },
-  "custom/recorder": {
-    "format": " ",
-    "tooltip": false,
-    "on-click": "~/.config/hypr/bin/recorder",
-    "signal": 4
   },
   "group/brightness": {
     "orientation": "inherit",
@@ -269,8 +243,7 @@
     ],
     "on-scroll-down": "brightnessctl s 5%-",
     "on-scroll-up": "brightnessctl s +5%",
-    "tooltip": true,
-    "tooltip-format": "Brightness: {percent}% ",
+    "tooltip": false,
     "smooth-scrolling-threshold": 1,
   },
   "backlight/slider": {
@@ -293,7 +266,6 @@
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
-    "tooltip-format": "{volume}% {icon} | {desc}",
     "format-muted": "󰖁",
     "format-icons": {
       "headphones": "󰋌",
@@ -308,7 +280,7 @@
         "󰕾"
       ],
     },
-    "on-click": "pavucontrol",
+    "tooltip": false,
   },
   "pulseaudio/slider": {
     "min": 0,
@@ -361,8 +333,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} ",
     "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
     "tooltip-format-disconnected": "Not Connected to any type of Network",
-    "tooltip": true,
-    "on-click": "nmgui",
+    "tooltip": false,
   },
   "group/blue": {
     "orientation": "inherit",
@@ -380,11 +351,7 @@
     "format-off": "󰂲",
     "format-disabled": "",
     "format-connected": "<b></b>",
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "blueberry",
+    "tooltip": false,
   },
   "bluetooth#status": {
     "format-on": "",
@@ -392,11 +359,7 @@
     "format-disabled": "",
     "format-connected": "<b>{num_connections}</b>",
     "format-connected-battery": "<small><b>{device_battery_percentage}%</b></small>",
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "blueberry",
+    "tooltip": false,
   },
   "custom/notification": {
     "tooltip": false,
