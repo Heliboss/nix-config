@@ -1,14 +1,7 @@
-{
-  pkgs,
-  ...
-}: {
-  home.packages = with pkgs; [
-    prismlauncher-unwrapped
-  ];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ prismlauncher ];
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".local/share/PrismLauncher"
-    ];
+    directories = [ ".local/share/PrismLauncher" ];
   };
 }
