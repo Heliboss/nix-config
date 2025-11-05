@@ -22,7 +22,7 @@
     adwaita-icon-theme
     noto-fonts
     corefonts
-    vistafonts
+    vista-fonts
     aporetic
     nerd-fonts.iosevka
     nerd-fonts.jetbrains-mono

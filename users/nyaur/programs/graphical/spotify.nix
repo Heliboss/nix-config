@@ -1,8 +1,6 @@
-{
-  pkgs,
-  ...
-}: let
- spotify-adblock = pkgs.rustPlatform.buildRustPackage rec {
+{ pkgs, ... }:
+let
+  spotify-adblock = pkgs.rustPlatform.buildRustPackage rec {
     pname = "spotify-adblock";
     version = "1.0.3";
     src = pkgs.fetchFromGitHub {
@@ -32,29 +30,16 @@
   };
 
   spotify-override = pkgs.spotify.overrideAttrs (old: {
-    buildInputs = (old.buildInputs or [ ]) ++ [
-      pkgs.zip
-      pkgs.unzip
-    ];
+    buildInputs = (old.buildInputs or [ ]) ++ [ pkgs.zip pkgs.unzip ];
     postInstall = (old.postInstall or "") + ''
       ln -s ${spotify-adblock}/lib/libspotifyadblock.so $libdir
       wrapProgram $out/bin/spotify --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so"
-
-      # Hide placeholder for advert banner
-      ${pkgs.unzip}/bin/unzip -p $out/share/spotify/Apps/xpui.spa xpui.js | sed 's/adsEnabled:\!0/adsEnabled:false/' > $out/share/spotify/Apps/xpui.js
-      ${pkgs.zip}/bin/zip --junk-paths --update $out/share/spotify/Apps/xpui.spa $out/share/spotify/Apps/xpui.js
-      rm $out/share/spotify/Apps/xpui.js
     '';
   });
 in {
-  home.packages = [
-    spotify-override
-  ];
+  home.packages = [ spotify-override ];
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/spotify"
-      ".cache/spotify"
-    ];
+    directories = [ ".config/spotify" ".cache/spotify" ];
   };
 }
