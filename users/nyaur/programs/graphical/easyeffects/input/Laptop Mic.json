@@ -1,9 +1,24 @@
 {
     "input": {
         "blocklist": [],
+        "filter#0": {
+            "balance": 0.0,
+            "bypass": true,
+            "equal-mode": "IIR",
+            "frequency": 2200.0,
+            "gain": -2.42861286636753e-17,
+            "input-gain": 0.0,
+            "mode": "RLC (BT)",
+            "output-gain": 0.0,
+            "quality": 15.0,
+            "slope": "x6",
+            "type": "Low-pass",
+            "width": 4.0
+        },
         "plugins_order": [
             "speex#0",
-            "rnnoise#0"
+            "rnnoise#0",
+            "filter#0"
         ],
         "rnnoise#0": {
             "bypass": false,
