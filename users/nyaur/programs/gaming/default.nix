@@ -1,12 +1,5 @@
 {
-  pkgs,
-  ...
-}: {
-  imports = [
-    ./lutris.nix
-    ./osu.nix
-    ./minecraft.nix
-  ];
+  imports = [ ./lutris.nix ./osu.nix ./minecraft.nix ];
 
   home.persistence."/persist/home/nyaur" = {
     directories = [
@@ -20,7 +13,10 @@
         method = "bindfs";
       }
       ".config/NecroDancer"
-      ".local/share/Replicube"
+      {
+        directory = ".local/share/Replicube";
+        method = "bindfs";
+      }
     ];
   };
 }
