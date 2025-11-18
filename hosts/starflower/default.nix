@@ -1,10 +1,4 @@
-{
-  lib,
-  config,
-  pkgs,
-  inputs,
-  ...
-}: {
+{ lib, config, pkgs, inputs, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -25,13 +19,12 @@
     ../common/optional/flatpak.nix
     ../common/optional/gnupg.nix
     ../common/optional/virt-manager.nix
+    ../common/optional/joycond.nix
   ];
 
   networking.hostName = "starflower";
 
-  boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
-  };
+  boot = { kernelPackages = pkgs.linuxPackages_latest; };
 
   zramSwap = {
     enable = true;
@@ -40,7 +33,8 @@
 
   xdg.portal = {
     extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
-    config.common.default = config.home-manager.users.nyaur.xdg.portal.config.common.default;
+    config.common.default =
+      config.home-manager.users.nyaur.xdg.portal.config.common.default;
   };
 
   sops.age.keyFile = "/persist/starflower.txt";
