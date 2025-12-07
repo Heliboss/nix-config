@@ -17,6 +17,14 @@
         directory = ".local/share/Replicube";
         method = "bindfs";
       }
+      {
+        directory = ".local/share/Paradox Interactive";
+        method = "bindfs";
+      }
+      {
+        directory = ".local/share/Terraria";
+        method = "bindfs";
+      }
     ];
   };
 }
