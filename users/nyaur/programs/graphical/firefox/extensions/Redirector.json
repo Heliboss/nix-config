@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2025-10-24T13:54:38.387Z",
+    "createdAt": "2025-11-29T15:13:30.376Z",
     "redirects": [
         {
             "description": "x redirect",
@@ -30,7 +30,7 @@
             "redirectUrl": "https://redlib.perennialte.ch/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame"
@@ -47,7 +47,7 @@
             "redirectUrl": "https://redlib.catsarch.com/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": true,
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame"
@@ -117,6 +117,23 @@
             "redirectUrl": "$1",
             "patternType": "W",
             "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "no youtube tracking links",
+            "exampleUrl": "https://www.youtube.com/redirect?event=video_description&redir_token=aaa&q=https%3A%2F%2Fwww.facebook.com&v=aaa",
+            "exampleResult": "https://www.facebook.com",
+            "error": null,
+            "includePattern": "https://www.youtube.com/redirect\\?event\\=video_description\\&redir_token\\=(.*)\\&q\\=(.*)\\&v\\=(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "urlDecode",
             "disabled": false,
             "grouped": false,
             "appliesTo": [
