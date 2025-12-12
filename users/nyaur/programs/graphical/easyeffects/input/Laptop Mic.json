@@ -22,19 +22,19 @@
         ],
         "rnnoise#0": {
             "bypass": false,
-            "enable-vad": false,
+            "enable-vad": true,
             "input-gain": 0.0,
             "model-name": "",
-            "output-gain": 7.5,
+            "output-gain": 8.0,
             "release": 20.0,
             "vad-thres": 50.0,
             "wet": 0.0
         },
         "speex#0": {
             "bypass": false,
-            "enable-agc": false,
+            "enable-agc": true,
             "enable-denoise": true,
-            "enable-dereverb": false,
+            "enable-dereverb": true,
             "input-gain": 0.0,
             "noise-suppression": -100,
             "output-gain": 0.0,
