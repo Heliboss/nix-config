@@ -14,7 +14,6 @@
       tree-sitter
       go
       nodePackages.nodejs
-      nodePackages.jsonlint
       nodePackages.markdownlint-cli
       nil
       nixd
