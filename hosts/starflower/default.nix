@@ -29,16 +29,15 @@
     kernelModules = [ "zram" ];
   };
 
-  swapDevices = [{
-    device = "/tmp/swapfile";
-    size = 7311;
-  }];
-
   systemd.services.zramloop = {
     description = "Attach /swap/swapfile to /dev/loop0 for zram writeback";
     wantedBy = [ "multi-user.target" ];
     path = [ "/run/current-system/sw" ];
     script = ''
+      touch /tmp/swapfile
+      chattr +C /tmp/swapfile
+      chmod 600 /tmp/swapfile
+      fallocate -l 7311M /tmp/swapfile
       if swapoff /dev/zram0; then
         echo swapoff
       fi
