@@ -38,24 +38,10 @@
             "threshold": -12.0,
             "wet": 0.0
         },
-        "filter#0": {
-            "balance": 0.0,
-            "bypass": false,
-            "equal-mode": "IIR",
-            "frequency": 7300.0,
-            "gain": 0.0,
-            "input-gain": 0.0,
-            "mode": "LRX (BT)",
-            "output-gain": 0.0,
-            "quality": 15.0,
-            "slope": "x6",
-            "type": "Low-pass",
-            "width": 4.0
-        },
         "gate#0": {
             "attack": 20.0,
             "bypass": false,
-            "curve-threshold": -48.0,
+            "curve-threshold": -24.0,
             "curve-zone": -6.0,
             "dry": -80.01,
             "hpf-frequency": 10.0,
@@ -72,7 +58,7 @@
             "lpf-mode": "Off",
             "makeup": 0.0,
             "output-gain": 0.0,
-            "reduction": -24.0,
+            "reduction": -72.0,
             "release": 100.0,
             "sidechain": {
                 "lookahead": 0.0,
@@ -90,19 +76,18 @@
         },
         "plugins_order": [
             "rnnoise#0",
-            "gate#0",
             "compressor#0",
-            "filter#0"
+            "gate#0"
         ],
         "rnnoise#0": {
             "bypass": false,
-            "enable-vad": true,
+            "enable-vad": false,
             "input-gain": 0.0,
             "model-name": "\"\"",
             "output-gain": 0.0,
             "release": 20.0,
             "use-standard-model": true,
-            "vad-thres": 95.0,
+            "vad-thres": 50.0,
             "wet": 0.0
         }
     }
