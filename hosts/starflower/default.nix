@@ -34,10 +34,13 @@
     wantedBy = [ "multi-user.target" ];
     path = [ "/run/current-system/sw" ];
     script = ''
-      touch /tmp/swapfile
-      chattr +C /tmp/swapfile
-      chmod 600 /tmp/swapfile
-      fallocate -l 7311M /tmp/swapfile
+      if rm /swap/swapfile; then
+        echo rm
+      fi
+      touch /swap/swapfile
+      chattr +C /swap/swapfile
+      chmod 600 /swap/swapfile
+      fallocate -l 7311M /swap/swapfile
       if swapoff /dev/zram0; then
         echo swapoff
       fi
@@ -54,7 +57,7 @@
         echo detach
       fi
       sleep 1
-      if losetup /dev/loop0 /tmp/swapfile; then
+      if losetup /dev/loop0 /swap/swapfile; then
         echo loop
       fi
       sleep 1
