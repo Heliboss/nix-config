@@ -6,8 +6,12 @@
   };
 
   services.flatpak = {
-    packages =
-      [ "org.vinegarhq.Sober" "net.davidotek.pupgui2" "io.github.Soundux" ];
+    packages = [
+      "org.vinegarhq.Sober"
+      "org.vinegarhq.Vinegar"
+      "net.davidotek.pupgui2"
+      "io.github.Soundux"
+    ];
     overrides = {
       "io.github.Soundux".Context.filesystems =
         [ "/persist/home/nyaur/Music/soundux:create" ];
