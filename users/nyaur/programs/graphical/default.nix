@@ -34,5 +34,6 @@
     feh
     qpwgraph
     keepassxc
+    brave
   ];
 }
