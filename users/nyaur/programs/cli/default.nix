@@ -1,9 +1,6 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{ pkgs, inputs, ... }: {
   imports = [
+    ./btop
     ./neovim
     ./fastfetch.nix
     ./fish
@@ -16,13 +13,10 @@
     ./yt-x
   ];
 
-  programs = {
-    nh.enable = true;
-  };
+  programs = { nh.enable = true; };
 
   home.packages = with pkgs; [
     jmtpfs
-    btop
     unzip
     powertop
     gdu
@@ -35,9 +29,6 @@
   ];
 
   home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".ssh"
-      ".gnupg"
-    ];
+    directories = [ ".ssh" ".gnupg" ];
   };
 }
