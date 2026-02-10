@@ -40,7 +40,7 @@
       touch /swap/swapfile
       chattr +C /swap/swapfile
       chmod 600 /swap/swapfile
-      fallocate -l 7311M /swap/swapfile
+      fallocate -l 14622M /swap/swapfile
       if swapoff /dev/zram0; then
         echo swapoff
       fi
@@ -63,7 +63,7 @@
       sleep 1
       echo zstd > /sys/block/zram0/comp_algorithm
       echo /dev/loop0 > /sys/block/zram0/backing_dev
-      echo 7311M > /sys/block/zram0/disksize
+      echo 14622M > /sys/block/zram0/disksize
       sleep 1
       mkswap -U clear /dev/zram0
       swapon -d -p 100 /dev/zram0
