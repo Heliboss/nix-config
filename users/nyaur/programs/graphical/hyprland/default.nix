@@ -1,18 +1,14 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, ... }: {
   imports = [ ./foot ./waybar ./wofi ./swaync.nix ./theme.nix ];
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    portalPackage =
-      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+    package = pkgs.hyprland;
+    portalPackage = pkgs.xdg-desktop-portal-hyprland;
     extraConfig = ''
       ${builtins.readFile ./hypr/hyprland.conf}
     '';
-    plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprexpo
-    ];
+    plugins = [ pkgs.hyprlandPlugins.hyprbars pkgs.hyprlandPlugins.hyprexpo ];
   };
 
   home.file = {
@@ -23,10 +19,8 @@
   };
 
   xdg.portal = {
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
-    ];
+    extraPortals =
+      [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland ];
     config.common.default = "*";
   };
 

@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [ prismlauncher ];
 
-  home.persistence."/persist/home/nyaur" = {
+  home.persistence."/persist" = {
     directories = [ ".local/share/PrismLauncher" ];
   };
 }

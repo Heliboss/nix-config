@@ -6,5 +6,5 @@
       "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/wofi/style.css";
   };
 
-  home.persistence."/persist/home/nyaur" = { files = [ "/.cache/wofi-drun" ]; };
+  home.persistence."/persist" = { files = [ "/.cache/wofi-drun" ]; };
 }

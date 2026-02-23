@@ -39,7 +39,7 @@ let
 in {
   home.packages = [ spotify-override ];
 
-  home.persistence."/persist/home/nyaur" = {
+  home.persistence."/persist" = {
     directories = [ ".config/spotify" ".cache/spotify" ];
   };
 }

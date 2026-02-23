@@ -25,7 +25,7 @@
       "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
   };
 
-  home.persistence."/persist/home/nyaur" = {
+  home.persistence."/persist" = {
     directories = [ ".local/state/nvim" ".local/share/nvim" ];
   };
 }

@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{ pkgs, ... }: {
   programs.obs-studio = {
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [
@@ -11,9 +8,5 @@
     ];
   };
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/obs-studio"
-    ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/obs-studio" ]; };
 }

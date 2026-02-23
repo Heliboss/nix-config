@@ -1,14 +1,5 @@
-{
-  pkgs,
-  ...
-}: {
-  home.packages = with pkgs; [
-    libreoffice-fresh
-  ];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ libreoffice-fresh ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/libreoffice"
-    ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/libreoffice" ]; };
 }

@@ -1,30 +1,15 @@
 {
   imports = [ ./lutris.nix ./osu.nix ./minecraft.nix ];
 
-  home.persistence."/persist/home/nyaur" = {
+  home.persistence."/persist" = {
     directories = [
-      {
-        directory = ".local/share/Steam";
-        method = "symlink"; # Bindfs is too slow for Steam games
-      }
+      ".local/share/Steam"
       # Directories used by games
-      {
-        directory = ".config/bitburner";
-        method = "bindfs";
-      }
+      ".config/bitburner"
       ".config/NecroDancer"
-      {
-        directory = ".local/share/Replicube";
-        method = "bindfs";
-      }
-      {
-        directory = ".local/share/Paradox Interactive";
-        method = "bindfs";
-      }
-      {
-        directory = ".local/share/Terraria";
-        method = "bindfs";
-      }
+      ".local/share/Replicube"
+      ".local/share/Paradox Interactive"
+      ".local/share/Terraria"
     ];
   };
 }

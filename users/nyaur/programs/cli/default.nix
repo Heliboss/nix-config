@@ -28,7 +28,5 @@
     picocrypt-cli
   ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [ ".ssh" ".gnupg" ];
-  };
+  home.persistence."/persist" = { directories = [ ".ssh" ".gnupg" ]; };
 }

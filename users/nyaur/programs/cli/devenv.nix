@@ -1,14 +1,5 @@
-{
-  pkgs,
-  ...
-}: {
-  home.packages = with pkgs; [
-    devenv
-  ];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ devenv ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".local/share/devenv"
-    ];
-  };
+  home.persistence."/persist" = { directories = [ ".local/share/devenv" ]; };
 }

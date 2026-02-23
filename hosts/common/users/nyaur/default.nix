@@ -1,12 +1,5 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}: {
-  imports = [
-    inputs.home-manager.nixosModules.home-manager
-  ];
+{ config, inputs, ... }: {
+  imports = [ inputs.home-manager.nixosModules.home-manager ];
 
   sops.secrets.nyaur.neededForUsers = true;
 
@@ -28,18 +21,19 @@
     "d /persist/home/nyaur/.local/share 0700 nyaur users -"
     "d /persist/home/nyaur/.local/state 0700 nyaur users -"
     "d /persist/home/nyaur/.var 0700 nyaur users -"
-  ] ++ map (x: "d /persist/home/nyaur/" + x.directory + " 0700 nyaur users -") config.home-manager.users.nyaur.home.persistence."/persist/home/nyaur".directories
-    ++ map (x: "f /persist/home/nyaur/" + x + " 0700 nyaur users -") config.home-manager.users.nyaur.home.persistence."/persist/home/nyaur".files;
+  ] ++ map (x: "d /persist/home/nyaur/" + x.directory + " 0700 nyaur users -")
+    config.home-manager.users.nyaur.home.persistence."/persist".directories
+    ++ map (x: "f /persist/home/nyaur/" + x.file + " 0700 nyaur users -")
+    config.home-manager.users.nyaur.home.persistence."/persist".files;
 
   # Gets freaky when putting this in the home manager module. Maybe a permission issue?
   environment.persistence."/persist" = {
-    directories = [
-      "/home/nyaur/.local/share/waydroid"
-    ];
+    directories = [ "/home/nyaur/.local/share/waydroid" ];
   };
 
   home-manager = {
-    users.nyaur = (import ../../../../users/nyaur/${config.networking.hostName}.nix);
+    users.nyaur =
+      (import ../../../../users/nyaur/${config.networking.hostName}.nix);
     backupFileExtension = "backup";
   };
 }

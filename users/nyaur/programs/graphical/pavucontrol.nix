@@ -1,14 +1,7 @@
-{
-  pkgs,
-  ...
-}: {
-  home.packages = with pkgs; [
-    pavucontrol
-  ];
+{ pkgs, ... }: {
+  home.packages = with pkgs; [ pavucontrol ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".local/state/wireplumber"
-    ];
+  home.persistence."/persist" = {
+    directories = [ ".local/state/wireplumber" ];
   };
 }

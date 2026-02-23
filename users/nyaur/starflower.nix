@@ -1,4 +1,3 @@
-{ config, pkgs, inputs, ... }:
 let FLAKE = "/persist/home/nyaur/.config/nixos";
 in {
   imports = [
@@ -12,9 +11,7 @@ in {
     ./programs/flatpak
   ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [ ".config/nixos" ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/nixos" ]; };
 
   # Wallpaper
   wayland.windowManager.hyprland.settings = {

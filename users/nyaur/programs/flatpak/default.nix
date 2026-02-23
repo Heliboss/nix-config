@@ -1,7 +1,7 @@
 { inputs, ... }: {
   imports = [ inputs.nix-flatpak.homeManagerModules.nix-flatpak ];
 
-  home.persistence."/persist/home/nyaur" = {
+  home.persistence."/persist" = {
     directories = [ ".local/share/flatpak" ".var/app" ];
   };
 

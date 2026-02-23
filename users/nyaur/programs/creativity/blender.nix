@@ -1,7 +1,5 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [ blender ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [ ".config/blender" ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/blender" ]; };
 }

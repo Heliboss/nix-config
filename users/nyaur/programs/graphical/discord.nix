@@ -1,11 +1,5 @@
 {
-  programs.vesktop = {
-    enable = true;
-  };
+  programs.vesktop = { enable = true; };
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [
-      ".config/vesktop"
-    ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/vesktop" ]; };
 }

@@ -6,10 +6,5 @@
       "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/vale/.vale.ini";
   };
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [{
-      directory = ".local/share/vale";
-      method = "bindfs";
-    }];
-  };
+  home.persistence."/persist" = { directories = [ ".local/share/vale" ]; };
 }

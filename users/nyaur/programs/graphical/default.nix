@@ -6,8 +6,6 @@
     ./dolphin
     ./qbittorrent.nix
     ./discord.nix
-    ./messenger.nix
-    ./spotify.nix
     ./zathura.nix
   ];
 
@@ -24,9 +22,7 @@
     };
   };
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [ ".local/share/icons" ];
-  };
+  home.persistence."/persist" = { directories = [ ".local/share/icons" ]; };
 
   home.packages = with pkgs; [
     libnotify

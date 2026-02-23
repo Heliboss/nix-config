@@ -11,7 +11,5 @@ let
 in {
   home.packages = [ caprine-override ];
 
-  home.persistence."/persist/home/nyaur" = {
-    directories = [ ".config/Caprine" ];
-  };
+  home.persistence."/persist" = { directories = [ ".config/Caprine" ]; };
 }
