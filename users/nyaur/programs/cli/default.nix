@@ -9,8 +9,6 @@
     ./git.nix
     ./yazi.nix
     ./modprobed-db.nix
-    ./fastanime.nix
-    ./yt-x
   ];
 
   programs = { nh.enable = true; };
