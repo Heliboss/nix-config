@@ -16,8 +16,6 @@
     textfox.url = "github:adriankarlen/textfox";
     pipewire-screenaudio.url = "github:IceDBorn/pipewire-screenaudio";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
-    yt-x.url = "github:Benexl/yt-x";
-    fastanime.url = "github:Benexl/fastanime";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
