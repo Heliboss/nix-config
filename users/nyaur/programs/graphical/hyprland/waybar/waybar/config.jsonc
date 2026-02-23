@@ -58,6 +58,7 @@
   },
   "clock": {
     "format": "{:%H\n%M}",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep gsimplecal || echo a)); gsimplecal",
     "tooltip": false,
   },
   "group/utils": {
@@ -76,14 +77,12 @@
     "format": "{}",
     "tooltip": false,
     "interval": 3600,
-    "exec": "wttrbar --custom-indicator '{ICON}' --location mabalacat --nerd",
     "return-type": "json"
   },
   "custom/weather": {
     "format": "{}",
     "tooltip": false,
     "interval": 3600,
-    "exec": "wttrbar --custom-indicator '<b>{temp_C}󰔄</b>' --location mabalacat",
     "return-type": "json"
   },
 
@@ -102,27 +101,33 @@
   },
   "cpu#icon": {
     "format": "󰻠",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v \"$(pgrep foot || echo a)\" | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "cpu": {
     "format": "{usage}󱉸",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory#icon": {
     "format": "",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory": {
     "format": "{percentage}󱉸",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature#icon": {
     "format": "{icon}",
     "format-icons" : [ "", "", "", "", "" ],
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature": {
     "format": "{temperatureC}󰔄",
+    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "group/info": {
@@ -243,7 +248,7 @@
     ],
     "on-scroll-down": "brightnessctl s 5%-",
     "on-scroll-up": "brightnessctl s +5%",
-    "tooltip": false,
+    "tooltip-format": "{percent}%",
     "smooth-scrolling-threshold": 1,
   },
   "backlight/slider": {
@@ -268,19 +273,13 @@
     "format-bluetooth": "{icon}",
     "format-muted": "󰖁",
     "format-icons": {
-      "headphones": "󰋌",
-      "handsfree": "󰋌",
-      "headset": "󰋌",
-      "phone": "",
-      "portable": "",
-      "car": " ",
       "default": [
         "󰕿",
         "󰖀",
         "󰕾"
       ],
     },
-    "tooltip": false,
+    "tooltip-format": "{volume}%",
   },
   "pulseaudio/slider": {
     "min": 0,
@@ -350,7 +349,7 @@
     "format-on": "",
     "format-off": "󰂲",
     "format-disabled": "",
-    "format-connected": "<b></b>",
+    "format-connected": "",
     "tooltip": false,
   },
   "bluetooth#status": {
@@ -358,7 +357,7 @@
     "format-off": "",
     "format-disabled": "",
     "format-connected": "<b>{num_connections}</b>",
-    "format-connected-battery": "<small><b>{device_battery_percentage}%</b></small>",
+    "format-connected-battery": "<small><b>{device_battery_percentage}</b></small>",
     "tooltip": false,
   },
   "custom/notification": {

@@ -69,7 +69,7 @@ tooltip label {
 #pulseaudio.mic,
 #audio,
 #wifi,
-#bluetooth,
+#blue,
 #custom-notification,
 #gcpu {
   border-radius: 8px;
@@ -94,6 +94,8 @@ tooltip label {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  margin: 0px 2px 0px 2px;
+  padding: 2px 0px 2px 0px;
 }
 
 #battery.discharging.critical {
@@ -102,6 +104,8 @@ tooltip label {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  margin: 0px 2px 0px 2px;
+  padding: 2px 0px 2px 0px;
 }
 
 #battery.capacity {
@@ -112,7 +116,7 @@ tooltip label {
 
 #battery.charging {
   margin-top: -2px;
-  padding: 0px 0px 8px 0px;
+  padding: 0px 0px 4px 0px;
 }
 
 #clock {
@@ -209,12 +213,19 @@ tooltip label {
 }
 
 #pulseaudio.mic {
+  font-size: 16px;
   padding: 0px 0px 0px 0px;
 }
 
-#backlight,
+#backlight {
+  font-size: 14px;
+  padding: 0px 2px 0px 0px;
+  margin: 2px 0px 2px 0px;
+}
+
 #pulseaudio {
-  padding: 0px 4px 0px 0px;
+  font-size: 15px;
+  padding: 0px 2px 0px 0px;
 }
 
 #backlight-slider,
@@ -258,18 +269,17 @@ tooltip label {
 }
 
 #bluetooth {
-  margin-bottom: 2px;
+  margin: 2px 0px 2px 0px;
 }
 
-#bluetooth.discoverable,
-#bluetooth.discovering,
-#bluetooth.pairable {
-  border-radius: 8px;
-  animation-name: blink-active;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#bluetooth.connected {
+  padding: 0px 2px 0px 0px;
+}
+
+#bluetooth.status {
+  font-size: 14px;
+  padding: 2px 0px 2px 0px;
+  margin: -4px 0px 0px 0px;
 }
 
 #custom-notification {

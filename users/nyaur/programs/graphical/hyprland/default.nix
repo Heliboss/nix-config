@@ -42,5 +42,6 @@
     grimblast
     wl-screenrec
     wttrbar
+    gsimplecal
   ];
 }
