@@ -1,5 +1,5 @@
-{ config, ... }: {
-  services.easyeffects.enable = true;
+{ config, pkgs, ... }: {
+  home.packages = with pkgs; [ easyeffects ];
 
   home.file = {
     ".local/share/easyeffects/autoload".source =
@@ -11,5 +11,7 @@
     ".local/share/easyeffects/output".source =
       config.lib.file.mkOutOfStoreSymlink
       "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/output";
+    ".config/easyeffectsrc".source = config.lib.file.mkOutOfStoreSymlink
+      "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/easyeffectsrc";
   };
 }
