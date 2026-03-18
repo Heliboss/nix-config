@@ -58,7 +58,7 @@
   },
   "clock": {
     "format": "{:%H\n%M}",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep gsimplecal || echo a)); gsimplecal",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw $$ | grep -vw \"$(pgrep gsimplecal)\"); gsimplecal",
     "tooltip": false,
   },
   "group/utils": {
@@ -69,21 +69,7 @@
     },
     "modules": [
       "custom/dmark",
-      "custom/weather#icon",
-      "custom/weather",
     ]
-  },
-  "custom/weather#icon": {
-    "format": "{}",
-    "tooltip": false,
-    "interval": 3600,
-    "return-type": "json"
-  },
-  "custom/weather": {
-    "format": "{}",
-    "tooltip": false,
-    "interval": 3600,
-    "return-type": "json"
   },
 
   // info
@@ -101,33 +87,33 @@
   },
   "cpu#icon": {
     "format": "󰻠",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v \"$(pgrep foot || echo a)\" | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "cpu": {
     "format": "{usage}󱉸",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory#icon": {
     "format": "",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory": {
     "format": "{percentage}󱉸",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature#icon": {
     "format": "{icon}",
     "format-icons" : [ "", "", "", "", "" ],
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature": {
     "format": "{temperatureC}󰔄",
-    "on-click": "kill $(pgrep -g $(pgrep -P $(pgrep waybar) | grep -v $$ | grep -v \"$(pgrep swaync-client)\") | grep -v $(pgrep foot || echo a) | grep -v $(pgrep btop || echo a)); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "group/info": {
@@ -186,12 +172,10 @@
   "modules-right": [
     "tray",
     "privacy",
-    "custom/recorder",
     "group/brightness",
     "pulseaudio#mic",
     "group/audio",
     "group/connection",
-    "custom/notification",
   ],
   "tray": {
     "icon-size": 18,
@@ -359,25 +343,5 @@
     "format-connected": "<b>{num_connections}</b>",
     "format-connected-battery": "<small><b>{device_battery_percentage}</b></small>",
     "tooltip": false,
-  },
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "󰅸",
-      "none": "󰂜",
-      "dnd-notification": "󰅸",
-      "dnd-none": "󱏨",
-      "inhibited-notification": "󰅸",
-      "inhibited-none": "󰂜",
-      "dnd-inhibited-notification": "󰅸",
-      "dnd-inhibited-none": "󱏨",
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click-right": "swaync-client -d -sw",
-    "on-click": "swaync-client -t -sw",
-    "escape": true,
   },
 }
