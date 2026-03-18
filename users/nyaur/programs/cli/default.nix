@@ -7,7 +7,7 @@
     ./ttyper
     ./devenv.nix
     ./git.nix
-    ./yazi.nix
+    ./yazi
     ./modprobed-db.nix
   ];
 
