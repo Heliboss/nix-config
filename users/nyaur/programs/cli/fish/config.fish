@@ -8,6 +8,14 @@ function m
   end
 end
 
+function n
+  if count $argv > /dev/null
+    nmcli d w c $argv --ask
+  else
+    nmcli d w l
+  end
+end
+
 function mtp
   if test -d ~/Media
     fusermount -u ~/Media; rm -r ~/Media
