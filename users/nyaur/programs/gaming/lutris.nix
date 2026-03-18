@@ -1,5 +1,5 @@
-{ pkgs, ... }: {
+{
   home.persistence."/persist" = { directories = [ ".local/share/lutris" ]; };
 
-  home.packages = with pkgs; [ lutris ];
+  programs.lutris.enable = true;
 }
