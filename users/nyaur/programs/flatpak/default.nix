@@ -11,6 +11,7 @@
       "org.vinegarhq.Vinegar"
       "net.davidotek.pupgui2"
       "io.github.Soundux"
+      "com.github.Matoking.protontricks"
     ];
     overrides = {
       "io.github.Soundux".Context.filesystems =
