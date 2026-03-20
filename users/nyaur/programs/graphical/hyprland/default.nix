@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  imports = [ ./foot ./waybar ./wofi ./swaync.nix ./theme.nix ];
+  imports = [ ./foot ./waybar ./wofi ./swaync ./theme.nix ];
 
   wayland.windowManager.hyprland = {
     enable = true;
