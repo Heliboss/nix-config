@@ -34,7 +34,7 @@
     nerd-fonts.iosevka
     nerd-fonts.jetbrains-mono
     nmgui
-    blueberry
+    blueman
     playerctl
     mpv
     vial
