@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2025-11-29T15:13:30.376Z",
+    "createdAt": "2026-03-24T07:00:40.418Z",
     "redirects": [
         {
             "description": "x redirect",
@@ -16,7 +16,8 @@
             "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
             ]
         },
         {
@@ -30,10 +31,11 @@
             "redirectUrl": "https://redlib.perennialte.ch/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": true,
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
             ]
         },
         {
@@ -47,10 +49,11 @@
             "redirectUrl": "https://redlib.catsarch.com/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
             ]
         },
         {
@@ -103,7 +106,8 @@
             "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
             ]
         },
         {
@@ -120,7 +124,8 @@
             "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
             ]
         },
         {
@@ -137,7 +142,26 @@
             "disabled": false,
             "grouped": false,
             "appliesTo": [
-                "main_frame"
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "invidious redirect",
+            "exampleUrl": "https://youtube.com/example",
+            "exampleResult": "https://inv.nadeko.net/example",
+            "error": null,
+            "includePattern": "https://(?:www.)?youtube.com/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://inv.nadeko.net/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
             ]
         }
     ]
