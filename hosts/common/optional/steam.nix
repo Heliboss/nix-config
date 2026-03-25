@@ -1,16 +1,27 @@
 { pkgs, ... }: {
   programs.steam = {
     enable = true;
-    # For SynthV zenity fix
-    extraPackages = with pkgs; [ kdePackages.kdialog ];
+    extraPackages = with pkgs; [
+      gamemode
+      # For SynthV zenity fix
+      kdePackages.kdialog
+    ];
     gamescopeSession.enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
   };
 
   programs.gamescope = {
     enable = true;
-    capSysNice = true;
+    capSysNice = false;
+  };
+
+  # Workaround since apparently CAP_SYS_NICE prevents gamescope from working in Steam
+  services.ananicy = {
+    enable = true;
+    package = pkgs.ananicy-cpp;
+    rulesProvider = pkgs.ananicy-cpp;
+    extraRules = [{
+      "name" = "gamescope";
+      "nice" = -20;
+    }];
   };
 }
