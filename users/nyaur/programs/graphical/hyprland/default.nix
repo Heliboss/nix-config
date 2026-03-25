@@ -8,7 +8,6 @@
     extraConfig = ''
       ${builtins.readFile ./hypr/hyprland.conf}
     '';
-    plugins = [ pkgs.hyprlandPlugins.hyprbars ];
   };
 
   home.file = {
