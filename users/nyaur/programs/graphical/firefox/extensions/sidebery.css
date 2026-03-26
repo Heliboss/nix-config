@@ -11,8 +11,8 @@
   content: counter(tabs);
   position: absolute;
   color: #787878;
-  font: 11px sans-serif;
-	margin: 0px 0px;
+  font: 9px sans-serif;
+	margin: 1px 2px;
 	z-index: 2;
 }
 
