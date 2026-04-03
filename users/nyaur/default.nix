@@ -19,6 +19,7 @@
       "Source"
       "Projects"
       "Public"
+      ".local/share/waydroid"
     ];
   };
 }
