@@ -13,8 +13,6 @@
       gnumake
       tree-sitter
       go
-      nodePackages.nodejs
-      nodePackages.markdownlint-cli
       nil
       nixd
     ];
