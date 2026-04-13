@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  imports = [ ./foot ./waybar ./wofi ./swaync ./theme.nix ];
+  imports = [ ./foot ./waybar ./rofi ./swaync ./theme.nix ];
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -34,7 +34,6 @@
     wl-clipboard
     grimblast
     wl-screenrec
-    wttrbar
     gsimplecal
   ];
 }
