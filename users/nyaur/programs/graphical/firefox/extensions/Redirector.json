@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2026-03-24T07:00:40.418Z",
+    "createdAt": "2026-04-14T13:28:26.863Z",
     "redirects": [
         {
             "description": "x redirect",
@@ -31,7 +31,7 @@
             "redirectUrl": "https://redlib.perennialte.ch/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
@@ -49,7 +49,7 @@
             "redirectUrl": "https://redlib.catsarch.com/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": true,
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
@@ -157,7 +157,7 @@
             "redirectUrl": "https://inv.nadeko.net/$1",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
