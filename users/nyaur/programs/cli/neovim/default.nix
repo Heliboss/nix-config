@@ -14,7 +14,6 @@
       tree-sitter
       go
       nodejs
-      nil
       nixd
     ];
   };
