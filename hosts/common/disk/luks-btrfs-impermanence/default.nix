@@ -1,7 +1,8 @@
 {
   lib,
   ...
-}: {
+}:
+{
   imports = [
     ./disk-config.nix
   ];
@@ -10,6 +11,7 @@
   users.mutableUsers = false;
 
   # Move root subvolume to /dev/root/mapper/old_roots on boot, delete after 30d.
+  # Also deletes /var/lib/libvirt/secrets/secrets-encryption-key to prevent an error
   boot.initrd.postResumeCommands = lib.mkAfter ''
     mkdir /btrfs_tmp
     mount /dev/mapper/root /btrfs_tmp
@@ -31,6 +33,7 @@
         delete_subvolume_recursively "$i"
     done
 
+    rm /btrfs_tmp/persist/var/lib/libvirt/secrets/secrets-encryption-key
     btrfs subvolume create /btrfs_tmp/root
     umount /btrfs_tmp
   '';
