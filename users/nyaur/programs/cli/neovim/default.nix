@@ -1,9 +1,11 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   imports = [ ./vale ];
 
   programs.neovim = {
     enable = true;
     defaultEditor = true;
+    sideloadInitLua = true;
     extraPackages = with pkgs; [
       gcc
       fd
@@ -19,11 +21,14 @@
   };
 
   home.file = {
-    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
+    ".config/nvim".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
   };
 
   home.persistence."/persist" = {
-    directories = [ ".local/state/nvim" ".local/share/nvim" ];
+    directories = [
+      ".local/state/nvim"
+      ".local/share/nvim"
+    ];
   };
 }
