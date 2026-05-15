@@ -9,4 +9,6 @@
     ".config/rofi".source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/rofi/rofi";
   };
+
+  home.persistence."/persist" = { files = [ ".cache/rofi3.druncache" ]; };
 }

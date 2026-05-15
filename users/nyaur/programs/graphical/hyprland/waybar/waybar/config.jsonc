@@ -58,7 +58,7 @@
   },
   "clock": {
     "format": "{:%H\n%M}",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw $$ | grep -vw \"$(pgrep gsimplecal)\"); gsimplecal",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw $$ | grep -vw \"$(pgrep gsimplecal)\"); gsimplecal",
     "tooltip": false,
   },
   "group/utils": {
@@ -69,7 +69,13 @@
     },
     "modules": [
       "custom/dmark",
+      "custom/note",
     ]
+  },
+  "custom/note": {
+    "format": "󰎞",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(hyprctl clients | grep note-waybar: >/dev/null && echo a || pgrep -nA sh))\"); hyprctl clients | grep note-waybar: >/dev/null && nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>' || foot -T 'note-waybar' nvim --listen /tmp/note-waybar ~/Documents/note.md",
+    "tooltip": false,
   },
 
   // info
@@ -87,33 +93,33 @@
   },
   "cpu#icon": {
     "format": "󰻠",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "cpu": {
     "format": "{usage}󱉸",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory#icon": {
     "format": "",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory": {
     "format": "{percentage}󱉸",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature#icon": {
     "format": "{icon}",
     "format-icons" : [ "", "", "", "", "" ],
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature": {
     "format": "{temperatureC}󰔄",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "group/info": {
@@ -134,12 +140,14 @@
   },
   "disk#icon": {
     "format": "󰋊",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
     "tooltip": false,
   },
   "disk": {
     "interval": 600,
     "format": "{percentage_used}󱉸",
     "path": "/",
+    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
     "tooltip": false,
   },
 

@@ -123,6 +123,10 @@ tooltip label {
   padding: 6px 0px 0px 0px;
 }
 
+#custom-note {
+  margin-right: 2px;
+}
+
 #gcpu {
   padding: 2px 2px 0px 0px;
 }
