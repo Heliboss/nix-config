@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   imports = [
     ./hardware-configuration.nix
 
@@ -28,6 +29,8 @@
     kernelPackages = pkgs.linuxPackages_zen;
     kernelModules = [ "zram" ];
   };
+
+  environment.systemPackages = [ pkgs.e2fsprogs ];
 
   systemd.services.zramloop = {
     description = "Attach /swap/swapfile to /dev/loop0 for zram writeback";
@@ -68,16 +71,20 @@
       mkswap -U clear /dev/zram0
       swapon -d -p 100 /dev/zram0
     '';
-    serviceConfig.DeviceAllow =
-      [ "/dev/loop-control" "/dev/loop0" "/dev/zram0" ];
+    serviceConfig.DeviceAllow = [
+      "/dev/loop-control"
+      "/dev/loop0"
+      "/dev/zram0"
+    ];
   };
 
-  boot.kernel.sysctl = { "vm.swappiness" = 10; };
+  boot.kernel.sysctl = {
+    "vm.swappiness" = 10;
+  };
 
   xdg.portal = {
     extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
-    config.common.default =
-      config.home-manager.users.nyaur.xdg.portal.config.common.default;
+    config.common.default = config.home-manager.users.nyaur.xdg.portal.config.common.default;
   };
 
   sops.age.keyFile = "/persist/starflower.txt";
