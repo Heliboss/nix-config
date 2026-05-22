@@ -1,4 +1,5 @@
-{ config, inputs, ... }: {
+{ config, inputs, ... }:
+{
   imports = [ inputs.home-manager.nixosModules.home-manager ];
 
   sops.secrets.nyaur.neededForUsers = true;
@@ -6,7 +7,13 @@
   users.users.nyaur = {
     isNormalUser = true;
     initialPassword = "123";
-    extraGroups = [ "wheel" "networkmanager" "gamemode" "libvirtd" ];
+    extraGroups = [
+      "wheel"
+      "input"
+      "networkmanager"
+      "gamemode"
+      "libvirtd"
+    ];
     hashedPasswordFile = config.sops.secrets.nyaur.path;
   };
 
@@ -21,14 +28,16 @@
     "d /persist/home/nyaur/.local/share 0700 nyaur users -"
     "d /persist/home/nyaur/.local/state 0700 nyaur users -"
     "d /persist/home/nyaur/.var 0700 nyaur users -"
-  ] ++ map (x: "d /persist/home/nyaur/" + x.directory + " 0700 nyaur users -")
-    config.home-manager.users.nyaur.home.persistence."/persist".directories
-    ++ map (x: "f /persist/home/nyaur/" + x.file + " 0700 nyaur users -")
-    config.home-manager.users.nyaur.home.persistence."/persist".files;
+  ]
+  ++ map (
+    x: "d /persist/home/nyaur/" + x.directory + " 0700 nyaur users -"
+  ) config.home-manager.users.nyaur.home.persistence."/persist".directories
+  ++ map (
+    x: "f /persist/home/nyaur/" + x.file + " 0700 nyaur users -"
+  ) config.home-manager.users.nyaur.home.persistence."/persist".files;
 
   home-manager = {
-    users.nyaur =
-      (import ../../../../users/nyaur/${config.networking.hostName}.nix);
+    users.nyaur = (import ../../../../users/nyaur/${config.networking.hostName}.nix);
     backupFileExtension = "backup";
   };
 }
