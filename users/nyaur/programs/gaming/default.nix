@@ -21,6 +21,7 @@
       ".local/share/Replicube"
       ".local/share/Paradox Interactive"
       ".local/share/Terraria"
+      ".config/Proxy Studios"
     ];
   };
 }
