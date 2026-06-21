@@ -1,8 +1,12 @@
-{ inputs, ... }: {
+{ inputs, ... }:
+{
   imports = [ inputs.nix-flatpak.homeManagerModules.nix-flatpak ];
 
   home.persistence."/persist" = {
-    directories = [ ".local/share/flatpak" ".var/app" ];
+    directories = [
+      ".local/share/flatpak"
+      ".var/app"
+    ];
   };
 
   services.flatpak = {
@@ -12,10 +16,10 @@
       "net.davidotek.pupgui2"
       "io.github.Soundux"
       "com.github.Matoking.protontricks"
+      "info.beyondallreason.bar"
     ];
     overrides = {
-      "io.github.Soundux".Context.filesystems =
-        [ "/persist/home/nyaur/Music/soundux:create" ];
+      "io.github.Soundux".Context.filesystems = [ "/persist/home/nyaur/Music/soundux:create" ];
     };
   };
 }
