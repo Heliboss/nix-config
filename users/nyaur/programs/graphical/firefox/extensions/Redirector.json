@@ -1,16 +1,16 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2026-04-14T13:28:26.863Z",
+    "createdAt": "2026-06-06T00:39:37.306Z",
     "redirects": [
         {
             "description": "x redirect",
             "exampleUrl": "https://twitter.com/example",
-            "exampleResult": "https://xcancel.com/example",
+            "exampleResult": "https://nitter.net/example",
             "error": null,
             "includePattern": "https://(?:twitter|x).com/(.*)",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://xcancel.com/$1",
+            "redirectUrl": "https://nitter.net/$1",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
@@ -80,7 +80,7 @@
             "exampleResult": "https://www.youtube.com/watch?v=example",
             "error": null,
             "includePattern": "https://www.youtube.com/watch\\?v=(.*)&list=([a-zA-Z0-9_-]{13})(.*)",
-            "excludePattern": "https://www.youtube.com/watch\\?v=(.*)&list=([a-zA-Z0-9_-]{34})(.*)",
+            "excludePattern": "https://www.youtube.com/watch\\?v=(.*)&list=(?:[a-zA-Z0-9_-]{34}|[a-zA-Z0-9_-]{26})(.*)",
             "patternDesc": "",
             "redirectUrl": "https://www.youtube.com/watch?v=$1",
             "patternType": "R",
