@@ -1,23 +1,43 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2026-06-06T00:39:37.306Z",
+    "createdAt": "2026-06-27T05:57:34.382Z",
     "redirects": [
         {
-            "description": "x redirect",
+            "description": "x redirect (xcancel)",
             "exampleUrl": "https://twitter.com/example",
-            "exampleResult": "https://nitter.net/example",
+            "exampleResult": "https://xcancel.com/example",
             "error": null,
             "includePattern": "https://(?:twitter|x).com/(.*)",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://nitter.net/$1",
+            "redirectUrl": "https://xcancel.com/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "x redirect (catsarch)",
+            "exampleUrl": "https://twitter.com/example",
+            "exampleResult": "https://nitter.us.catsarch.com/example",
+            "error": null,
+            "includePattern": "https://(?:twitter|x).com/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://nitter.us.catsarch.com/$1",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -35,7 +55,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -53,7 +74,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -71,7 +93,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -89,7 +112,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -107,7 +131,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -125,7 +150,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -143,7 +169,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         },
         {
@@ -161,7 +188,8 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
-                "history"
+                "history",
+                "other"
             ]
         }
     ]
