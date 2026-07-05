@@ -1,6 +1,7 @@
 { config, ... }:
 {
   imports = [
+    ./lutris.nix
     ./osu.nix
     ./minecraft.nix
   ];
