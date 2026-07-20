@@ -1,4 +1,5 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }:
+{
   imports = [
     ./btop
     ./neovim
@@ -11,10 +12,12 @@
     ./modprobed-db.nix
   ];
 
-  programs = { nh.enable = true; };
+  programs = {
+    nh.enable = true;
+  };
 
   home.packages = with pkgs; [
-    jmtpfs
+    simple-mtpfs
     unzip
     powertop
     gdu
@@ -26,5 +29,10 @@
     picocrypt-cli
   ];
 
-  home.persistence."/persist" = { directories = [ ".ssh" ".gnupg" ]; };
+  home.persistence."/persist" = {
+    directories = [
+      ".ssh"
+      ".gnupg"
+    ];
+  };
 }
