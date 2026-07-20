@@ -26,7 +26,7 @@
   networking.hostName = "starflower";
 
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "zram" ];
   };
 
