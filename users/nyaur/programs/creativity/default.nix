@@ -12,10 +12,15 @@
     reaper
     ffmpeg-full
     yt-dlp
+    openutau
   ];
 
   home.persistence."/persist" = {
-    directories = [ ".lv2" ];
+    directories = [
+      ".lv2"
+      ".vst3"
+      ".local/share/OpenUtau"
+    ];
   };
 
   home.file = {
