@@ -82,4 +82,9 @@ in
 
   # Update legacy behavior
   wayland.windowManager.hyprland.configType = "lua";
+  gtk.gtk4.theme = null;
+  programs.neovim = {
+    withRuby = false;
+    withPython3 = false;
+  };
 }
