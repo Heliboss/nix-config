@@ -1,12 +1,15 @@
 {
   pkgs,
   ...
-}: {
+}:
+{
   programs.git = {
     enable = true;
-    userName = "Heliboss";
-    userEmail = "99956405+Heliboss@users.noreply.github.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Heliboss";
+        email = "99956405+Heliboss@users.noreply.github.com";
+      };
       init.defaultBranch = "main";
     };
   };
