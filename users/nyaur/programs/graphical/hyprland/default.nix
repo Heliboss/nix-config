@@ -1,25 +1,34 @@
-{ config, pkgs, ... }: {
-  imports = [ ./foot ./waybar ./rofi ./swaync ./theme.nix ];
+{ config, pkgs, ... }:
+{
+  imports = [
+    ./foot
+    ./waybar
+    ./rofi
+    ./swaync
+    ./theme.nix
+  ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
     portalPackage = pkgs.xdg-desktop-portal-hyprland;
     extraConfig = ''
-      ${builtins.readFile ./hypr/hyprland.conf}
+      ${builtins.readFile ./hypr/hyprland.lua}
     '';
   };
 
   home.file = {
-    ".config/hypr/conf".source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/conf";
-    ".config/hypr/bin".source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/bin";
+    ".config/hypr/conf".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/conf";
+    ".config/hypr/bin".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/bin";
   };
 
   xdg.portal = {
-    extraPortals =
-      [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-hyprland
+    ];
     config.common.default = "*";
   };
 
