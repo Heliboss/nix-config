@@ -25,6 +25,9 @@
 
   networking.hostName = "starflower";
 
+  # Passing system to lib.nixosSystem is deprecated
+  nixpkgs.hostPlatform = "x86_64-linux";
+
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "zram" ];

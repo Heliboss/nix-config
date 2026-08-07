@@ -18,35 +18,40 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    # Remember to set
-    # environment.persistence."/persist".enable = false;
-    # on a non-impermanent setup
-    nixosConfigurations = {
-      # Main
-      starflower = nixpkgs.lib.nixosSystem rec {
-        system = "x86_64-linux";
-        specialArgs = {
-          inherit inputs;
-          device = "/dev/nvme0n1";
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
+    {
+      # Remember to set
+      # environment.persistence."/persist".enable = false;
+      # on a non-impermanent setup
+      nixosConfigurations = {
+        # Main
+        starflower = nixpkgs.lib.nixosSystem rec {
+          specialArgs = {
+            inherit inputs;
+            device = "/dev/nvme0n1";
+          };
+          modules = [
+            ./hosts/starflower
+            { home-manager.extraSpecialArgs = specialArgs; }
+          ];
         };
-        modules = [
-          ./hosts/starflower
-          { home-manager.extraSpecialArgs = specialArgs; }
-        ];
+      };
+      # For non-NixOS
+      homeConfigurations = {
+        # Main
+        "nyaur@starflower" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          extraSpecialArgs = { inherit inputs; };
+          modules = [
+            ./users/nyaur/starflower.nix
+            { targets.genericLinux.enable = true; }
+          ];
+        };
       };
     };
-    # For non-NixOS
-    homeConfigurations = {
-      # Main
-      "nyaur@starflower" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          ./users/nyaur/starflower.nix
-          { targets.genericLinux.enable = true; }
-        ];
-      };
-    };
-  };
 }
