@@ -20,8 +20,8 @@
   home.file = {
     ".config/hypr/conf".source =
       config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/conf";
-    ".config/hypr/bin".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/bin";
+    ".config/hypr/wallpaper".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper";
   };
 
   xdg.portal = {
