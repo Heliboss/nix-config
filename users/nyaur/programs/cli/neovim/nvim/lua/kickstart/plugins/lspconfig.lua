@@ -132,6 +132,7 @@ return {
 
         quick_lint_js = {},
         ts_ls = {},
+        texlab = {},
 
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
