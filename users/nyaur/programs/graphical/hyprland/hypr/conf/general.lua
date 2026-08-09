@@ -105,8 +105,8 @@ hl.animation { leaf = 'windowsOut', enabled = true, speed = 2, bezier = 'emphasi
 hl.animation { leaf = 'windowsMove', enabled = true, speed = 3, bezier = 'emphasizedDecel', style = 'slide' }
 hl.animation { leaf = 'border', enabled = true, speed = 10, bezier = 'emphasizedDecel' }
 -- layers
-hl.animation { leaf = 'layersIn', enabled = true, speed = 2.7, bezier = 'emphasizedDecel', style = 'slide bottom' }
-hl.animation { leaf = 'layersOut', enabled = true, speed = 2.4, bezier = 'menu_accel', style = 'slide bottom' }
+hl.animation { leaf = 'layersIn', enabled = true, speed = 2.7, bezier = 'emphasizedDecel' }
+hl.animation { leaf = 'layersOut', enabled = true, speed = 2.4, bezier = 'menu_accel' }
 -- fade
 hl.animation { leaf = 'fadeLayersIn', enabled = true, speed = 0.5, bezier = 'menu_decel' }
 hl.animation { leaf = 'fadeLayersOut', enabled = true, speed = 2.7, bezier = 'menu_accel' }
@@ -171,6 +171,15 @@ hl.config {
     zoom_rigid = false,
     hotspot_padding = 1,
   },
+}
+
+-- Layer rules
+hl.layer_rule {
+  name = 'rofi',
+  match = {
+    namespace = 'rofi',
+  },
+  animation = 'slide bottom',
 }
 
 -- Window rules
