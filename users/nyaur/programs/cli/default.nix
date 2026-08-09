@@ -3,7 +3,7 @@
   imports = [
     ./btop
     ./neovim
-    ./fastfetch.nix
+    ./fastfetch
     ./fish
     ./ttyper
     ./devenv.nix
