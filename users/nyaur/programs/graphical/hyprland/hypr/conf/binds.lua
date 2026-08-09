@@ -5,6 +5,7 @@ local mod = 'SUPER'
 hl.bind(mod .. ' + T', hl.dsp.exec_cmd 'foot')
 hl.bind(mod .. ' + R', hl.dsp.exec_cmd 'bash ~/.config/rofi/launcher/launcher.sh')
 hl.bind(mod .. ' + N', hl.dsp.exec_cmd 'grimblast --freeze copy area; pkill hyprpicker')
+hl.bind(mod .. ' + SHIFT + N', hl.dsp.exec_cmd 'grimblast --freeze save area ~/Pictures/screenshots/$(date -I"ns").png; pkill hyprpicker')
 
 -- Actions
 hl.bind(mod .. ' + Q', hl.dsp.window.close())
