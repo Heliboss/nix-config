@@ -60,6 +60,7 @@ tooltip label {
   color: @active;
 }
 
+#custom-nixos,
 #bat,
 #together,
 #tray,
@@ -69,11 +70,17 @@ tooltip label {
 #audio,
 #wifi,
 #blue,
+#custom-notification,
 #gcpu {
   border-radius: 8px;
   margin: 2px 0px 4px 0px;
   padding: 0px 2px 0px 2px;
   background: alpha(@modules, 0.5);
+}
+
+#custom-nixos {
+  font-size: 17px;
+  padding: 2px 2px 2px 0px;
 }
 
 #bat {
@@ -271,6 +278,11 @@ tooltip label {
   font-size: 14px;
   padding: 2px 0px 2px 0px;
   margin: -4px 0px 0px 0px;
+}
+
+#custom-notification {
+  font-size: 15px;
+  padding: 2px 2px 2px 0px;
 }
 
 @keyframes blink-active {

@@ -4,10 +4,17 @@
   "reload_style_on_change": true,
 
   "modules-left": [
+    "custom/nixos",
     "group/bat",
     "group/together",
     "group/gcpu",
   ],
+
+  "custom/nixos": {
+    "format": "",
+    "on-click": "bash ~/.config/rofi/launcher/launcher.sh",
+    "tooltip": false,
+  },
 
   // battery
   "group/bat": {
@@ -58,7 +65,7 @@
   },
   "clock": {
     "format": "{:%H\n%M}",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw $$ | grep -vw \"$(pgrep gsimplecal)\"); gsimplecal",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw $$ | grep -vw \"$(pgrep gsimplecal)\" | grep -vw \"$(pgrep .swaync-client-)\"); gsimplecal",
     "tooltip": false,
   },
   "group/utils": {
@@ -74,7 +81,7 @@
   },
   "custom/note": {
     "format": "󰎞",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(hyprctl clients | grep note-waybar: >/dev/null && echo a || pgrep -nA sh))\"); hyprctl clients | grep note-waybar: >/dev/null && nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>' || foot -T 'note-waybar' nvim --listen /tmp/note-waybar ~/Documents/note.md",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(hyprctl clients | grep note-waybar: >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); hyprctl clients | grep note-waybar: >/dev/null && nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>' || foot -T 'note-waybar' nvim --listen /tmp/note-waybar ~/Documents/note.md",
     "tooltip": false,
   },
 
@@ -93,33 +100,33 @@
   },
   "cpu#icon": {
     "format": "󰻠",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "cpu": {
     "format": "{usage}󱉸",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory#icon": {
     "format": "",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "memory": {
     "format": "{percentage}󱉸",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature#icon": {
     "format": "{icon}",
     "format-icons" : [ "", "", "", "", "" ],
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "temperature": {
     "format": "{temperatureC}󰔄",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep btop >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep btop >/dev/null && pkill btop || foot -T 'btop-waybar' btop",
     "tooltip": false,
   },
   "group/info": {
@@ -140,14 +147,14 @@
   },
   "disk#icon": {
     "format": "󰋊",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
     "tooltip": false,
   },
   "disk": {
     "interval": 600,
     "format": "{percentage_used}󱉸",
     "path": "/",
-    "on-click": "nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>'; pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(pgrep gdu >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); pgrep gdu >/dev/null && pkill gdu || foot -T 'gdu-waybar' gdu ~",
     "tooltip": false,
   },
 
@@ -162,7 +169,8 @@
   },
   "hyprland/workspaces": {
     "format": "{icon}",
-    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"r-1\"})' ",
+    "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"r+1\"})' ",
     "format-icons": {
       "1": "ᜁ",
       "2": "ᜇ",
@@ -184,6 +192,7 @@
     "pulseaudio#mic",
     "group/audio",
     "group/connection",
+    "custom/notification",
   ],
   "tray": {
     "icon-size": 18,
@@ -351,5 +360,25 @@
     "format-connected": "<b>{num_connections}</b>",
     "format-connected-battery": "<small><b>{device_battery_percentage}</b></small>",
     "tooltip": false,
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󱏨",
+      "dnd-none": "󱏨",
+      "inhibited-notification": "󱏨",
+      "inhibited-none": "󱏨",
+      "dnd-inhibited-notification": "󱏨",
+      "dnd-inhibited-none": "󱏨",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click-right": "swaync-client -d -sw",
+    "on-click": "swaync-client -t -sw",
+    "escape": true,
   },
 }
