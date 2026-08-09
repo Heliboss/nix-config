@@ -37,3 +37,7 @@ function sw
   end
   nh os switch
 end
+
+function fish_greeting
+  fastfetch
+end
