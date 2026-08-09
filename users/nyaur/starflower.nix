@@ -1,3 +1,4 @@
+{ lib, ... }:
 let
   FLAKE = "/persist/home/nyaur/.config/nixos";
 in
@@ -19,10 +20,17 @@ in
 
   # Wallpaper
   wayland.windowManager.hyprland.settings = {
-    exec_cmd = [
-      "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json"
-      "sleep 5; easyeffects -w --service-mode"
-    ];
+    on = {
+      _args = [
+        "hyprland.start"
+        (lib.generators.mkLuaInline ''
+          function()
+            hl.exec_cmd 'sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json'
+            hl.exec_cmd 'sleep 10; easyeffects -w --service-mode'
+          end
+        '')
+      ];
+    };
     workspace_rule = [
       {
         workspace = "1";
