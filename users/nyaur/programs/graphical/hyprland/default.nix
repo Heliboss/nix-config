@@ -5,7 +5,7 @@
     ./waybar
     ./rofi
     ./swaync
-    ./theme.nix
+    ./theme
   ];
 
   wayland.windowManager.hyprland = {
