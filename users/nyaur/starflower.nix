@@ -22,8 +22,6 @@ in
     exec_cmd = [
       "sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json"
       "sleep 5; easyeffects -w --service-mode"
-      "sleep 6; easyeffects -l 'Arctis 3'"
-      "sleep 6; easyeffects -l 'Laptop Mic'"
     ];
     workspace_rule = [
       {
