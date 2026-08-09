@@ -5,6 +5,16 @@ hl.config {
   },
 }
 
+-- Permissions
+hl.permission { binary = '/nix/store/[a-z0-9]{32}-grim-[0-9.]*/bin/grim', type = 'screencopy', mode = 'allow' }
+hl.permission { binary = '/nix/store/[a-z0-9]{32}-hyprpicker-[0-9.]*/bin/hyprpicker', type = 'screencopy', mode = 'allow' }
+hl.permission { binary = '/nix/store/[a-z0-9]{32}-wl-screenrec-[0-9.]*/bin/wl-screenrec', type = 'screencopy', mode = 'allow' }
+hl.permission {
+  binary = '/nix/store/[a-z0-9]{32}-xdg-desktop-portal-hyprland-[0-9.]*/libexec/.xdg-desktop-portal-hyprland-wrapped',
+  type = 'screencopy',
+  mode = 'allow',
+}
+
 -- Cursor
 hl.env('XCURSOR_THEME', 'Bocchi The Dino Cursor ver.1.0.0')
 hl.env('XCURSOR_SIZE', '24')
