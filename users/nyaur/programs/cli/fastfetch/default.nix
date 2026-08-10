@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 {
-  home.packages = with pkgs; [
-    fastfetch
-  ];
+  programs.fastfetch.enable = true;
 
   home.file = {
     ".config/fastfetch".source =
