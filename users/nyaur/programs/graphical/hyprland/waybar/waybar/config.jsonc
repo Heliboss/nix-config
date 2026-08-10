@@ -160,17 +160,16 @@
 
   "modules-center": [
     "hyprland/submap",
-    "hyprland/workspaces",
+    "ext/workspaces",
   ],
   "hyprland/submap": {
     "format": "󰇘",
     "max-length": 8,
     "tooltip": false,
   },
-  "hyprland/workspaces": {
+  "ext/workspaces": {
     "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"r-1\"})' ",
-    "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"r+1\"})' ",
+    "on-click": "activate",
     "format-icons": {
       "1": "ᜁ",
       "2": "ᜇ",
