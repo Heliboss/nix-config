@@ -87,6 +87,7 @@ in
   };
 
   # Update legacy behavior
+  programs.yazi.shellWrapperName = "y";
   wayland.windowManager.hyprland.configType = "lua";
   gtk.gtk4.theme = null;
   programs.neovim = {
