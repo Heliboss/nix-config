@@ -41,7 +41,7 @@
         },
         {
             "type": "packages",
-            "format": "{nix-system} (system), {nix-user} (user), {flatpak-user} (flatpak)",
+            "format": "{nix-system} (system) {nix-user} (user) {flatpak-user} (flatpak)",
             "key": "pkgs  ",
             "keyColor": "#655FAF",
         },
