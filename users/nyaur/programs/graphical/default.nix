@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ./firefox
     ./easyeffects
@@ -6,7 +7,7 @@
     ./dolphin
     ./qbittorrent.nix
     ./discord.nix
-    ./zathura.nix
+    ./zathura
   ];
 
   fonts.fontconfig.enable = true;
@@ -22,7 +23,9 @@
     };
   };
 
-  home.persistence."/persist" = { directories = [ ".local/share/icons" ]; };
+  home.persistence."/persist" = {
+    directories = [ ".local/share/icons" ];
+  };
 
   home.packages = with pkgs; [
     libnotify
