@@ -16,7 +16,6 @@
       "net.davidotek.pupgui2"
       "io.github.Soundux"
       "com.github.Matoking.protontricks"
-      "info.beyondallreason.bar"
     ];
     overrides = {
       "io.github.Soundux".Context.filesystems = [ "/persist/home/nyaur/Music/soundux:create" ];
