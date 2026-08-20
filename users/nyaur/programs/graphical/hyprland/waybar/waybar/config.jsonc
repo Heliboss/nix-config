@@ -321,7 +321,6 @@
     "format-wifi": "󰤨",
     "format-ethernet": "󰈀",
     "format-disconnected": "󰖪",
-    "format-linked": "󰈁",
     "tooltip": false,
   },
   "network#speed": {
