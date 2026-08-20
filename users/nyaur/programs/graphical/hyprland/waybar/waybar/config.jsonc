@@ -22,7 +22,7 @@
     "modules": [
       "battery",
       "battery#capacity",
-      "battery#charging",
+      "battery#icon",
     ],
   },
   "battery": {
@@ -48,7 +48,7 @@
     "format": "{capacity}",
     "tooltip": false,
   },
-  "battery#charging": {
+  "battery#icon": {
     "rotate": 270,
     "format": "",
     "format-charging": "",

@@ -116,12 +116,13 @@ tooltip label {
 #battery.capacity {
   font-size: 12px;
   font-weight: bold;
-  padding: 0px 0px 6px 0px;
+  margin: -2px 2px 0px 0px;
 }
 
-#battery.charging {
+#battery.icon {
+  font-family: "JetBrainsMono NFP";
   margin-top: -2px;
-  padding: 0px 0px 4px 0px;
+  padding: 0px 0px 6px 0px;
 }
 
 #clock {
