@@ -8,8 +8,6 @@ return {
   config = function()
     local lint = require 'lint'
     lint.linters_by_ft = {
-      markdown = { 'vale' },
-      text = { 'vale' },
       tex = { 'lacheck', 'vale' },
     }
 
