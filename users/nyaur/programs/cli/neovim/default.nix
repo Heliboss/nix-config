@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  imports = [ ./vale ];
+  imports = [ ./vale.nix ];
 
   programs.neovim = {
     enable = true;
