@@ -53,8 +53,8 @@
             "output-gain": 0.0,
             "vad": {
                 "enable": true,
-                "probability-continue": 90,
-                "probability-start": 95
+                "probability-continue": 80,
+                "probability-start": 85
             }
         },
         "stereo_tools#0": {
