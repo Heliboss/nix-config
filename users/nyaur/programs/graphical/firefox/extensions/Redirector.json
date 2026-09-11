@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2026-06-27T05:57:34.382Z",
+    "createdAt": "2026-09-07T03:36:12.473Z",
     "redirects": [
         {
             "description": "x redirect (xcancel)",
@@ -17,6 +17,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -32,29 +39,69 @@
             "redirectUrl": "https://nitter.us.catsarch.com/$1",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
         },
         {
-            "description": "redlib redirect (perennialte)",
+            "description": "x redirect (nitter.cf)",
+            "exampleUrl": "https://twitter.com/example",
+            "exampleResult": "https://nitter.cf/example",
+            "error": null,
+            "includePattern": "https://(?:twitter|x).com/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://nitter.cf/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "redlib redirect (nadeko)",
             "exampleUrl": "https://www.reddit.com/user/example",
-            "exampleResult": "https://redlib.perennialte.ch/user/example",
+            "exampleResult": "https://redlib.nadeko.net/user/example",
             "error": null,
             "includePattern": "https://www.reddit(?:media)?.com/(r|user)/(.*)",
             "excludePattern": "",
             "patternDesc": "",
-            "redirectUrl": "https://redlib.perennialte.ch/$1/$2",
+            "redirectUrl": "https://redlib.nadeko.net/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": true,
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -70,10 +117,17 @@
             "redirectUrl": "https://redlib.catsarch.com/$1/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -93,6 +147,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -112,6 +173,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -131,6 +199,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -150,6 +225,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -169,6 +251,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
@@ -188,6 +277,13 @@
             "grouped": false,
             "appliesTo": [
                 "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
                 "history",
                 "other"
             ]
