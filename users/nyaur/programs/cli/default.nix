@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./btop
@@ -9,7 +9,6 @@
     ./devenv.nix
     ./git.nix
     ./yazi
-    ./modprobed-db.nix
   ];
 
   programs = {
