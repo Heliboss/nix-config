@@ -9,6 +9,7 @@
     ./devenv.nix
     ./git.nix
     ./yazi
+    ./jrnl
   ];
 
   programs = {
