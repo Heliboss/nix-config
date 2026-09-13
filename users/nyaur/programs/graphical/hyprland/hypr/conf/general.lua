@@ -196,9 +196,15 @@ hl.window_rule {
   match = {
     class = 'foot',
   },
-  float = true,
   min_size = { 960, 504 },
   opacity = '1 1 0.95',
+}
+hl.window_rule {
+  name = 'foot-workspace',
+  match = {
+    title = 'foot',
+  },
+  workspace = 'special:terminal',
 }
 hl.window_rule {
   name = 'steam',

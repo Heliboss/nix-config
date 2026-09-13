@@ -28,18 +28,16 @@ hl.bind(mod .. ' + SHIFT + down', hl.dsp.window.move { direction = 'down' })
 hl.bind(mod .. ' + mouse:272', hl.dsp.window.drag(), { mouse = true })
 hl.bind(mod .. ' + mouse:273', hl.dsp.window.resize(), { mouse = true })
 
--- Resize active window
-hl.bind(mod .. ' + ALT + left', hl.dsp.window.resize { x = '-106', y = 0 })
-hl.bind(mod .. ' + ALT + right', hl.dsp.window.resize { x = '-106', y = 0 })
-hl.bind(mod .. ' + ALT + up', hl.dsp.window.resize { x = '-106', y = 0 })
-hl.bind(mod .. ' + ALT + down', hl.dsp.window.resize { x = '-106', y = 0 })
-
 -- Switch workspaces
 for i = 1, 10 do
   local key = i % 10
   hl.bind(mod .. ' + ' .. key, hl.dsp.focus { workspace = i })
   hl.bind(mod .. ' + SHIFT + ' .. key, hl.dsp.window.move { workspace = i })
 end
+
+-- Special workspace
+hl.bind('SUPER + SHIFT + S', hl.dsp.window.move { workspace = 'special:terminal' })
+hl.bind('SUPER + S', hl.dsp.workspace.toggle_special 'terminal')
 
 -- Media keys
 hl.bind('XF86AudioRaiseVolume', hl.dsp.exec_cmd 'wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+')
@@ -50,6 +48,5 @@ hl.bind('XF86MonBrightnessUp', hl.dsp.exec_cmd 'brightnessctl s 10%+')
 hl.bind('XF86MonBrightnessDown', hl.dsp.exec_cmd 'brightnessctl s 10%-')
 hl.bind('XF86AudioPause', hl.dsp.exec_cmd 'playerctl pause')
 hl.bind('XF86AudioPlay', hl.dsp.exec_cmd 'playerctl play-pause')
-
 hl.bind('XF86AudioNext', hl.dsp.exec_cmd 'playerctl position 5+')
 hl.bind('XF86AudioPrev', hl.dsp.exec_cmd 'playerctl position 5-')
