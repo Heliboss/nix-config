@@ -81,7 +81,7 @@
   },
   "custom/note": {
     "format": "󰎞",
-    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(hyprctl clients | grep note-waybar: >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); hyprctl clients | grep note-waybar: >/dev/null && nvim --server /tmp/note-waybar --remote-send '<ESC>:wq<CR>' || foot -T 'note-waybar' nvim --listen /tmp/note-waybar ~/Documents/note.md",
+    "on-click": "pkill -g $(pgrep -P $(pgrep waybar) | grep -vw \"$(pgrep sh | grep -vw $(hyprctl clients | grep note-waybar: >/dev/null && echo a || pgrep -nA sh))\" | grep -vw \"$(pgrep .swaync-client-)\"); hyprctl clients | grep note-waybar: >/dev/null && nvim --server /tmp/note-waybar --remote-send '<ESC>:q!<CR>' || foot -T 'note-waybar' nvim -nR --listen /tmp/note-waybar ~/Documents/journal.txt",
     "tooltip": false,
   },
 
@@ -280,6 +280,7 @@
       ],
     },
     "tooltip-format": "{volume}%",
+    "on-click": "pavucontrol",
   },
   "pulseaudio/slider": {
     "min": 0,
@@ -327,11 +328,10 @@
     "format": " {bandwidthDownBits} ",
     "rotate": 90,
     "interval": 5,
-    "tooltip-format": "{ipaddr}",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} ",
-    "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
+    "tooltip-format": "",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) {frequency} MHz",
+    "tooltip-format-ethernet": "{ifname} {frequency} MHz",
     "tooltip-format-disconnected": "Not Connected to any type of Network",
-    "tooltip": false,
   },
   "group/blue": {
     "orientation": "inherit",
