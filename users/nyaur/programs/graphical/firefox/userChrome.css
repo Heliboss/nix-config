@@ -1,3 +1,4 @@
+/* tab numbers */
 tabs {
   counter-reset: tab-counter;
 }
@@ -20,8 +21,104 @@ tab:nth-child(8) .tab-content::before {
   border-radius: 7px;
 
   opacity: 1;
-  background: #000000;
+  background: #232136;
 
   font-weight: bold;
   font-size: 80%;
+}
+
+/* transparency */
+:root {
+  --theme: 35, 33, 54 !important;
+  --theme-primary: rgba(var(--theme), 0.95) !important;
+  --theme-transparent: rgba(var(--theme), 0.50) !important;
+  --theme-slight-transparent: rgba(var(--theme), 0.95) !important;
+  --theme-opaque: rgba(var(--theme), 1) !important;
+  --tf-accent: rgb(234, 154, 151);
+  --tf-bg: transparent !important;
+  --tf-border: rgb(68, 65, 90);
+  --tf-navbar-margin: 8px 8px 11px;
+}
+
+/* main title */
+#tabbrowser-tabbox::before {
+  margin: -1.35rem 0rem !important;
+}
+
+/* vertical tabs title */
+box#vertical-tabs::before {
+  margin: -1.35rem .4rem !important;
+}
+
+/* sidebar */
+#sidebar {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Make the main window completely transparent */
+#main-window, body {
+  background-color: transparent !important;
+  appearance: win-glass !important;
+}
+
+/* Make navbar transparent */
+#nav-bar, #TabsToolbar, #PersonalToolbar {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Apply theme */
+#navigator-toolbox {
+  background-color: var(--theme-primary) !important;
+  border: none !important;
+}
+
+/* Tab radius and background color */
+.browserContainer{
+  border-radius: 20px !important;
+}
+#browser{
+  max-width: 100% !important;
+  background: var(--theme-primary) !important;
+}
+
+/* Selected Tab Background Color */
+.tab-background[selected] {
+  background-color: var(--theme-opaque) !important;
+}
+
+/* Rightclick menu themes  */
+menupopup::part(content),
+panel::part(content),
+.popup-internal-box,
+.menupopup-arrowscrollbox {
+  background-color: var(--theme-slight-transparent)!important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 11px !important;
+}
+
+/* urlbar themes */
+.urlbar[focused] {
+  .urlbar-background {
+    background:  var(--theme-slight-transparent) !important;
+  }
+}
+
+/* Edit Hamburger menu theme*/
+#appMenu-popup {
+  opacity: 0.95 !important;
+  .panel-subview-body {
+    background: var(--theme-slight-transparent) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px;
+  }
+}
+
+/* Search Engine Switcher Theme */
+.searchmode-switcher-panel {
+  opacity: 0.95 !important;
+  .searchmode-switcher-panel-list {
+    background: var(--theme-primary) !important;
+  }
 }
