@@ -10,3 +10,4 @@ user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
+user_pref("signon.rememberSignons", false);
