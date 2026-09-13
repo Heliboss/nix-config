@@ -199,24 +199,6 @@ hl.window_rule {
   min_size = { 960, 504 },
   opacity = '1 1 0.95',
 }
--- applications
-hl.window_rule {
-  name = 'firefox',
-  match = {
-    class = 'firefox',
-  },
-  workspace = '1',
-}
-hl.window_rule {
-  name = 'picture-in-picture',
-  match = {
-    title = 'Picture-in-Picture',
-  },
-  float = true,
-  pin = true,
-  size = { 640, 360 },
-  move = { 'window_w*0.08', 'window_h*1.95' },
-}
 -- special workspaces
 hl.window_rule {
   name = 'terminal',
@@ -233,39 +215,66 @@ hl.window_rule {
   workspace = 'special:steam',
 }
 hl.window_rule {
+  name = 'prismlauncher',
+  match = {
+    class = 'org.prismlauncher.PrismLauncher',
+  },
+  workspace = 'special:steam',
+}
+hl.window_rule {
   name = 'discord',
   match = {
     class = 'vesktop',
   },
   workspace = 'special:discord',
 }
--- games
+-- applications
 hl.window_rule {
-  name = 'gamescope',
+  name = 'picture-in-picture',
   match = {
-    class = 'gamescope',
+    title = 'Picture-in-Picture',
   },
-  fullscreen = true,
-  rounding = 0,
-  workspace = '2',
-}
-hl.window_rule {
-  name = 'bitburner',
-  match = {
-    class = 'bitburner',
-  },
-  fullscreen = true,
-  rounding = 0,
-  workspace = '2',
+  float = true,
+  pin = true,
+  size = { 640, 360 },
+  move = { 'window_w*0.08', 'window_h*1.95' },
 }
 hl.window_rule {
   name = 'minecraft',
   match = {
     title = 'Minecraft.*',
   },
-  fullscreen = true,
   rounding = 0,
-  workspace = '2',
+}
+hl.window_rule {
+  name = 'reaper',
+  match = {
+    class = 'REAPER',
+  },
+  center = true,
+}
+hl.window_rule {
+  name = 'menu',
+  match = {
+    title = 'menu',
+  },
+  center = false,
+}
+hl.window_rule {
+  name = 'kdenlive',
+  match = {
+    class = 'org.kde.kdenlive',
+    float = true,
+  },
+  size = { 982, 562 },
+}
+hl.window_rule {
+  name = 'kdialog',
+  match = {
+    class = 'org.kde.kdialog',
+  },
+  float = true,
+  size = { 982, 562 },
 }
 -- waybar stuff
 hl.window_rule {
