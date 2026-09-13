@@ -5,6 +5,7 @@
     ./krita
     ./gimp.nix
     ./blender.nix
+    ./synthv
   ];
 
   home.packages = with pkgs; [
