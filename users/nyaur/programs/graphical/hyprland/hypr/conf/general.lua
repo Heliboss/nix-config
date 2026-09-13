@@ -199,21 +199,13 @@ hl.window_rule {
   min_size = { 960, 504 },
   opacity = '1 1 0.95',
 }
+-- applications
 hl.window_rule {
-  name = 'foot-workspace',
+  name = 'firefox',
   match = {
-    title = 'foot',
+    class = 'firefox',
   },
-  workspace = 'special:terminal',
-}
-hl.window_rule {
-  name = 'steam',
-  match = {
-    title = 'Steam',
-  },
-  float = true,
-  center = true,
-  size = { 1280, 800 },
+  workspace = '1',
 }
 hl.window_rule {
   name = 'picture-in-picture',
@@ -225,16 +217,57 @@ hl.window_rule {
   size = { 640, 360 },
   move = { 'window_w*0.08', 'window_h*1.95' },
 }
+-- special workspaces
+hl.window_rule {
+  name = 'terminal',
+  match = {
+    title = 'foot',
+  },
+  workspace = 'special:terminal',
+}
+hl.window_rule {
+  name = 'steam',
+  match = {
+    title = 'Steam',
+  },
+  workspace = 'special:steam',
+}
+hl.window_rule {
+  name = 'discord',
+  match = {
+    class = 'vesktop',
+  },
+  workspace = 'special:discord',
+}
+-- games
+hl.window_rule {
+  name = 'gamescope',
+  match = {
+    class = 'gamescope',
+  },
+  fullscreen = true,
+  rounding = 0,
+  workspace = '2',
+}
+hl.window_rule {
+  name = 'bitburner',
+  match = {
+    class = 'bitburner',
+  },
+  fullscreen = true,
+  rounding = 0,
+  workspace = '2',
+}
 hl.window_rule {
   name = 'minecraft',
   match = {
     title = 'Minecraft.*',
   },
-  center = true,
-  float = true,
   fullscreen = true,
   rounding = 0,
+  workspace = '2',
 }
+-- waybar stuff
 hl.window_rule {
   name = 'gsimplecal',
   match = {

@@ -36,8 +36,9 @@ for i = 1, 10 do
 end
 
 -- Special workspace
-hl.bind('SUPER + SHIFT + S', hl.dsp.window.move { workspace = 'special:terminal' })
-hl.bind('SUPER + S', hl.dsp.workspace.toggle_special 'terminal')
+hl.bind('SUPER + M', hl.dsp.workspace.toggle_special 'terminal')
+hl.bind('SUPER + L', hl.dsp.workspace.toggle_special 'steam')
+hl.bind('SUPER + D', hl.dsp.workspace.toggle_special 'discord')
 
 -- Media keys
 hl.bind('XF86AudioRaiseVolume', hl.dsp.exec_cmd 'wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+')
