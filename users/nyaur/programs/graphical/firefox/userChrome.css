@@ -50,12 +50,6 @@ box#vertical-tabs::before {
   margin: -1.35rem .4rem !important;
 }
 
-/* sidebar */
-#sidebar {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
 /* Make the main window completely transparent */
 #main-window, body {
   background-color: transparent !important;
