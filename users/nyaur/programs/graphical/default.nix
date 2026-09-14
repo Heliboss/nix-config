@@ -6,7 +6,7 @@
     ./pavucontrol.nix
     ./dolphin
     ./qbittorrent.nix
-    ./discord.nix
+    ./vesktop
     ./zathura
   ];
 
