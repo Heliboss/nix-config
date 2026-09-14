@@ -203,7 +203,7 @@ hl.window_rule {
 hl.window_rule {
   name = 'terminal',
   match = {
-    title = 'foot',
+    class = 'foot',
   },
   workspace = 'special:terminal',
 }

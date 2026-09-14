@@ -2,7 +2,7 @@
 local mod = 'SUPER'
 
 -- Programs
-hl.bind(mod .. ' + T', hl.dsp.exec_cmd 'foot')
+hl.bind(mod .. ' + SHIFT + T', hl.dsp.exec_cmd 'foot')
 hl.bind(mod .. ' + R', hl.dsp.exec_cmd 'bash ~/.config/rofi/launcher/launcher.sh')
 hl.bind(mod .. ' + N', hl.dsp.exec_cmd 'grimblast --freeze copy area; pkill hyprpicker')
 hl.bind(mod .. ' + SHIFT + N', hl.dsp.exec_cmd 'grimblast --freeze save area ~/Pictures/screenshots/$(date +%s).png; pkill hyprpicker')
@@ -36,7 +36,10 @@ for i = 1, 10 do
 end
 
 -- Special workspace
-hl.bind('SUPER + M', hl.dsp.workspace.toggle_special 'terminal')
+hl.bind(
+  mod .. ' + T',
+  hl.dsp.exec_cmd 'hyprctl clients | grep "special:terminal" && hyprctl clients | grep "class: foot"  >/dev/null 2>&1 && hyprctl dispatch "hl.dsp.workspace.toggle_special(\'terminal\')" || foot'
+)
 hl.bind('SUPER + L', hl.dsp.workspace.toggle_special 'steam')
 hl.bind('SUPER + D', hl.dsp.workspace.toggle_special 'discord')
 
