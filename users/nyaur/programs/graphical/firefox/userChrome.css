@@ -31,11 +31,11 @@ tab:nth-child(8) .tab-content::before {
 :root {
   --theme: 35, 33, 54 !important;
   --theme-primary: rgba(var(--theme), 0.95) !important;
-  --theme-transparent: rgba(var(--theme), 0.50) !important;
+  --theme-transparent: rgba(var(--theme), 0.75) !important;
   --theme-slight-transparent: rgba(var(--theme), 0.95) !important;
   --theme-opaque: rgba(var(--theme), 1) !important;
   --tf-accent: rgb(234, 154, 151);
-  --tf-bg: transparent !important;
+  --tf-bg: var(--theme-transparent) !important;
   --tf-border: rgb(68, 65, 90);
   --tf-navbar-margin: 8px 8px 11px;
 }
@@ -85,7 +85,7 @@ box#vertical-tabs::before {
 
 /* Selected Tab Background Color */
 .tab-background[selected] {
-  background-color: var(--theme-opaque) !important;
+  background-color: var(--theme-transparent) !important;
 }
 
 /* Rightclick menu themes  */
