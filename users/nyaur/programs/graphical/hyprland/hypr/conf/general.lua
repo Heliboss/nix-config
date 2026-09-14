@@ -196,16 +196,30 @@ hl.window_rule {
   match = {
     class = 'foot',
   },
-  min_size = { 960, 504 },
+  size = { 960, 504 },
   opacity = '1 1 0.95',
 }
 -- special workspaces
 hl.window_rule {
   name = 'terminal',
   match = {
-    class = 'foot',
+    initial_title = 'foot-terminal',
   },
   workspace = 'special:terminal',
+}
+hl.window_rule {
+  name = 'pavucontrol',
+  match = {
+    class = 'org.pulseaudio.pavucontrol',
+  },
+  workspace = 'special:gui',
+}
+hl.window_rule {
+  name = 'easyeffects',
+  match = {
+    class = 'com.github.wwmm.easyeffects',
+  },
+  workspace = 'special:gui',
 }
 hl.window_rule {
   name = 'steam',
