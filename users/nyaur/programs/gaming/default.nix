@@ -3,7 +3,7 @@
   imports = [
     ./lutris.nix
     ./osu.nix
-    ./minecraft.nix
+    ./prismlauncher
   ];
 
   home.file = {
