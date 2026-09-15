@@ -16,6 +16,7 @@
       "net.davidotek.pupgui2"
       "io.github.Soundux"
       "com.github.Matoking.protontricks"
+      "io.github.swordpuffin.rewaita"
     ];
     overrides = {
       "io.github.Soundux".Context.filesystems = [ "/persist/home/nyaur/Music/soundux:create" ];
