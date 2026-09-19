@@ -1,0 +1,111 @@
+:root {
+  /* Window */
+  --window-bg-color: #232136;
+  --window-fg-color: #e0def4;
+
+  /* View styling */
+  --view-bg-color: #232136;
+  --view-fg-color: #e0def4;
+
+  /* Header bar */
+  --headerbar-bg-color: #2a273f;
+  --headerbar-backdrop-color: #2a273f;
+  --headerbar-fg-color: #e0def4;
+
+  /* Popovers and dialogs */
+  --popover-bg-color: #232136;
+  --popover-fg-color: #e0def4;
+
+  --dialog-bg-color: var(--popover-bg-color);
+  --dialog-fg-color: var(--popover-fg-color);
+
+  /* Cards and sidebars */
+  --card-bg-color: #393552;
+  --card-fg-color: #e0def4;
+
+  --sidebar-bg-color: #232136;
+  --sidebar-fg-color: #e0def4;
+  --sidebar-backdrop-color: var(--sidebar-bg-color);
+  --sidebar-border-color: #393552;
+
+  --secondary-sidebar-bg-color: var(--sidebar-bg-color);
+  --secondary-sidebar-fg-color: var(--sidebar-fg-color);
+  --secondary-sidebar-backdrop-color: var(--sidebar-backdrop-color);
+  --secondary-sidebar-border-color: var(--sidebar-border-color);
+
+  /* Accents */
+  --blue-1: #9ccfd8;
+  --blue-2: #c4a7e7;
+  --blue-3: #3e8fb0;
+  --blue-4: #3e8fb0;
+  --blue-5: #3e8fb0;
+
+  --green-1: #3e8fb0;
+  --green-2: #9ccfd8;
+  --green-3: #3e8fb0;
+  --green-4: #9ccfd8;
+  --green-5: #3e8fb0;
+
+  --yellow-1: #f6c177;
+  --yellow-2: #f6c177;
+  --yellow-3: #ea9a97;
+  --yellow-4: #ea9a97;
+  --yellow-5: #ea9a97;
+
+  --orange-1: #ea9a97;
+  --orange-2: #ea9a97;
+  --orange-3: #eb6f92;
+  --orange-4: #f6c177;
+  --orange-5: #f6c177;
+
+  --red-1: #eb6f92;
+  --red-2: #eb6f92;
+  --red-3: #eb6f92;
+  --red-4: #ea9a97;
+  --red-5: #ea9a97;
+
+  --purple-1: #c4a7e7;
+  --purple-2: #908caa;
+  --purple-3: #6e6a86;
+  --purple-4: #9ccfd8;
+  --purple-5: #3e8fb0;
+
+  --brown-1: #6e6a86;
+  --brown-2: #6e6a86;
+  --brown-3: #908caa;
+  --brown-4: #c4a7e7;
+  --brown-5: #6e6a86;
+
+  --light-1: #e0def4;
+  --light-2: #908caa;
+  --light-3: #6e6a86;
+  --light-4: #c4a7e7;
+  --light-5: #6e6a86;
+
+  --dark-1: #393552;
+  --dark-2: #2a273f;
+  --dark-3: #232136;
+  --dark-4: #232136;
+  --dark-5: #232136;
+
+  /* Active toggle colors */
+  --active-toggle-bg-color: var(--window-bg-color);
+  --active-toggle-fg-color: var(--window-fg-color);
+}
+
+toast {
+  background-color: var(--window-bg-color);
+  color: var(--window-fg-color);
+}
+
+.inline {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.background {
+	opacity: 0.92;
+}
+
+@define-color accent_bg_color #ea9a97;
+@define-color accent_fg_color #222222;
