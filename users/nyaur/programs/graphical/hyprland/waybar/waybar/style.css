@@ -4,6 +4,7 @@
 @define-color active #ea9a97;
 
 * {
+  all: unset;
   font-size: 16px;
   font-family: "Aporetic Sans";
   min-width: 8px;
