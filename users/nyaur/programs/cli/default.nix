@@ -17,7 +17,7 @@
   };
 
   home.packages = with pkgs; [
-    simple-mtpfs
+    android-file-transfer
     unzip
     powertop
     gdu
