@@ -644,7 +644,8 @@
             "enabled": false
         },
         "UnlockedAvatarZoom": {
-            "enabled": true
+            "enabled": true,
+            "zoomMultiplier": 4
         },
         "UnsuppressEmbeds": {
             "enabled": false
@@ -715,7 +716,7 @@
             "overrideCommonKeybinds": true
         },
         "WebScreenShareFixes": {
-            "enabled": false,
+            "enabled": true,
             "experimentalAV1Support": false
         },
         "WhoReacted": {
@@ -801,11 +802,12 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1789812467819
+        "settingsSyncVersion": 1791111213008
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
     },
-    "windowsMaterial": "none"
+    "windowsMaterial": "none",
+    "nativeTitleBar": false
 }
