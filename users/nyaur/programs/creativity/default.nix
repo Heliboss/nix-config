@@ -1,11 +1,13 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
+    ./opentabletdriver
     ./obs.nix
     ./krita
     ./gimp.nix
     ./blender.nix
     ./synthv
+    ./openutau.nix
   ];
 
   home.packages = with pkgs; [
@@ -13,21 +15,12 @@
     reaper
     ffmpeg-full
     yt-dlp
-    openutau
   ];
 
   home.persistence."/persist" = {
     directories = [
       ".lv2"
       ".vst3"
-      ".local/share/OpenUtau"
     ];
-  };
-
-  home.file = {
-    ".config/OpenTabletDriver/Presets".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets";
-    ".config/OpenTabletDriver/Plugins".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Plugins";
   };
 }
