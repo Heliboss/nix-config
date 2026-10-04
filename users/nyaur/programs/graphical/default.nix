@@ -8,20 +8,12 @@
     ./qbittorrent.nix
     ./vesktop
     ./zathura
+    ./mimeapps
   ];
 
   fonts.fontconfig.enable = true;
 
   xdg.mime.enable = true;
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "x-scheme-handler/http" = "firefox.desktop";
-      "x-scheme-handler/https" = "firefox.desktop";
-      "x-scheme-handler/about" = "firefox.desktop";
-      "x-scheme-handler/unknown" = "firefox.desktop";
-    };
-  };
 
   home.persistence."/persist" = {
     directories = [ ".local/share/icons" ];
