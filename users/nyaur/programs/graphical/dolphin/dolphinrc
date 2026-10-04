@@ -1,6 +1,18 @@
+[CompactMode]
+UseSystemFont=false
+ViewFont=Aporetic Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+
+[DetailsMode]
+UseSystemFont=false
+ViewFont=Aporetic Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+
 [General]
 Version=202
 ViewPropsTimestamp=2026,10,4,21,16,19.368
+
+[IconsMode]
+UseSystemFont=false
+ViewFont=Aporetic Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -8,6 +20,9 @@ Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,svgthumbnail
 
 [UiSettings]
 ColorScheme=rose-pine-moon
