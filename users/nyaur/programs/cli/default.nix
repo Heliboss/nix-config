@@ -6,7 +6,6 @@
     ./fastfetch
     ./fish
     ./ttyper
-    ./devenv.nix
     ./git.nix
     ./yazi
     ./jrnl
