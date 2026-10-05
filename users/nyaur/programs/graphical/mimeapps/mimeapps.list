@@ -9,4 +9,5 @@ image/jpg=feh.desktop
 image/jpeg=feh.desktop
 image/webp=feh.desktop
 image/gif=mpv.desktop
+text/x-tex=nvim.desktop
 application/pdf=zathura.desktop
