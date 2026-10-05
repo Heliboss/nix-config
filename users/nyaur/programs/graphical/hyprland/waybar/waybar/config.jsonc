@@ -280,7 +280,7 @@
       ],
     },
     "tooltip-format": "{volume}%",
-    "on-click": "pavucontrol",
+    "on-click": "pgrep pavucontrol >/dev/null && pkill pavucontrol || env GTK_THEME=Adwaita-dark pavucontrol",
   },
   "pulseaudio/slider": {
     "min": 0,
