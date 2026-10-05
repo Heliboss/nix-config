@@ -30,60 +30,17 @@
 
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelModules = [ "zram" ];
+    zswap.enable = true;
   };
+
+  swapDevices = [
+    {
+      device = "/swap/swapfile";
+      size = 7304;
+    }
+  ];
 
   environment.systemPackages = [ pkgs.e2fsprogs ];
-
-  systemd.services.zramloop = {
-    description = "Attach /swap/swapfile to /dev/loop0 for zram writeback";
-    wantedBy = [ "multi-user.target" ];
-    path = [ "/run/current-system/sw" ];
-    script = ''
-      if rm /swap/swapfile; then
-        echo rm
-      fi
-      touch /swap/swapfile
-      chattr +C /swap/swapfile
-      chmod 600 /swap/swapfile
-      fallocate -l 14622M /swap/swapfile
-      if swapoff /dev/zram0; then
-        echo swapoff
-      fi
-      sleep 1
-      if rmmod zram; then
-        echo unload
-      fi
-      sleep 1
-      if modprobe zram; then
-        echo load
-      fi
-      sleep 1
-      if losetup -d /dev/loop0; then
-        echo detach
-      fi
-      sleep 1
-      if losetup /dev/loop0 /swap/swapfile; then
-        echo loop
-      fi
-      sleep 1
-      echo zstd > /sys/block/zram0/comp_algorithm
-      echo /dev/loop0 > /sys/block/zram0/backing_dev
-      echo 14622M > /sys/block/zram0/disksize
-      sleep 1
-      mkswap -U clear /dev/zram0
-      swapon -d -p 100 /dev/zram0
-    '';
-    serviceConfig.DeviceAllow = [
-      "/dev/loop-control"
-      "/dev/loop0"
-      "/dev/zram0"
-    ];
-  };
-
-  boot.kernel.sysctl = {
-    "vm.swappiness" = 10;
-  };
 
   xdg.portal = {
     extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
