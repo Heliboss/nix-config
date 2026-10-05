@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs.foot.enable = true;
 
   home.packages = with pkgs; [
@@ -10,6 +11,15 @@
   ];
 
   home.file = {
-    ".config/foot/foot.ini".source = config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/foot.ini";
+    ".config/foot/foot.ini".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/foot.ini";
+  };
+
+  xdg.desktopEntries = {
+    "nvim" = {
+      name = "Neovim wrapper";
+      exec = "foot nvim";
+      icon = "nvim";
+    };
   };
 }
