@@ -20,7 +20,7 @@
       "Projects"
       "Public"
       ".local/share/waydroid"
-      ".cache"
+      ".cache/nix"
     ];
   };
 }
