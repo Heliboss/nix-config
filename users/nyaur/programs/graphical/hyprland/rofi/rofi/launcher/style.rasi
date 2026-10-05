@@ -9,7 +9,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,window,calc";
+	modi:                       "calc,drun,filebrowser";
     show-icons:                 true;
     display-drun:               "";
     display-run:                "";
@@ -23,12 +23,12 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "Jetbrains Mono Nerd Font 10";
-    background:                  #26233a;
-    background-alt:              #21202e;
+    background:                  #232136F2;
+    background-alt:              #2a283e;
     foreground:                  #e0def4;
-    selected:                    #403d52;
+    selected:                    #44415a;
     active:                      #eb6f92;
-    urgent:                      #31748f;
+    urgent:                      #3e8fb0;
 }
 
 /*****----- Main Window -----*****/
