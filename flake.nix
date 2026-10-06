@@ -16,6 +16,7 @@
     textfox.url = "github:adriankarlen/textfox";
     pipewire-screenaudio.url = "github:IceDBorn/pipewire-screenaudio";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
   outputs =
