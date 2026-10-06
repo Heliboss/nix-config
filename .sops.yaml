@@ -1,7 +1,9 @@
 keys:
   - &starflower age1xsux8m9d6ajcmwxanmj79kxw803qlrzf9vqhemers095ygq63emql6hmup
+  - &graysteel age1sm2kq3thpumgsuzcktwhf2k3mqwr632h2zfewygr74vz9p6epqrswk49x8
 creation_rules:
   - path_regex: hosts/common/secrets.ya?ml$
     key_groups:
       - age:
         - *starflower
+        - *graysteel

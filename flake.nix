@@ -40,6 +40,17 @@
             { home-manager.extraSpecialArgs = specialArgs; }
           ];
         };
+        # Minecraft server
+        graysteel = nixpkgs.lib.nixosSystem rec {
+          specialArgs = {
+            inherit inputs;
+            device = "/dev/sda";
+          };
+          modules = [
+            ./hosts/graysteel
+            { home-manager.extraSpecialArgs = specialArgs; }
+          ];
+        };
       };
       # For non-NixOS
       homeConfigurations = {
