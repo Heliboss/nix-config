@@ -16,8 +16,6 @@
 
   networking.hostName = "graysteel";
 
-  users.mutableUsers = false;
-
   # Passing system to lib.nixosSystem is deprecated
   nixpkgs.hostPlatform = "x86_64-linux";
 

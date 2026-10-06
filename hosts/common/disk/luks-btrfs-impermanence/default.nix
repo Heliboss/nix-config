@@ -1,14 +1,16 @@
 {
   utils,
+  inputs,
   ...
 }:
 {
   imports = [
+    inputs.disko.nixosModules.disko
     ./disk-config.nix
   ];
 
-  # Declare the password!!! >:(
-  users.mutableUsers = false;
+  # Required for impermanence to work properly.
+  fileSystems."/persist".neededForBoot = true;
 
   boot.initrd.systemd = {
     enable = true;

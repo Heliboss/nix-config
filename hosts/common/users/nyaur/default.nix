@@ -4,17 +4,20 @@
 
   sops.secrets.nyaur.neededForUsers = true;
 
-  users.users.nyaur = {
-    isNormalUser = true;
-    initialPassword = "123";
-    extraGroups = [
-      "wheel"
-      "input"
-      "networkmanager"
-      "gamemode"
-      "libvirtd"
-    ];
-    hashedPasswordFile = config.sops.secrets.nyaur.path;
+  users = {
+    mutableUsers = false;
+    users.nyaur = {
+      isNormalUser = true;
+      initialPassword = "123";
+      extraGroups = [
+        "wheel"
+        "input"
+        "networkmanager"
+        "gamemode"
+        "libvirtd"
+      ];
+      hashedPasswordFile = config.sops.secrets.nyaur.path;
+    };
   };
 
   # Prevents an error when using the home-manager impermanence module.

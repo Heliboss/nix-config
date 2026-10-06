@@ -1,9 +1,4 @@
-{ inputs, device, ... }: {
-  imports = [ inputs.disko.nixosModules.disko ];
-
-  # Required for impermanence to work properly.
-  fileSystems."/persist".neededForBoot = true;
-
+{ device, ... }: {
   disko.devices = {
     disk = {
       main = {
@@ -35,23 +30,35 @@
                   subvolumes = {
                     "/root" = {
                       mountpoint = "/";
-                      mountOptions =
-                        [ "compress-force=zstd:1" "noatime" "subvol=@" ];
+                      mountOptions = [
+                        "compress-force=zstd:1"
+                        "noatime"
+                        "subvol=@"
+                      ];
                     };
                     "/persist" = {
                       mountpoint = "/persist";
-                      mountOptions =
-                        [ "compress-force=zstd:1" "noatime" "subvol=@persist" ];
+                      mountOptions = [
+                        "compress-force=zstd:1"
+                        "noatime"
+                        "subvol=@persist"
+                      ];
                     };
                     "/nix" = {
                       mountpoint = "/nix";
-                      mountOptions =
-                        [ "compress-force=zstd:1" "noatime" "subvol=@nix" ];
+                      mountOptions = [
+                        "compress-force=zstd:1"
+                        "noatime"
+                        "subvol=@nix"
+                      ];
                     };
                     "/swap" = {
                       mountpoint = "/swap";
-                      mountOptions =
-                        [ "compress-force=zstd:1" "noatime" "subvol=@swap" ];
+                      mountOptions = [
+                        "compress-force=zstd:1"
+                        "noatime"
+                        "subvol=@swap"
+                      ];
                     };
                   };
                 };
