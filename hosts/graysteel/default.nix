@@ -1,7 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./minecraft-server.nix
+    ./services/minecraft
 
     ../common/global
     ../common/disk/btrfs-subvolumes
