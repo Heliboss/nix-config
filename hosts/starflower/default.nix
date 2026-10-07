@@ -3,7 +3,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../common
+    ../common/global
     ../common/disk/luks-btrfs-impermanence
     ../common/users/nyaur
 

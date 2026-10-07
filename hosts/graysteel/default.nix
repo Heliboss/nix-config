@@ -4,7 +4,7 @@
     ./hardware-configuration.nix
     ./minecraft-server.nix
 
-    ../common
+    ../common/global
     ../common/disk/btrfs-subvolumes
     ../common/users/nyaur
 
