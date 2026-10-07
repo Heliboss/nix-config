@@ -8,6 +8,8 @@
     ./programs/cli/yazi
   ];
 
+  home.persistence."/persist".enable = false;
+
   home.packages = with pkgs; [
     sops
   ];
