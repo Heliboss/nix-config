@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -25,9 +25,6 @@
 
   networking.hostName = "starflower";
 
-  # Passing system to lib.nixosSystem is deprecated
-  nixpkgs.hostPlatform = "x86_64-linux";
-
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     zswap.enable = true;
@@ -39,13 +36,6 @@
       size = 7304;
     }
   ];
-
-  environment.systemPackages = [ pkgs.e2fsprogs ];
-
-  xdg.portal = {
-    extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
-    config.common.default = config.home-manager.users.nyaur.xdg.portal.config.common.default;
-  };
 
   sops.age.keyFile = "/persist/starflower.txt";
 

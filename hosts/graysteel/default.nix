@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -16,13 +15,7 @@
 
   networking.hostName = "graysteel";
 
-  # Passing system to lib.nixosSystem is deprecated
-  nixpkgs.hostPlatform = "x86_64-linux";
-
-  boot = {
-    kernelPackages = pkgs.linuxPackages;
-    zswap.enable = true;
-  };
+  boot.zswap.enable = true;
 
   swapDevices = [
     {
@@ -30,8 +23,6 @@
       size = 3835;
     }
   ];
-
-  environment.systemPackages = [ pkgs.e2fsprogs ];
 
   sops.age.keyFile = "/etc/nixos/graysteel.txt";
 

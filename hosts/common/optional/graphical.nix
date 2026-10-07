@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   services.xserver = {
     enable = true;
     displayManager.startx.enable = true; # Replaces LightDM with TTY login prompt
@@ -27,4 +27,10 @@
 
   # Enable SysRq shortcuts
   boot.kernel.sysctl."kernel.sysrq" = 1;
+
+  xdg.portal = {
+    extraPortals = config.home-manager.users.nyaur.xdg.portal.extraPortals;
+    config.common.default = config.home-manager.users.nyaur.xdg.portal.config.common.default;
+  };
+
 }
