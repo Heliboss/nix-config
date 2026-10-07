@@ -35,6 +35,7 @@
           specialArgs = {
             inherit inputs;
             device = "/dev/nvme0n1";
+            flake = "/persist/home/nyaur/.config/nixos";
           };
           modules = [
             ./hosts/starflower
@@ -46,6 +47,7 @@
           specialArgs = {
             inherit inputs;
             device = "/dev/sda";
+            flake = "/etc/nixos/nix-config";
           };
           modules = [
             ./hosts/graysteel

@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./nh.nix
     ./btop
     ./neovim
     ./fastfetch
@@ -10,10 +11,6 @@
     ./yazi
     ./jrnl
   ];
-
-  programs = {
-    nh.enable = true;
-  };
 
   home.packages = with pkgs; [
     android-file-transfer

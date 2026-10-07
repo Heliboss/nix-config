@@ -1,7 +1,4 @@
-{ lib, ... }:
-let
-  FLAKE = "/persist/home/nyaur/.config/nixos";
-in
+{ lib, flake, ... }:
 {
   imports = [
     ./default.nix
@@ -25,7 +22,7 @@ in
         "hyprland.start"
         (lib.generators.mkLuaInline ''
           function()
-            hl.exec_cmd 'sleep 1; otd loadsettings ${FLAKE}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json'
+            hl.exec_cmd 'sleep 1; otd loadsettings ${flake}/users/nyaur/programs/creativity/OpenTabletDriver/Presets/Art.json'
             hl.exec_cmd 'sleep 10; easyeffects -w --service-mode'
           end
         '')
@@ -82,8 +79,7 @@ in
   '';
 
   home.sessionVariables = {
-    inherit FLAKE;
-    NH_FLAKE = FLAKE;
+    FLAKE = flake;
   };
 
   # Update legacy behavior
