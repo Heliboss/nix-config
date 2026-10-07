@@ -1,6 +1,7 @@
 { pkgs, flake, ... }:
 {
   imports = [
+    ./default.nix
     ./programs/cli/nh.nix
     ./programs/cli/neovim
     ./programs/cli/git.nix

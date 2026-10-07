@@ -90,4 +90,7 @@
     withRuby = false;
     withPython3 = false;
   };
+
+  # Don't change
+  home.stateVersion = "24.11";
 }
