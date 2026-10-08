@@ -10,6 +10,7 @@
     ./git.nix
     ./yazi
     ./jrnl
+    ./tmux.nix
   ];
 
   home.packages = with pkgs; [

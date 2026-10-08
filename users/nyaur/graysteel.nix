@@ -6,6 +6,7 @@
     ./programs/cli/neovim
     ./programs/cli/git.nix
     ./programs/cli/yazi
+    ./programs/cli/tmux.nix
   ];
 
   home.persistence."/persist".enable = false;
