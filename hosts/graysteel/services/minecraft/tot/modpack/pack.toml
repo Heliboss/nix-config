@@ -1,0 +1,13 @@
+name = "Thread of Time"
+author = "heliboss"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "7f02c35413be4f6d7b0c28e3b4a344874fea958e48493be70498c974d03ba371"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.256"
