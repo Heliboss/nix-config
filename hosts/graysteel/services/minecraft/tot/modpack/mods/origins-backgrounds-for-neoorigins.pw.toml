@@ -1,0 +1,13 @@
+name = "Origins: Backgrounds for NeoOrigins"
+filename = "Origins-Backgrounds-1.21.1-NeoOrigins-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4ddee2f8666fcebe14a07e192bdaeaee5b941a9e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8924698
+project-id = 1578568

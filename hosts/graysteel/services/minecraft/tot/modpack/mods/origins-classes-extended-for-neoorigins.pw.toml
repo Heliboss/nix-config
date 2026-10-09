@@ -1,0 +1,13 @@
+name = "Origins: Classes Extended for NeoOrigins"
+filename = "Origins-Classes-Ex-1.21.1-NeoOrigins-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eae386f38fa050c631bbd270e75e472ce809852d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8393343
+project-id = 1602395

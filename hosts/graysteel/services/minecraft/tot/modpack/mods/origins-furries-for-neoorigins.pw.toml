@@ -1,0 +1,13 @@
+name = "Origins Furries for NeoOrigins"
+filename = "Origins-Furries-1.21.1-NeoOrigins-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b3f19f46beea21f0fcd30b71fedba6f734e58d3d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8891687
+project-id = 1592095
