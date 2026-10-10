@@ -3,11 +3,6 @@ filename = "neoorigins-2.2.29+1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5d3331ba143a0ea33cc6f1881c098b33a81cb616"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 9000888
-project-id = 1495375
+url = "https://github.com/CyberDay1/NeoOrigins/releases/download/v2.2.29/neoorigins-2.2.29+1.21.1.jar"
+hash-format = "sha256"
+hash = "380dbee9ad8d906e54c12ed5c2d6682688c853dfe2713af54eafc2ceca89df4a"

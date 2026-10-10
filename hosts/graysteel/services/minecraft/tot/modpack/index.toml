@@ -61,11 +61,6 @@ hash = "47573d3f6e2392e8a720aacfd9b48f4a7be9c5e24f3200eff25de021aac75cc3"
 metafile = true
 
 [[files]]
-file = "mods/apothic-nerf.pw.toml"
-hash = "4f85f57102ee746e66ac56bf6dd81ed08c3bb19a435e597dcd60cad7d50869ce"
-metafile = true
-
-[[files]]
 file = "mods/apothic-spawners.pw.toml"
 hash = "781fe924f8038f4b54d326b6d90104e56b4639e6d7439ea361165c8d22c97113"
 metafile = true
@@ -88,11 +83,6 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
-metafile = true
-
-[[files]]
-file = "mods/ars-n-spells.pw.toml"
-hash = "4a34a05dd9f9306edb9152ce233edcb5a634549f7f706759ae2310a7af9e63bf"
 metafile = true
 
 [[files]]
@@ -232,7 +222,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "efc9a3f8d4d0098687667f5ce7be29262202bcba23b0cec29811dcac1b0799fc"
+hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
 metafile = true
 
 [[files]]
@@ -297,7 +287,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "02d6c9aceef547b018bf3786367ca40f5aec682b8f577e15fb0656811b424d66"
+hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
@@ -577,7 +567,7 @@ metafile = true
 
 [[files]]
 file = "mods/neoorigins.pw.toml"
-hash = "2a967171e8ec4f54f37f95baaae79f9964f19d836ebe638e25e7be17527870bd"
+hash = "4a28c516516f78387228415d04d41e866f76c9087157fa3796f5a50e6a690a0f"
 metafile = true
 
 [[files]]
@@ -602,7 +592,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "78a453bc5b750d057212b0762e93ae82ea2f360b6dccfe6b53c52d5b6849c80b"
+hash = "e0f1cef5482844e62c6fc3c7771fc9ef8385c47092248f76aa1fa271220b24e8"
 metafile = true
 
 [[files]]
@@ -702,7 +692,7 @@ metafile = true
 
 [[files]]
 file = "mods/plushie-buddies.pw.toml"
-hash = "8c7a2f285d01a530aaeb7b4d459b938d6bae27deb0267f2b13634e7446352645"
+hash = "232cc64017e10c72eb65e1c210e6e1d14ce4391a2534912e023467dfc5f8ad1a"
 metafile = true
 
 [[files]]
@@ -827,7 +817,7 @@ metafile = true
 
 [[files]]
 file = "mods/skinrestorer.pw.toml"
-hash = "3cf41e2d57097121c6a65f7ea17550714b0225517e4b9aa06521909d82d0304a"
+hash = "840bb114b8c686327e6d53856e189906e396f4b74d3fe02d2103c9190dd76a37"
 metafile = true
 
 [[files]]
