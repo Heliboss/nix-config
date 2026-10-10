@@ -11,6 +11,7 @@
     ../common/optional/dnscrypt-proxy.nix
     ../common/optional/nix-ld.nix
     ../common/optional/openssh.nix
+    ../common/optional/playit-nixos-module.nix
   ];
 
   networking.hostName = "graysteel";
