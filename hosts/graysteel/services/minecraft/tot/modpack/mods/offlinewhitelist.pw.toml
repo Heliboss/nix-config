@@ -1,0 +1,13 @@
+name = "Offline Whitelist — Nickname-Based Whitelist"
+filename = "offlinewhitelist-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a4c7638251a000e53543bfdcb189d361c983e295"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8492878
+project-id = 1621265

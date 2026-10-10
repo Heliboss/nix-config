@@ -1,0 +1,13 @@
+name = "Playit Companion"
+filename = "playit_companion-neoforge-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5c6014e5fb1ebdac2aead52fab2694e57af58116"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7033942
+project-id = 1352039

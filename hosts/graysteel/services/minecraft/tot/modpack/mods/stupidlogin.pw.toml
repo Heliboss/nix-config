@@ -1,0 +1,13 @@
+name = "Stupid Login"
+filename = "stupidlogin-4.3-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YA7ljPpf/versions/6tlSzVRV/stupidlogin-4.3-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "417b254904399b6b81574ca200433ba6fe667862e2160450dffea224ab7cf49d3bd1d3b65c05714955034d157cc74bb4be4ebe19c634b875294b3a2630c7018a"
+
+[update]
+[update.modrinth]
+mod-id = "YA7ljPpf"
+version = "6tlSzVRV"

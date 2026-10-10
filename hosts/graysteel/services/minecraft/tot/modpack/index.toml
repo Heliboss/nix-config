@@ -61,6 +61,10 @@ hash = "47573d3f6e2392e8a720aacfd9b48f4a7be9c5e24f3200eff25de021aac75cc3"
 metafile = true
 
 [[files]]
+file = "mods/apothic-nerf-1.21.1-neo.jar"
+hash = "196ffedcd5065773b6d2f88a9e4d3f5ae6ca0cbe5496d91c8b467131e7970679"
+
+[[files]]
 file = "mods/apothic-spawners.pw.toml"
 hash = "781fe924f8038f4b54d326b6d90104e56b4639e6d7439ea361165c8d22c97113"
 metafile = true
@@ -89,6 +93,10 @@ metafile = true
 file = "mods/ars-nouveau.pw.toml"
 hash = "21dfd3b22c8fd9ea0b89f53460169693258b31dbcbdb3b6fea73c76d29fd1b84"
 metafile = true
+
+[[files]]
+file = "mods/ars_n_spells-3.3.7.jar"
+hash = "e0e3a4a46b3dd6446be6b292401433b43846ad5bc5ca24b0b32b3d5c71886c63"
 
 [[files]]
 file = "mods/artifacts.pw.toml"
@@ -183,6 +191,11 @@ metafile = true
 [[files]]
 file = "mods/cherished-worlds.pw.toml"
 hash = "e2caa89a5028fea5cb1f002e844b0e91759cbc9969cf0cce1877f329a54e8139"
+metafile = true
+
+[[files]]
+file = "mods/chunky-pregenerator-forge.pw.toml"
+hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
 metafile = true
 
 [[files]]
@@ -601,6 +614,11 @@ hash = "00fb150ec4389dbe540bcede8ac3b6e34677f5bf3e3454732d311b7e44569d63"
 metafile = true
 
 [[files]]
+file = "mods/offlinewhitelist.pw.toml"
+hash = "14f56ad6cad48e8af5d38302fe9915f804db98dc338f4276e56803c25bc9ac79"
+metafile = true
+
+[[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
 hash = "9ae1e2d2b88fd1c89d2e90a4a4f5037182fca6963695abc43986b9675deec166"
 metafile = true
@@ -688,6 +706,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
+metafile = true
+
+[[files]]
+file = "mods/playit-companion.pw.toml"
+hash = "f52cf0ca8dfdff3597de0bddec3dc86c93ee480cec1d725c37c4c2b531a7c6bb"
 metafile = true
 
 [[files]]
@@ -863,6 +886,11 @@ metafile = true
 [[files]]
 file = "mods/starcatcher.pw.toml"
 hash = "ee1d263e6a9c1d93d5ed31e184a6f0e03f8b2508183de73f09d43ae82b635b39"
+metafile = true
+
+[[files]]
+file = "mods/stupidlogin.pw.toml"
+hash = "a6db1511b92b2d4955578745a8e217f5c890e7aa07d1a6c5337f9169a0069a28"
 metafile = true
 
 [[files]]
