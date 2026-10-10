@@ -709,11 +709,6 @@ hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
-file = "mods/playit-companion.pw.toml"
-hash = "f52cf0ca8dfdff3597de0bddec3dc86c93ee480cec1d725c37c4c2b531a7c6bb"
-metafile = true
-
-[[files]]
 file = "mods/plushie-buddies.pw.toml"
 hash = "232cc64017e10c72eb65e1c210e6e1d14ce4391a2534912e023467dfc5f8ad1a"
 metafile = true
