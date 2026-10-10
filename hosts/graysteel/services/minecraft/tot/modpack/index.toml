@@ -81,8 +81,18 @@ hash = "a35c812005762698c71c87d55c26745ea4dd244c1ef5f2df19f0a78ae04c575d"
 metafile = true
 
 [[files]]
+file = "mods/artsandcrafts.pw.toml"
+hash = "bc0f66cc6958163527668af00f435b261fd81efae69dd9bffb02e0e4a621f986"
+metafile = true
+
+[[files]]
 file = "mods/atlas-api.pw.toml"
 hash = "8c6d5170ca4f3e42a3ff45ec2891a24fef98ab136f3e427fc34af23564d9e7dc"
+metafile = true
+
+[[files]]
+file = "mods/aureljs-paintings.pw.toml"
+hash = "123e3c632f57824ddf77643be32787cf35540217b4b559a27f8029b666fa57e6"
 metafile = true
 
 [[files]]
@@ -196,6 +206,11 @@ hash = "790b91b9701cd633895bd83f906c6333a6d38c095c6bc7b70209c57d4cde2686"
 metafile = true
 
 [[files]]
+file = "mods/enderscape.pw.toml"
+hash = "dd1d97bf0dbd163301b1c6677f36777c8684c58434b91b375ee0ef9fa7cc044a"
+metafile = true
+
+[[files]]
 file = "mods/eternal-starlight.pw.toml"
 hash = "b30bd5d8702c19e0a4b55ae895de4a7bfadccaec60608a79cd0997a5c5f30270"
 metafile = true
@@ -238,6 +253,11 @@ metafile = true
 [[files]]
 file = "mods/guideme.pw.toml"
 hash = "b24c97f37ff924391f9beae46b8955eb0475b3b3f74616af2430dff4505d9b49"
+metafile = true
+
+[[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "d573695d37296209dc06495d359c4b283ffa6640bcfe8aa9c9b59eb420891788"
 metafile = true
 
 [[files]]
@@ -291,6 +311,11 @@ hash = "e899cdf41bc145d2f9212a3d097839b55e3c6c2a0b13b26c8fa6bb8241dc7134"
 metafile = true
 
 [[files]]
+file = "mods/jinxedlib.pw.toml"
+hash = "1350afbe0b8ffcd889f3093b5e1feadb255224a1c887acbcc30a36e50450b351"
+metafile = true
+
+[[files]]
 file = "mods/jumbo-furnace.pw.toml"
 hash = "83ef2f7df09049070ac193b60278e13981d5c3532e78b5deee16ba138d0563df"
 metafile = true
@@ -323,6 +348,11 @@ metafile = true
 [[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "c27c2b642deba3609c6e5741ee6360cb8d760e5bf5b2595fd4fa01c01dc5f074"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "a5021505140d5b7ffa4ff7184e74566a21b4e72a7ae256afeaf1e99e929333d1"
 metafile = true
 
 [[files]]
@@ -363,6 +393,16 @@ metafile = true
 [[files]]
 file = "mods/neoorigins.pw.toml"
 hash = "2a967171e8ec4f54f37f95baaae79f9964f19d836ebe638e25e7be17527870bd"
+metafile = true
+
+[[files]]
+file = "mods/nether-descent.pw.toml"
+hash = "a7443c01eb5ebb85c952d524fb78dd17c49b242a9eceb2bb9cf08e0840d99251"
+metafile = true
+
+[[files]]
+file = "mods/oh-the-trees-youll-grow.pw.toml"
+hash = "9ae1e2d2b88fd1c89d2e90a4a4f5037182fca6963695abc43986b9675deec166"
 metafile = true
 
 [[files]]
@@ -556,6 +596,11 @@ hash = "24d2d04bd35de31d5f3a19579b4ee1596cab14e8a171bea5de7594a63a6bb9cd"
 metafile = true
 
 [[files]]
+file = "mods/terralith.pw.toml"
+hash = "f083c3cdf6aadc3b033e20ba8ccc929d5e1b86a0be50b05dc638d7f76dab5024"
+metafile = true
+
+[[files]]
 file = "mods/tesseract-api-neoforge.pw.toml"
 hash = "572482c34a1b27cd0af83b4f12e1ced101e6adb372ccb1e12c1700ee607a0cf9"
 metafile = true
@@ -568,6 +613,11 @@ metafile = true
 [[files]]
 file = "mods/trade-cycling.pw.toml"
 hash = "a265dc0654050cf736b29ff48e13f647ee07bbb1d8f40f4562b1c4a7f828ff0e"
+metafile = true
+
+[[files]]
+file = "mods/true-ending.pw.toml"
+hash = "c98091a3c98f5bf8f512541d6e003e3d87bb0bdec6f0d07c7f5948607b2680e9"
 metafile = true
 
 [[files]]
