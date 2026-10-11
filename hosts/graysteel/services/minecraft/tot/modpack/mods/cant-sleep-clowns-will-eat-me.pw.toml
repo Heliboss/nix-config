@@ -1,6 +1,7 @@
 name = "Can't Sleep Clowns Will Eat Me"
 filename = "cant_sleep_clowns_will_eat_me-1.21-2.0.0.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

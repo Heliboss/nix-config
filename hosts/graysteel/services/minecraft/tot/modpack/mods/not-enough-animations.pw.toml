@@ -1,6 +1,7 @@
 name = "Not Enough Animations"
 filename = "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar"
 side = "client"
+pin = true
 
 [download]
 url = "https://cdn.modrinth.com/data/MPCX6s5C/versions/VCuMsK45/notenoughanimations-neoforge-1.12.6-mc1.21.1.jar"

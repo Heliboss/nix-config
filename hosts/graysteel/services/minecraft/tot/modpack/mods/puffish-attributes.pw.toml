@@ -1,6 +1,7 @@
 name = "Pufferfish's Attributes [Fabric & Forge & NeoForge]"
 filename = "puffish_attributes-0.8.3-1.21-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

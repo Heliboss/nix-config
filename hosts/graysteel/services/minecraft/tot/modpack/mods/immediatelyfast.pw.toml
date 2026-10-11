@@ -1,6 +1,7 @@
 name = "ImmediatelyFast"
 filename = "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,7 @@
 name = "Aurelj's Paintings"
 filename = "AureljPaintings-1.0.5-1.21.x-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

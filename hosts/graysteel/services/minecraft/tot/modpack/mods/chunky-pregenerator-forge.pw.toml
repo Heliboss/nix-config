@@ -1,6 +1,7 @@
 name = "Chunky (Forge/NeoForge)"
 filename = "Chunky-NeoForge-1.4.23.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

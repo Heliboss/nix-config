@@ -1,6 +1,7 @@
 name = "Enderscape"
 filename = "enderscape-neoforge-1.0.9+mc1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,7 @@
 name = "Origins: Backgrounds ISS for NeoOrigins"
 filename = "Origins-ISS-Backgrounds-1.21.1-NeoOrigins-1.0.2.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

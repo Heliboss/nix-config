@@ -1,6 +1,7 @@
 name = "NeoOrigins"
 filename = "neoorigins-2.2.29+1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 url = "https://github.com/CyberDay1/NeoOrigins/releases/download/v2.2.29/neoorigins-2.2.29+1.21.1.jar"

@@ -1,6 +1,7 @@
 name = "Legendary Tooltips [Neo/Forge]"
 filename = "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

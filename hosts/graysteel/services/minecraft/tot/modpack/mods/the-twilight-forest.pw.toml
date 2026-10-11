@@ -1,6 +1,7 @@
 name = "The Twilight Forest"
 filename = "twilightforest-1.21.1-4.8.3345-universal.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

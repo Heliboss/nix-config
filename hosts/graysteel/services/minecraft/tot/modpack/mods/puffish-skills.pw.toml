@@ -1,6 +1,7 @@
 name = "Pufferfish's Skills [Fabric & Forge & NeoForge]"
 filename = "puffish_skills-0.19.2-1.21-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

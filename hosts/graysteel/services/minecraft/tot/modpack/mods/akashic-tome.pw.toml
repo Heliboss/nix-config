@@ -1,6 +1,7 @@
 name = "Akashic Tome"
 filename = "AkashicTome-1.8-30.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

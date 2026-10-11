@@ -1,6 +1,7 @@
 name = "PingHUD"
 filename = "PingHUD-4.0.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

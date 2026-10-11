@@ -1,6 +1,7 @@
 name = "Offline Whitelist — Nickname-Based Whitelist"
 filename = "offlinewhitelist-1.0.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

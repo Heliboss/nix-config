@@ -1,6 +1,7 @@
 name = "Clumps"
 filename = "Clumps-neoforge-1.21.1-19.0.0.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

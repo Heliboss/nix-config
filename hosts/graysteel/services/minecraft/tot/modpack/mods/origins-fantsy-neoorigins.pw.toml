@@ -1,6 +1,7 @@
 name = "Origins Fantasy for NeoOrigins"
 filename = "Origins-Fantasy-1.21.1-NeoOrigins-1.1.3.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

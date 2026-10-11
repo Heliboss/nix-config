@@ -1,6 +1,7 @@
 name = "Aquaculture 2"
 filename = "Aquaculture-1.21.1-2.7.21.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

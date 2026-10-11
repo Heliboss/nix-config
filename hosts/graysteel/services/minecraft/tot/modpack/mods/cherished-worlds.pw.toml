@@ -1,6 +1,7 @@
 name = "Cherished Worlds"
 filename = "cherishedworlds-neoforge-10.1.1+1.21.1.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

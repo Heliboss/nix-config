@@ -1,6 +1,7 @@
 name = "Create: Ultimate Factory"
 filename = "create_ultimate_factory-2.2.4-neoforge-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

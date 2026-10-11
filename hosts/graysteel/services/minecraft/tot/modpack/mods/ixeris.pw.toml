@@ -1,6 +1,7 @@
 name = "Ixeris"
 filename = "Ixeris-4.6.8+1.21.1-neoforge.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

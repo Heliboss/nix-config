@@ -1,6 +1,7 @@
 name = "Eternal Starlight"
 filename = "eternalstarlight-0.9.1+1.21.1+neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,7 @@
 name = "Iron's Spells 'n Spellbooks Dynamic Skill Trees"
 filename = "irons_spells_dynamic_skilltree_1.1.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

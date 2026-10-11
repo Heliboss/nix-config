@@ -1,6 +1,7 @@
 name = "Animal Pens"
 filename = "animal_pen-neoforge-1.21-2.5.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

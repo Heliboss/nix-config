@@ -1,6 +1,7 @@
 name = "Xaero's Minimap"
 filename = "xaerominimap-neoforge-1.21.1-26.6.0.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

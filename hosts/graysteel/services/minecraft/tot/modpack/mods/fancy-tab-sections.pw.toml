@@ -1,6 +1,7 @@
 name = "Fancy Tab Sections"
 filename = "fancytabsections-6.2.1-NEOFORGE-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

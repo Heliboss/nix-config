@@ -1,6 +1,7 @@
 name = "[ETF] Entity Texture Features - [Fabric & Forge]"
 filename = "entity_texture_features-7.2.5-1.21-neoforge.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

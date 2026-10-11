@@ -1,6 +1,7 @@
 name = "Creeper Overhaul"
 filename = "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

@@ -1,6 +1,7 @@
 name = "Sophisticated Backpacks"
 filename = "sophisticatedbackpacks-1.21.1-3.26.9.2195.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

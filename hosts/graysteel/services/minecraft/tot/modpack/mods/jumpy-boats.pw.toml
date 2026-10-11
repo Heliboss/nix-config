@@ -1,6 +1,7 @@
 name = "Jumpy Boats"
 filename = "jumpboat-1.21.0-1.0.5.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

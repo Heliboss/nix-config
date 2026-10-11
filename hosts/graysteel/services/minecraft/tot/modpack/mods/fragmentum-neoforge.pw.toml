@@ -1,6 +1,7 @@
 name = "Fragmentum [NeoForge Edition]"
 filename = "fragmentum-5.2.0+1.21.1-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

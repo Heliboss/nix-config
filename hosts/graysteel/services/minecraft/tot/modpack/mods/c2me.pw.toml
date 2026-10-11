@@ -1,6 +1,7 @@
 name = "Concurrent Chunk Management Engine"
 filename = "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.122.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

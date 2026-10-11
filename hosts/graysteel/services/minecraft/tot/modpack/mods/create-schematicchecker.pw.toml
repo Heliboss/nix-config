@@ -1,6 +1,7 @@
 name = "Create: Schematic Checker"
 filename = "createschematicchecker-2.27.47-6.0-neoforge-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

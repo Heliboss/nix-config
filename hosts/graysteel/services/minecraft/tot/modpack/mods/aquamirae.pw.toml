@@ -1,6 +1,7 @@
 name = "Aquamirae [Neo/Forge Edition]"
 filename = "aquamirae-neoforge-1.21.1-7.2.10.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

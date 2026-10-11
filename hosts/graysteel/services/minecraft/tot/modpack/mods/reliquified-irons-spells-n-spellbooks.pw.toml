@@ -1,6 +1,7 @@
 name = "Reliquified Iron's Spells 'n Spellbooks"
 filename = "reliquified_irons_spells_and_spellbooks-1.21.1-0.2.7.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

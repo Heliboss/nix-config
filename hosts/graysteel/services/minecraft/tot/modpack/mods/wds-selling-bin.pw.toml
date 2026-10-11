@@ -1,6 +1,7 @@
 name = "wd's Selling Bin"
 filename = "selling_bin-1.6-NEOFORGE-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

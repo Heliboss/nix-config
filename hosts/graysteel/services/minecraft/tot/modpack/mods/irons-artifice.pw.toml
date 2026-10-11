@@ -1,6 +1,7 @@
 name = "Iron's Arms 'n Artifice"
 filename = "irons_artifice-1.21.1-1.1.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

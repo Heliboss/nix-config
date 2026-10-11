@@ -1,6 +1,7 @@
 name = "Ok Zoomer - It's Zoom!"
 filename = "ok_zoomer-neo-10.0.0-beta.13.jar"
 side = "client"
+pin = true
 
 [download]
 hash-format = "sha1"

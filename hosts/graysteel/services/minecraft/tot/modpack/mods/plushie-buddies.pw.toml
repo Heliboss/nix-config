@@ -1,6 +1,7 @@
 name = "Plushie Buddies"
 filename = "plushie_buddies-1.0.1-neofroge-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 url = "https://cdn.modrinth.com/data/5hoSWfrw/versions/79cJi8lU/plushie_buddies-1.0.1-neofroge-1.21.1.jar"

@@ -1,6 +1,7 @@
 name = "Boss Checklist"
 filename = "boss_checklist-neoforge-5.3.2.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

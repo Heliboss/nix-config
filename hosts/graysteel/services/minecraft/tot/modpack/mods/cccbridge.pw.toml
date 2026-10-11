@@ -1,6 +1,7 @@
 name = "CC:C Bridge"
 filename = "cccbridge-mc1.21.1-v1.7.3-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 url = "https://cdn.modrinth.com/data/fXt291FO/versions/MKK6cYI5/cccbridge-mc1.21.1-v1.7.3-neoforge.jar"

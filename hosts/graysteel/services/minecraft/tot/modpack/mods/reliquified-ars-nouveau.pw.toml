@@ -1,6 +1,7 @@
 name = "Reliquified Ars Nouveau"
 filename = "reliquified_ars_nouveau-1.21.1-0.8.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

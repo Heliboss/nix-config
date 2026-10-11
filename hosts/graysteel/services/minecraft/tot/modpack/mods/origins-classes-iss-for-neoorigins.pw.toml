@@ -1,6 +1,7 @@
 name = "Origins: Classes ISS for NeoOrigins"
 filename = "Origins-Classes-ISS-1.21.1-NeoOrigins-1.0.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

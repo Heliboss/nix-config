@@ -1,6 +1,7 @@
 name = "Atlas API"
 filename = "atlas_api-1.21.1-1.2.0.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

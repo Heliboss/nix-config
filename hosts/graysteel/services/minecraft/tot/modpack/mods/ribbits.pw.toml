@@ -1,6 +1,7 @@
 name = "Ribbits"
 filename = "Ribbits-1.21.1-NeoForge-4.1.6.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

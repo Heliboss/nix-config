@@ -1,6 +1,7 @@
 name = "Spice of Life: Carrot Edition"
 filename = "solcarrot-1.21.1-1.16.6.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

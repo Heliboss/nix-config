@@ -1,6 +1,7 @@
 name = "ModernFix"
 filename = "modernfix-neoforge-5.27.26+mc1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"

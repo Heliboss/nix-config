@@ -1,6 +1,7 @@
 name = "Little Big Redstone"
 filename = "little-big-redstone-1.9.12-1.21.1.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
