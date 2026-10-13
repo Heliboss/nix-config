@@ -779,9 +779,6 @@
         "MusicRichPresence": {
             "enabled": false
         },
-        "TenorGifSearch": {
-            "enabled": false
-        },
         "ContextMenuAPI": {
             "enabled": true
         },
@@ -790,6 +787,12 @@
         },
         "AddAttachments": {
             "enabled": false
+        },
+        "GifProviderSwitcher": {
+            "enabled": false
+        },
+        "FixDiscordCss": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -802,7 +805,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1791111213008
+        "settingsSyncVersion": 1791814783621
     },
     "uiElements": {
         "chatBarButtons": {},
