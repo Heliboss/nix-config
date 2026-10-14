@@ -4,6 +4,6 @@
 
   home.file = {
     ".config/jrnl/jrnl.yaml".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/jrnl/jrnl.yaml";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/jrnl/config/jrnl.yaml";
   };
 }

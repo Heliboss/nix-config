@@ -22,7 +22,7 @@
 
   home.file = {
     ".config/nvim".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/nvim";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/cli/neovim/config";
   };
 
   home.persistence."/persist" = {
