@@ -7,8 +7,8 @@
 
   home.file = {
     "Applications/synthesizer-v-studio-basic/start.sh".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/synthv/start.sh";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/synthv/config/start.sh";
     "Applications/synthesizer-v-studio-basic/zenity-fix.sh".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/synthv/zenity-fix.sh";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/synthv/config/zenity-fix.sh";
   };
 }
