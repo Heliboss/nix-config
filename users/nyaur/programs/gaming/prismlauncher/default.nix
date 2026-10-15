@@ -4,7 +4,7 @@
 
   home.file = {
     ".local/share/PrismLauncher/themes".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/prismlauncher/themes";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/prismlauncher/config/themes";
   };
 
   home.persistence."/persist" = {

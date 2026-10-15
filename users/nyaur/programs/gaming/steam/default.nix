@@ -2,9 +2,9 @@
 {
   home.file = {
     ".gs.sh".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/steam/gs.sh";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/steam/config/gs.sh";
     ".ex.sh".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/steam/ex.sh";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/gaming/steam/config/ex.sh";
   };
 
   home.persistence."/persist" = {
