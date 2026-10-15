@@ -12,7 +12,7 @@
 
   home.file = {
     ".config/foot/foot.ini".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/foot.ini";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/foot/config/foot.ini";
   };
 
   xdg.desktopEntries = {

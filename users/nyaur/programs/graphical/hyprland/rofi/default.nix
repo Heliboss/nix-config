@@ -7,7 +7,7 @@
 
   home.file = {
     ".config/rofi".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/rofi/rofi";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/rofi/config";
   };
 
   home.persistence."/persist" = {

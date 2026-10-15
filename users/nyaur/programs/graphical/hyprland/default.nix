@@ -13,15 +13,15 @@
     package = pkgs.hyprland;
     portalPackage = pkgs.xdg-desktop-portal-hyprland;
     extraConfig = ''
-      ${builtins.readFile ./hypr/hyprland.lua}
+      ${builtins.readFile ./config/hyprland.lua}
     '';
   };
 
   home.file = {
     ".config/hypr/conf".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/conf";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/config/conf";
     ".config/hypr/wallpaper".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/hypr/wallpaper";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/hyprland/config/wallpaper";
     ".config/hypr/stubs".source = "${pkgs.hyprland}/share/hypr/stubs";
   };
 
