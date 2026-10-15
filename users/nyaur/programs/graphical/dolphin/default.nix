@@ -20,8 +20,8 @@
 
   home.file = {
     ".config/kdeglobals".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/dolphin/kdeglobals";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/dolphin/config/kdeglobals";
     ".config/dolphinrc".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/dolphin/dolphinrc";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/dolphin/config/dolphinrc";
   };
 }

@@ -4,14 +4,14 @@
 
   home.file = {
     ".local/share/easyeffects/autoload".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/autoload";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/config/autoload";
     ".local/share/easyeffects/input".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/input";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/config/input";
     ".local/share/easyeffects/output".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/output";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/config/output";
     ".config/easyeffectsrc".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/easyeffectsrc";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/config/easyeffectsrc";
     ".config/easyeffects/db/graphrc".source =
-      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/graphrc";
+      config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/graphical/easyeffects/config/graphrc";
   };
 }
