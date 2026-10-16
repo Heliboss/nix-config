@@ -18,6 +18,7 @@ in
       level-seed = "-1276853157668539701";
       motd = "Avanti, barbari!";
       online-mode = false;
+      spawn-protection = 0;
     };
     symlinks = {
       "mods" = "${modpack}/mods";
