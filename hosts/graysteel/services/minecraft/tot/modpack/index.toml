@@ -224,6 +224,11 @@ hash = "8e6490a7dc88e48fdc4338bbb5368d6fe1dde28d9b6914e90f9d78664c1f566a"
 metafile = true
 
 [[files]]
+file = "mods/cosmetic-armor-reworked.pw.toml"
+hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
+metafile = true
+
+[[files]]
 file = "mods/crafting-station.pw.toml"
 hash = "7497882c5feef3d709e72e6f42bac96093ea9ae61a16553f7af338a97834a6a5"
 metafile = true
@@ -431,6 +436,11 @@ metafile = true
 [[files]]
 file = "mods/irons-lib.pw.toml"
 hash = "af7c4ec1f242a6994c5d889b96f9768fa17f852c22fd6307341827b22bbee42a"
+metafile = true
+
+[[files]]
+file = "mods/irons-spells-incantation.pw.toml"
+hash = "2330bc530261eef66a743cd3b70cf611d2e7cd8132ebb90b9360a6e04164357a"
 metafile = true
 
 [[files]]

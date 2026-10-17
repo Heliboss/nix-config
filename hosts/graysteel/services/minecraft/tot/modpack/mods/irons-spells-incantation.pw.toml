@@ -1,0 +1,13 @@
+name = "Iron's Spells: Incantation"
+filename = "incantation-0.10.6+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "71b8ff1e19218409be8b54b5d970c7d7f92bb776"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8837126
+project-id = 1549991
