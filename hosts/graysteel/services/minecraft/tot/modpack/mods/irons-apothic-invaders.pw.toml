@@ -1,6 +1,6 @@
 name = "Iron's Apothic Invaders"
 filename = "irons_apothic_invaders_1.0.0.jar"
-side = "server"
+side = "both"
 pin = true
 
 [download]
