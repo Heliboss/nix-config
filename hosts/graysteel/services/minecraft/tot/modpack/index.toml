@@ -443,6 +443,11 @@ hash = "07d5cd6d06c26a919e716fcbd66e3eeb1d2d1f418fc4e4320878336986faed04"
 metafile = true
 
 [[files]]
+file = "mods/iris-flywheel-compat.pw.toml"
+hash = "97f34470d491dcb5c91625dcc2b5f545ce3904315b12cababaa3591b2538d189"
+metafile = true
+
+[[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "25c1b1c3ab00ed1a3b00ccc24c88421aca29f7fdbbc53cefc3589a8553688923"
 metafile = true
