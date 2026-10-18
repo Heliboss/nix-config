@@ -99,6 +99,11 @@ hash = "72ec6540a2dfe200b24b260c7e2dcd3175e2c9fd3e8601b8769f784dc7d4dfcb"
 metafile = true
 
 [[files]]
+file = "mods/ars-nouveaus-flavors-delight.pw.toml"
+hash = "c083baf926ede8b29e7a91c7e09da9777ebbabd74200cb04e332d6e6c1d3ed92"
+metafile = true
+
+[[files]]
 file = "mods/ars_n_spells-3.3.7.jar"
 hash = "e0e3a4a46b3dd6446be6b292401433b43846ad5bc5ca24b0b32b3d5c71886c63"
 
@@ -130,6 +135,11 @@ metafile = true
 [[files]]
 file = "mods/aureljs-paintings.pw.toml"
 hash = "d222c73ef6657f8ef34c836e7eccc1c865c6ddb2bc769aa91219702ece50bba4"
+metafile = true
+
+[[files]]
+file = "mods/autochefs-delight.pw.toml"
+hash = "214b217fa999a43ce4354b2b47db0fec61d986225cef7bd185c995da3b81c515"
 metafile = true
 
 [[files]]
@@ -313,6 +323,11 @@ hash = "067aa030a5d51b5ed15f0844e301741dec9850b897e63e609d9f9e007a1df3fa"
 metafile = true
 
 [[files]]
+file = "mods/ends-delight.pw.toml"
+hash = "699e82e10c3534c64a9a2c7b1d388b99b210d8c5006b75272bbe9168e588de27"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "7e9f55c3c0394c55ed917548dc3191ec6d805b2fe33754dfc45584bb8fc80889"
 metafile = true
@@ -350,6 +365,11 @@ metafile = true
 [[files]]
 file = "mods/fancy-tab-sections.pw.toml"
 hash = "29081698b4bd31b2fada0d136267e96849a18c4edf687c5f82ba662359e7f608"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "424fb7b36769a5d2b961430799401dd167db7b1f0bd56dc1e79940000105a8ff"
 metafile = true
 
 [[files]]
@@ -673,6 +693,11 @@ hash = "909d5586dc45498fd2c357c5e18901df695a41ba6d90fd89772c981217046d44"
 metafile = true
 
 [[files]]
+file = "mods/oceans-delight.pw.toml"
+hash = "362f5c0647ca753192dcbaddcd361b9c73780298a1f7931151291dac981cc0f1"
+metafile = true
+
+[[files]]
 file = "mods/offlinewhitelist.pw.toml"
 hash = "74af164222fea7433ae8a540c8005342a68a7347b6ec8b580f13748163982ef4"
 metafile = true
@@ -985,6 +1010,11 @@ metafile = true
 [[files]]
 file = "mods/trimmed.pw.toml"
 hash = "272c87ea74272ab37fd2dd6ffbd93f0eaf7f7a2b730f262bcebe2bedd37763bf"
+metafile = true
+
+[[files]]
+file = "mods/twilights-flavors-delight.pw.toml"
+hash = "a371d14c32fa4dd6f1936b3a35e192d69942d818c84638e2d7ab6360ddf648ff"
 metafile = true
 
 [[files]]

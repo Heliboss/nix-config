@@ -1,0 +1,14 @@
+name = "Twilight's Flavors & Delight"
+filename = "twilightdelight-3.2.7.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "6d99e7797b118fc40e35747821e5c62c9d98ff54"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9239940
+project-id = 871735
