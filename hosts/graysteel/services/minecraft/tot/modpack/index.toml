@@ -299,11 +299,6 @@ hash = "d3b0159bc601bec6db25b1bee93bcb3848365a4692f7415aba746f582220d623"
 metafile = true
 
 [[files]]
-file = "mods/distant-horizons.pw.toml"
-hash = "bdbc9dd25fa39dd77a2079b23608e0859dfe153bd636b38621e143606c573a8a"
-metafile = true
-
-[[files]]
 file = "mods/enderscape.pw.toml"
 hash = "067aa030a5d51b5ed15f0844e301741dec9850b897e63e609d9f9e007a1df3fa"
 metafile = true
