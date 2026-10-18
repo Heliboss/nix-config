@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/supplementaries-common.toml"
+hash = "ff8362467d64d9749bc8fb8416b41de29ae0fa49ba1d9d820efd92396328fd42"
+
+[[files]]
 file = "mods/accelerated-decay.pw.toml"
 hash = "433160eeb5db3ab39c1a7d06a9c84f622d5d4c1a965f200990be28a95130bec2"
 metafile = true
@@ -234,6 +238,11 @@ hash = "7497882c5feef3d709e72e6f42bac96093ea9ae61a16553f7af338a97834a6a5"
 metafile = true
 
 [[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "88b0cba2980ed5d38885aa1fab006405161c41cc8bd699ce2bce2d8819fbe076"
+metafile = true
+
+[[files]]
 file = "mods/crash-assistant.pw.toml"
 hash = "2343daf2ffc4cfe832e18d51cf8de4879689e5557e9c399de9376e66ec1235ae"
 metafile = true
@@ -440,7 +449,7 @@ metafile = true
 
 [[files]]
 file = "mods/irons-apothic-invaders.pw.toml"
-hash = "1e7c0786004e056835f3d09b0334ea8f191d9fc817ff13966fdc41c7521379ad"
+hash = "94bf7536dc35d6f105b588e8724a5e86458124090f3fae7c9171ee52f7006c29"
 metafile = true
 
 [[files]]
@@ -549,6 +558,11 @@ hash = "12cfa1451e36ab838efd97653b924428ff3ad87f0a95f902a09cd514b343d29f"
 metafile = true
 
 [[files]]
+file = "mods/lighty.pw.toml"
+hash = "4a3fc640aa95fded93f48be7bd6b98808d8bd4905944fba120fb6cf07dcc3df6"
+metafile = true
+
+[[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "4064daf8057148da74c0983e64589b06c6d6af2d8c353fa301f9ef49b7c23fa8"
 metafile = true
@@ -591,6 +605,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "ca81ba32d3ac19389ba897f757d4ccf58b76a2a54a2dab71b57ed788c914ae6f"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "4bbfdb6dedb83016d425913a324dfd79234e8c6308caaea7d1354f3115e23d24"
 metafile = true
 
 [[files]]
@@ -650,7 +669,7 @@ metafile = true
 
 [[files]]
 file = "mods/offlinewhitelist.pw.toml"
-hash = "73437bcde12fef1a2b5f0636bb5981af7f93d72292ccc0231e4f526dc94d2db8"
+hash = "74af164222fea7433ae8a540c8005342a68a7347b6ec8b580f13748163982ef4"
 metafile = true
 
 [[files]]
@@ -866,6 +885,11 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "2f57b62c556e06e53c5bc6ffdc76d2a9e27509fde891450adb76cf211abec4d4"
+metafile = true
+
+[[files]]
+file = "mods/skin-layers-3d.pw.toml"
+hash = "ae4bcc49f7832ec2d0bfeb8553f70496fd5e894714746a6e8ee60b546ed25026"
 metafile = true
 
 [[files]]
