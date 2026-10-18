@@ -659,7 +659,7 @@ metafile = true
 
 [[files]]
 file = "mods/neoorigins.pw.toml"
-hash = "032b871ad508838a560c4b44a7867421e8d3c65e9635cb9319e10b2d2ce72abf"
+hash = "d4f15ab586a92b60658ebdc099fbcfdcd8f5ff5b87fc48be86b2c13e5101a017"
 metafile = true
 
 [[files]]

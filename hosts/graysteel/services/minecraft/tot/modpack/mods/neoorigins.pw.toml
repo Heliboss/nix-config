@@ -1,9 +1,8 @@
 name = "NeoOrigins"
-filename = "neoorigins-2.2.29+1.21.1.jar"
+filename = "neoorigins-2.2.30+1.21.1.jar"
 side = "both"
-pin = true
 
 [download]
-url = "https://github.com/CyberDay1/NeoOrigins/releases/download/v2.2.29/neoorigins-2.2.29+1.21.1.jar"
+url = "https://github.com/CyberDay1/NeoOrigins/releases/download/v2.2.30/neoorigins-2.2.30+1.21.1.jar"
 hash-format = "sha256"
-hash = "380dbee9ad8d906e54c12ed5c2d6682688c853dfe2713af54eafc2ceca89df4a"
+hash = "ce73256fa4ed6f188cbbd9df0ec374895a5c60ede4c91557526efacbbf574876"
