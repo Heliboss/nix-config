@@ -225,7 +225,7 @@ metafile = true
 
 [[files]]
 file = "mods/cosmetic-armor-reworked.pw.toml"
-hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
+hash = "38a9a68eea487f8758eba889cdb39b9da71f1ad623d899ce922db52f94f61049"
 metafile = true
 
 [[files]]
@@ -259,6 +259,11 @@ hash = "7a218bce09878e19e9cd35173f52d77e101742429293926407eaa4e3adff4c55"
 metafile = true
 
 [[files]]
+file = "mods/create-estrogen.pw.toml"
+hash = "b10e26341208fc63dc94a14997bcf82bd9c73905d42ca122521f5b4a0c166db3"
+metafile = true
+
+[[files]]
 file = "mods/create-schematicchecker.pw.toml"
 hash = "b8421074985c335c0dbfb698df2fd0b8bfdc50ca89425b96d7d7c09f28380af5"
 metafile = true
@@ -289,6 +294,11 @@ hash = "15b07dc26737adac8db691d1bf6f268ef8dd5c5f708ca4ed08b63a2d98121daa"
 metafile = true
 
 [[files]]
+file = "mods/cynosure.pw.toml"
+hash = "d3b0159bc601bec6db25b1bee93bcb3848365a4692f7415aba746f582220d623"
+metafile = true
+
+[[files]]
 file = "mods/enderscape.pw.toml"
 hash = "067aa030a5d51b5ed15f0844e301741dec9850b897e63e609d9f9e007a1df3fa"
 metafile = true
@@ -306,6 +316,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "b34c7d9a3c51520991b5cc91eb3ddb707a6d73fd76c0c2602f50fc114ab2d936"
+metafile = true
+
+[[files]]
+file = "mods/estrogen.pw.toml"
+hash = "a55770c6581c89aeba2428f159bec46f1a86d3f33fb16302665841fead0e6fa9"
 metafile = true
 
 [[files]]
@@ -405,7 +420,7 @@ metafile = true
 
 [[files]]
 file = "mods/im-fast.pw.toml"
-hash = "6c9b73eaf6e794e43d7fd60519c42eb3fd15b9198c76139fc2647ea354d94b3f"
+hash = "8da12f4684ff4bfde31d9770158031cf4fd372725778ba149808d0d1a7d619b2"
 metafile = true
 
 [[files]]
@@ -421,6 +436,11 @@ metafile = true
 [[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "25c1b1c3ab00ed1a3b00ccc24c88421aca29f7fdbbc53cefc3589a8553688923"
+metafile = true
+
+[[files]]
+file = "mods/irons-apothic-invaders.pw.toml"
+hash = "1e7c0786004e056835f3d09b0334ea8f191d9fc817ff13966fdc41c7521379ad"
 metafile = true
 
 [[files]]
@@ -440,7 +460,7 @@ metafile = true
 
 [[files]]
 file = "mods/irons-spells-incantation.pw.toml"
-hash = "2330bc530261eef66a743cd3b70cf611d2e7cd8132ebb90b9360a6e04164357a"
+hash = "b245ea4df20235216d795464afd5f98ac3dabc860148b963ccbc24d4f6fc3bf9"
 metafile = true
 
 [[files]]

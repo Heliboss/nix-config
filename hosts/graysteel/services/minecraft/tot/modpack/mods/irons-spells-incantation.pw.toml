@@ -1,6 +1,7 @@
 name = "Iron's Spells: Incantation"
 filename = "incantation-0.10.6+1.21.1-neoforge.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
