@@ -158,6 +158,11 @@ hash = "0bd6cbc31880bd9a8d1e6e9a2c2ef9836751c83517f6454e647eb8ab84c09f76"
 metafile = true
 
 [[files]]
+file = "mods/boat-item-view-forge.pw.toml"
+hash = "a1e80a894a16732e98b8f53d04dc76fcbce33470f174d5d53afbd03b0bdcdad7"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "ddbb2e6c9a6b1548db3e7dd5248d9e1d41a10bb342af79bae05c197412178de6"
 metafile = true
@@ -300,6 +305,11 @@ metafile = true
 [[files]]
 file = "mods/creeper-overhaul.pw.toml"
 hash = "69860d00c6d390851b1578a3b28dcc858f719b2078e9d355291e3d5881b6489e"
+metafile = true
+
+[[files]]
+file = "mods/ctm.pw.toml"
+hash = "1705e32b4d31fd61ed2b8f7dc612ef9c111ffcea8e8c9c356f7de4dae3df073e"
 metafile = true
 
 [[files]]
@@ -1061,3 +1071,7 @@ metafile = true
 file = "mods/yungs-api-neoforge.pw.toml"
 hash = "b6e021a974789e62e05e1a6abb692c1cf875dea68eb69f4e880f9ea190233fd2"
 metafile = true
+
+[[files]]
+file = "resourcepacks/Statech Emissive Ores 2.2.zip"
+hash = "dec3ca2016b36e195d15db56f079723123af67394ec4aa326bf516b9226d10da"
