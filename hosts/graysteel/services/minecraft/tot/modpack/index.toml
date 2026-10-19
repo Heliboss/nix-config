@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/MouseTweaks.cfg"
+hash = "adc06ca99bdc9ecb6181f28dc38199e2bbc2d1907bf095de41a0e7e2842c98ea"
+
+[[files]]
 file = "config/supplementaries-common.toml"
 hash = "ff8362467d64d9749bc8fb8416b41de29ae0fa49ba1d9d820efd92396328fd42"
 
@@ -1075,3 +1079,7 @@ metafile = true
 [[files]]
 file = "resourcepacks/Statech Emissive Ores 2.2.zip"
 hash = "dec3ca2016b36e195d15db56f079723123af67394ec4aa326bf516b9226d10da"
+
+[[files]]
+file = "shaderpacks/Invariance-0.1.0.zip"
+hash = "56661f3c3ecbe36bf93d85f6cb7d0c766a02d039c307f57b5e99ab0f78da3b69"
