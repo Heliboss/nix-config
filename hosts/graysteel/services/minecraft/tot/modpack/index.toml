@@ -212,6 +212,11 @@ hash = "59d344bebecd1a727c04e576bd463cce9b52d8764e5a16a72afa78e15230036e"
 metafile = true
 
 [[files]]
+file = "mods/chat-heads.pw.toml"
+hash = "a21c95500d5eccc92ee1a5828079c63e468698e951c7d319849100f14ae2e225"
+metafile = true
+
+[[files]]
 file = "mods/cherished-worlds.pw.toml"
 hash = "1e725fb1ce8c1317f9d8712d5586d7de9bbc05098c25da89caf0606cb7571d82"
 metafile = true
@@ -239,6 +244,11 @@ metafile = true
 [[files]]
 file = "mods/colorful-hearts.pw.toml"
 hash = "40435cec06899f28f3490c0e33efaefa1f9895f41809272ade79b08d0e569cd6"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "1b73d3bf836839d1bdff8f6ee64fea9479fdf5e561832c87261fbc88e9254672"
 metafile = true
 
 [[files]]
@@ -902,6 +912,11 @@ hash = "b8d740be558d35f1b2ac4dc38f2fd08c0ece571e1ff3cf38f60725a3b4ba8489"
 metafile = true
 
 [[files]]
+file = "mods/searchables.pw.toml"
+hash = "7471eb16f136122aa6bc9d73598d59f3676136cded21b7778fa35f0618c9fe53"
+metafile = true
+
+[[files]]
 file = "mods/selene.pw.toml"
 hash = "674b50d4ca1b55405d65f36c327ecd54b119fa4575e6f60bd6a275e70a195c5c"
 metafile = true
@@ -944,6 +959,11 @@ metafile = true
 [[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "4b8d106ef84760b198c133dc56c37898eb196e14c7a229195c71326b2a4967a1"
+metafile = true
+
+[[files]]
+file = "mods/sodium-shadowy-path-blocks.pw.toml"
+hash = "42ce15f0e0c044d9799e72e3a01426d69495333ee37311934f9920a2e0c30e16"
 metafile = true
 
 [[files]]
@@ -1082,4 +1102,4 @@ hash = "dec3ca2016b36e195d15db56f079723123af67394ec4aa326bf516b9226d10da"
 
 [[files]]
 file = "shaderpacks/Invariance-0.1.0.zip"
-hash = "56661f3c3ecbe36bf93d85f6cb7d0c766a02d039c307f57b5e99ab0f78da3b69"
+hash = "6a3171cf87eb5752cefbf24946ce73fea2568131afaf9fb6fc7f53dfed497cf1"
