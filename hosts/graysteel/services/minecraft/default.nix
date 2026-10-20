@@ -2,7 +2,7 @@
 {
   imports = [
     inputs.nix-minecraft.nixosModules.minecraft-servers
-    ./tot
+    ./servers/tot
   ];
   nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
 
