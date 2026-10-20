@@ -5,6 +5,7 @@
     ./programs/cli/nh.nix
     ./programs/cli/neovim
     ./programs/cli/git.nix
+    ./programs/cli/yazi
     ./programs/cli/tmux.nix
     ./programs/cli/bash.nix
   ];
