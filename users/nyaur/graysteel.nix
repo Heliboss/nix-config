@@ -7,6 +7,7 @@
     ./programs/cli/git.nix
     ./programs/cli/yazi
     ./programs/cli/tmux.nix
+    ./programs/cli/bash.nix
   ];
 
   home.persistence."/persist".enable = false;
