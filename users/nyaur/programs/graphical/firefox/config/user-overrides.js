@@ -19,3 +19,6 @@ user_pref("browser.ai.control.smartTabGroups", false);
 user_pref("browser.ai.control.smartWindow", false);
 user_pref("browser.ai.control.speechRecognition", false);
 user_pref("browser.ai.control.translations", false);
+user_pref("browser.search.separatePrivateDefault", false);
+user_pref("browser.search.separatePrivateDefault.ui.enabled", false);
+user_pref("browser.urlbar.suggest.engines", false);
