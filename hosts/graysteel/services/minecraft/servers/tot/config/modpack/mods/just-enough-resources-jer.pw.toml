@@ -1,6 +1,6 @@
 name = "Just Enough Resources (JER)"
 filename = "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
-side = "client"
+side = "both"
 pin = true
 
 [download]
