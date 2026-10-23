@@ -327,6 +327,11 @@ hash = "1705e32b4d31fd61ed2b8f7dc612ef9c111ffcea8e8c9c356f7de4dae3df073e"
 metafile = true
 
 [[files]]
+file = "mods/cupboard.pw.toml"
+hash = "0b9cc1a9bf23329a81c1101fee83be99d4f3eef8cfa98d6bc72405a7107a92c0"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "48bdcf0ab456ddb4aee721dce46717e6011f0576631c608bb1c6a13f215dca98"
 metafile = true
@@ -397,6 +402,11 @@ hash = "424fb7b36769a5d2b961430799401dd167db7b1f0bd56dc1e79940000105a8ff"
 metafile = true
 
 [[files]]
+file = "mods/fast-async-world-save-forge-fabric.pw.toml"
+hash = "915c6e839b969b41365a9962e07b5f923c1109810a1f1ab353c81d422c331416"
+metafile = true
+
+[[files]]
 file = "mods/fast-paintings.pw.toml"
 hash = "4ffec0014b429b952edc88307f9b404983633a0dffd9af5d729c6b27d11aa7bb"
 metafile = true
@@ -419,6 +429,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "f9527dc5db20e8e5961db0df948499981cd2c63262d6b01ea8d14c555672a86f"
+metafile = true
+
+[[files]]
+file = "mods/fix-gpu-memory-leak.pw.toml"
+hash = "6c7f81a24cacc33596fea102d169772ed63807fe9038489dc43c9b275401e0a3"
 metafile = true
 
 [[files]]
@@ -614,6 +629,11 @@ metafile = true
 [[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "4064daf8057148da74c0983e64589b06c6d6af2d8c353fa301f9ef49b7c23fa8"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "3f566dce270918c5e159e936f93596b348a3223ef02c4f78915e98994f3438ca"
 metafile = true
 
 [[files]]
@@ -957,6 +977,11 @@ hash = "a3fbc18a6e10a413d45fae0d0049f89fff34948e7c1768855c1b62d9839d122a"
 metafile = true
 
 [[files]]
+file = "mods/smooth-chunk-save.pw.toml"
+hash = "348470a5f60b7ab8a413ed5b9ce3d681a41d77e55b4adbcb388a882b69a1291d"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "4b8d106ef84760b198c133dc56c37898eb196e14c7a229195c71326b2a4967a1"
 metafile = true
@@ -1084,6 +1109,11 @@ metafile = true
 [[files]]
 file = "mods/yacl.pw.toml"
 hash = "cd4ea4fa0a39d88a2ab563624cc6dd722d5810e33c192aa4f503bc626c0c817a"
+metafile = true
+
+[[files]]
+file = "mods/yeetusexperimentus.pw.toml"
+hash = "9b8836d4a7e5488775c36d76e5378120a63a1329f2a11fd55c3ae8a94b00661f"
 metafile = true
 
 [[files]]
