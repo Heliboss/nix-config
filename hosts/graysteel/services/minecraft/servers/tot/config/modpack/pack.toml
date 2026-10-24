@@ -1,12 +1,12 @@
 name = "Thread of Time"
 author = "heliboss"
-version = "0.4.4"
+version = "0.4.5"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "20204a024a6f36ba6f6a371a6415e794a34ac0fb4758c60cba36fc0021c57719"
+hash = "0a856f83eb474af5f53a83083da550caf376d07e592a8e733c82c62fbd5a054c"
 
 [versions]
 minecraft = "1.21.1"

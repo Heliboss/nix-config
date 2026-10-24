@@ -222,6 +222,11 @@ hash = "1e725fb1ce8c1317f9d8712d5586d7de9bbc05098c25da89caf0606cb7571d82"
 metafile = true
 
 [[files]]
+file = "mods/chunk-sending-forge-fabric.pw.toml"
+hash = "5324a274e4cfa6328e38b786f74fba9608640d7543c5f221d35fa75939af3aa2"
+metafile = true
+
+[[files]]
 file = "mods/chunky-pregenerator-forge.pw.toml"
 hash = "a086acfebb1d70107eff459797746c6e4fa7afe293f56b02ce7563b2ce3150ae"
 metafile = true
@@ -244,6 +249,11 @@ metafile = true
 [[files]]
 file = "mods/colorful-hearts.pw.toml"
 hash = "40435cec06899f28f3490c0e33efaefa1f9895f41809272ade79b08d0e569cd6"
+metafile = true
+
+[[files]]
+file = "mods/connectivity.pw.toml"
+hash = "89340330d49ebf646a46af0da4cd457c98e0dca4337490981421d86bfcd2fd94"
 metafile = true
 
 [[files]]
