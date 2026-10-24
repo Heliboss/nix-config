@@ -98,6 +98,11 @@ hash = "07a10a123f56fd38ceed39cad19adeb3e04ad432add317c53e7b123100974599"
 metafile = true
 
 [[files]]
+file = "mods/ars-elemental.pw.toml"
+hash = "8e9f867e9c0ff53e08e779ae54fd1bbead92f1d7323b75369e64ade719d5d7c1"
+metafile = true
+
+[[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "72ec6540a2dfe200b24b260c7e2dcd3175e2c9fd3e8601b8769f784dc7d4dfcb"
 metafile = true
@@ -457,6 +462,11 @@ hash = "617525f1f2ff52a81ae54a107f39a53279d78c97fc54d50f01b04946cb5841d1"
 metafile = true
 
 [[files]]
+file = "mods/gateways-to-eternity.pw.toml"
+hash = "a918d214c27222c510f6526721a1c41b0111221ac348c7d20b2a28d4691dfdd4"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "34850332542cfade86618b33823c091579c89848d9ab4b306e1a47c8bb87c5f8"
 metafile = true
@@ -734,6 +744,16 @@ metafile = true
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "44a38a9452e61f30ba6633a10c5b66b9f374908609bb5d7b53a8c0473b394b72"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-glyphs.pw.toml"
+hash = "b64cdb46d272fea0415478942b9efb97404070efe308866d6111114e413be806"
+metafile = true
+
+[[files]]
+file = "mods/notenoughrecipebook.pw.toml"
+hash = "02c4f941c76c49cbaeb17e549dc0e37562ff5cbd6ca51fec9d8da3bb73538507"
 metafile = true
 
 [[files]]
