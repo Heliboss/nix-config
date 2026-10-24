@@ -2,8 +2,8 @@
 let
   modpack = (
     pkgs.fetchPackwizModpack {
-      src = ./config/modpack;
-      packHash = "sha256-lGSrabtg9Ek1QCt4IZZveV0tyxI3lL91jcxv0NzhSjA=";
+      src = ./modpack;
+      packHash = "sha256-ZqJCqlfBHpTj/idGpZQwxwt5WGOyWdgGq3lUi/wNv1o=";
     }
   );
 in
