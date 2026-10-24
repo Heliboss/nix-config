@@ -347,11 +347,6 @@ hash = "d3b0159bc601bec6db25b1bee93bcb3848365a4692f7415aba746f582220d623"
 metafile = true
 
 [[files]]
-file = "mods/enderscape.pw.toml"
-hash = "067aa030a5d51b5ed15f0844e301741dec9850b897e63e609d9f9e007a1df3fa"
-metafile = true
-
-[[files]]
 file = "mods/ends-delight.pw.toml"
 hash = "699e82e10c3534c64a9a2c7b1d388b99b210d8c5006b75272bbe9168e588de27"
 metafile = true
@@ -1064,11 +1059,6 @@ metafile = true
 [[files]]
 file = "mods/trade-cycling.pw.toml"
 hash = "260347548b3419fe2bc7b2deea8fc865930118e43ecb9694edb2bc1d8d9a4fa4"
-metafile = true
-
-[[files]]
-file = "mods/trimmed.pw.toml"
-hash = "272c87ea74272ab37fd2dd6ffbd93f0eaf7f7a2b730f262bcebe2bedd37763bf"
 metafile = true
 
 [[files]]
