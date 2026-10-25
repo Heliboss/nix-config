@@ -5,6 +5,10 @@ file = "config/MouseTweaks.cfg"
 hash = "adc06ca99bdc9ecb6181f28dc38199e2bbc2d1907bf095de41a0e7e2842c98ea"
 
 [[files]]
+file = "config/ars_elemental-common.toml"
+hash = "86d1ff2d41b4656e3a8bc410b39251d58c6f14d6c27a25daee2de8ab7d4bcc89"
+
+[[files]]
 file = "config/supplementaries-common.toml"
 hash = "ff8362467d64d9749bc8fb8416b41de29ae0fa49ba1d9d820efd92396328fd42"
 
@@ -99,7 +103,7 @@ metafile = true
 
 [[files]]
 file = "mods/ars-elemental.pw.toml"
-hash = "8e9f867e9c0ff53e08e779ae54fd1bbead92f1d7323b75369e64ade719d5d7c1"
+hash = "a7bf2209eecfa4703952274e1a914389f6c928cdf6509e3c1ff07a600a1aa0e8"
 metafile = true
 
 [[files]]
@@ -463,7 +467,7 @@ metafile = true
 
 [[files]]
 file = "mods/gateways-to-eternity.pw.toml"
-hash = "a918d214c27222c510f6526721a1c41b0111221ac348c7d20b2a28d4691dfdd4"
+hash = "e028fd6fc9f8a897d6fc75d8d258412e788940f0e603d79e62654172f0f1bd8a"
 metafile = true
 
 [[files]]
@@ -748,12 +752,12 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-glyphs.pw.toml"
-hash = "b64cdb46d272fea0415478942b9efb97404070efe308866d6111114e413be806"
+hash = "d67625daed194352f82ddb20d4698830deaa9f8ce734f6cc0276841ce7bb9d93"
 metafile = true
 
 [[files]]
 file = "mods/notenoughrecipebook.pw.toml"
-hash = "02c4f941c76c49cbaeb17e549dc0e37562ff5cbd6ca51fec9d8da3bb73538507"
+hash = "8c0c9863fd585b734d93c0552e026cd56d5297aadb92c7ed0da20ace97ef78f1"
 metafile = true
 
 [[files]]
