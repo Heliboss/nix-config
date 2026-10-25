@@ -523,9 +523,9 @@
         "ShikiCodeblocks": {
             "enabled": false,
             "theme": "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/2d87559c7601a928b9f7e0f0dda243d2fb6d4499/packages/tm-themes/themes/dark-plus.json",
-            "tryHljs": "SECONDARY",
             "useDevIcon": "GREYSCALE",
-            "bgOpacity": 100
+            "bgOpacity": 100,
+            "tryDiscordHighlighter": "SECONDARY"
         },
         "ShowAllMessageButtons": {
             "enabled": false
@@ -805,7 +805,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1791814783621
+        "settingsSyncVersion": 1792947476945
     },
     "uiElements": {
         "chatBarButtons": {},
