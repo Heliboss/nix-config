@@ -1,6 +1,7 @@
 name = "Not Enough Recipe Book [NERB]"
 filename = "Not Enough Recipe Book-NEOFORGE-0.4.3+1.21.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
