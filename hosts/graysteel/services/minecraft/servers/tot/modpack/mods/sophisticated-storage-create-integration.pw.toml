@@ -1,6 +1,7 @@
 name = "Sophisticated Storage Create Integration"
 filename = "sophisticatedstoragecreateintegration-1.21.1-0.1.22.238.jar"
 side = "both"
+pin = true
 
 [download]
 hash-format = "sha1"
