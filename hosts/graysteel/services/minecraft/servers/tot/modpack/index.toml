@@ -967,7 +967,7 @@ metafile = true
 
 [[files]]
 file = "mods/seasonhud.pw.toml"
-hash = "5df2bb08b37b6465e117a01859bf32ba4227a35a118b3553c85702cc7fe75a54"
+hash = "17b6190f28b50069ad025fd7906c95e9cb90c276b241cb53ecb8e596dae7b50d"
 metafile = true
 
 [[files]]
@@ -1031,6 +1031,11 @@ hash = "691cb7584e21951c5c7594cf23d4fb1e1f3d07c1ca149e80a1aaa76c3c89dc75"
 metafile = true
 
 [[files]]
+file = "mods/sophisticated-backpacks-create-integration.pw.toml"
+hash = "3b2d1e198c392387752bba24bc4317f8381b89736a8323d960aa3ce41112e7ed"
+metafile = true
+
+[[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
 hash = "da74bf070e7e8d1243c8966adbb9d1df7a53c32bf3f234734172ff2388aed67c"
 metafile = true
@@ -1038,6 +1043,16 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "fcfa5063d0dbd0fb6d0b3777cc39a5ba25d12baee975bf69750b4a547322efa3"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage-create-integration.pw.toml"
+hash = "8b2f7c6bba9773a986e7d253054db3838cf07408a6b1709452ae29ee19b453bd"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage-in-motion.pw.toml"
+hash = "e0af1efd6c7bb393f7df4ff7073a6fb254a29e11e3cae07c284e137f17eb1e4a"
 metafile = true
 
 [[files]]
