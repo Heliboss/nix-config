@@ -287,7 +287,7 @@ metafile = true
 
 [[files]]
 file = "mods/crafting-tweaks.pw.toml"
-hash = "88b0cba2980ed5d38885aa1fab006405161c41cc8bd699ce2bce2d8819fbe076"
+hash = "5b923ada607320f847840bf8fba97ea82f6483d28d4e79c189ce5c76d0d892d0"
 metafile = true
 
 [[files]]
@@ -963,6 +963,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "7471eb16f136122aa6bc9d73598d59f3676136cded21b7778fa35f0618c9fe53"
+metafile = true
+
+[[files]]
+file = "mods/seasonhud.pw.toml"
+hash = "5df2bb08b37b6465e117a01859bf32ba4227a35a118b3553c85702cc7fe75a54"
 metafile = true
 
 [[files]]
