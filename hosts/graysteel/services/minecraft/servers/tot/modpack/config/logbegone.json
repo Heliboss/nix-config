@@ -1,0 +1,20 @@
+{
+  "logbegone": {
+    "phrases": [
+      "########## GL ERROR ##########",
+      "@ Pre render",
+      "@ Render",
+      "65539: Invalid key -1",
+      "OpenGL debug message",
+      "Encountered unknown or non-serializable data attachment"
+    ],
+    "regex": [
+      "########## GL ERROR ##########",
+      "@ Pre render",
+      "@ Render",
+      "65539: Invalid key -1",
+      "OpenGL debug message",
+      "Encountered unknown or non-serializable data attachment"
+    ]
+  }
+}

@@ -9,6 +9,10 @@ file = "config/ars_elemental-common.toml"
 hash = "86d1ff2d41b4656e3a8bc410b39251d58c6f14d6c27a25daee2de8ab7d4bcc89"
 
 [[files]]
+file = "config/logbegone.json"
+hash = "fe003fc49ee755ae96051292526dd8721797bf99adb3e8c9c80b67f42ffbfaa5"
+
+[[files]]
 file = "config/supplementaries-common.toml"
 hash = "ff8362467d64d9749bc8fb8416b41de29ae0fa49ba1d9d820efd92396328fd42"
 
@@ -426,6 +430,11 @@ hash = "4ffec0014b429b952edc88307f9b404983633a0dffd9af5d729c6b27d11aa7bb"
 metafile = true
 
 [[files]]
+file = "mods/fastboot.pw.toml"
+hash = "b4a839418ff2d069444a321570a903f59a4cc03102223a16bfd0d2128dac45d8"
+metafile = true
+
+[[files]]
 file = "mods/fastfurnace.pw.toml"
 hash = "55bfaa5e2867eecf5f3f83161892c37c1d7852e0d3e58277a836c22a0f2bf5af"
 metafile = true
@@ -668,6 +677,11 @@ metafile = true
 [[files]]
 file = "mods/lmft.pw.toml"
 hash = "e645ccc30f96434d82bdf52aefed13a4e6ff29c0627dd77d83b1fce3f6f7b7f6"
+metafile = true
+
+[[files]]
+file = "mods/log-begone.pw.toml"
+hash = "77068a30c63bab7bd44433f8798f343b34513798b1d5f4691ea707bbfc0495f1"
 metafile = true
 
 [[files]]
