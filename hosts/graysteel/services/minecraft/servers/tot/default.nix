@@ -3,7 +3,7 @@ let
   modpack = (
     pkgs.fetchPackwizModpack {
       src = ./modpack;
-      packHash = "sha256-TWEdfq1Vg9KzV/k04Doz7esACYo7WojdzbwQbWUu4L8=";
+      packHash = "sha256-E46WvV8VqSuPvNX3T8HI70PD6kLuxXHXH21JbZFp24g=";
     }
   );
 in
