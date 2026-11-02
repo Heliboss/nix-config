@@ -265,6 +265,11 @@ hash = "40435cec06899f28f3490c0e33efaefa1f9895f41809272ade79b08d0e569cd6"
 metafile = true
 
 [[files]]
+file = "mods/configurable.pw.toml"
+hash = "dae3f20ac523cfe73919c1324361cd4db4b23710955501642e82c7ebc6bf031e"
+metafile = true
+
+[[files]]
 file = "mods/connectivity.pw.toml"
 hash = "89340330d49ebf646a46af0da4cd457c98e0dca4337490981421d86bfcd2fd94"
 metafile = true
@@ -737,6 +742,11 @@ metafile = true
 [[files]]
 file = "mods/neoorigins.pw.toml"
 hash = "d4f15ab586a92b60658ebdc099fbcfdcd8f5ff5b87fc48be86b2c13e5101a017"
+metafile = true
+
+[[files]]
+file = "mods/neruina.pw.toml"
+hash = "51360e67ae74324aad07a37810cb6dcca5561fdf17e9d2bfe069f07edec1b3be"
 metafile = true
 
 [[files]]
