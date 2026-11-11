@@ -13,7 +13,6 @@
   fileSystems."/persist".neededForBoot = true;
 
   boot.initrd.systemd = {
-    enable = true;
     services.impermanence = {
       description = "Move root subvolume to /dev/root/mapper/old_roots on boot and delete after 30d";
       unitConfig.DefaultDependencies = false;
