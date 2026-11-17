@@ -290,6 +290,24 @@ hl.window_rule {
   float = true,
   size = { 982, 562 },
 }
+hl.window_rule {
+  name = 'tkinter',
+  match = {
+    class = 'Tk',
+  },
+  float = true,
+  center = true,
+  rounding = 0,
+}
+hl.window_rule {
+  name = 'lovr',
+  match = {
+    class = 'LÖVR',
+  },
+  fullscreen = true,
+  center = true,
+  rounding = 0,
+}
 -- waybar stuff
 hl.window_rule {
   name = 'gsimplecal',
