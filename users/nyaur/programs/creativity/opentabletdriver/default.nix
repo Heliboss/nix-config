@@ -5,4 +5,8 @@
     ".config/OpenTabletDriver/Plugins".source =
       config.lib.file.mkOutOfStoreSymlink "${config.home.sessionVariables.FLAKE}/users/nyaur/programs/creativity/opentabletdriver/config/Plugins";
   };
+
+  home.persistence."/persist" = {
+    directories = [ ".config/OpenTabletDriver/settings.json" ];
+  };
 }
