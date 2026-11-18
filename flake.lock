@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1792526520,
-        "narHash": "sha256-3hSJlv8mUVnZPMWK2+CM7a9O+nR6Z4mCh27NfLCmTPc=",
+        "lastModified": 1794328522,
+        "narHash": "sha256-h2BYMW4nTFpIqnMd8gwAPFmJAp/1wWLQ6vT0NfL5qt4=",
         "owner": "nix-community",
         "repo": "disko",
-        "rev": "cedd626e11b635470fa6f9fdb8ad79b0075dd7f9",
+        "rev": "1dd30c29c88d99ce295f15e27f93c49bc5fbae07",
         "type": "github"
       },
       "original": {
@@ -61,11 +61,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1794278858,
-        "narHash": "sha256-rkrJwLgLSHBnXfgoSKIDa+2LLGdTqynsV3GAxOTGhUU=",
+        "lastModified": 1794963576,
+        "narHash": "sha256-+CPrP74GDJ63f7bgEFC9Av4hbxc7K9WUNv1ZVRifRe8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "82ce401aa350502897c3f2e85f384d61cd3b0b6d",
+        "rev": "2b13c9cb3aa20653e6f8ee0b7f8331a53ea9b0a9",
         "type": "github"
       },
       "original": {
@@ -136,11 +136,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1794293811,
-        "narHash": "sha256-XjOqLH+M406ZA0cS2kSNfDXpOYB/BZz+D/lESZre7Uc=",
+        "lastModified": 1794900976,
+        "narHash": "sha256-3n39ugz102j6teFBMKv1Efi3ABjjjJ3/wPKDgJzH0Rg=",
         "owner": "Infinidoge",
         "repo": "nix-minecraft",
-        "rev": "4a820d0fd584a048d49d8ec66545f7f4543bcf1c",
+        "rev": "2191fbfdcd90817e5e814182635533b5a750590d",
         "type": "github"
       },
       "original": {
@@ -198,11 +198,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1794042290,
-        "narHash": "sha256-ziZn2PvCJE5JEEpqTdxXwJpPB+L3YqoCpTAMCzyaP3U=",
+        "lastModified": 1794750194,
+        "narHash": "sha256-c6ZxSsG1c2luSrbESFfp9Jq2pSVhGst2to4aIzt2Nes=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "f4a03c008967841f2a0b3cb7c436fc6fc31671f6",
+        "rev": "1a08097fc1ed85575db39763b2c4a5d8970a37ba",
         "type": "github"
       },
       "original": {
@@ -262,11 +262,11 @@
     },
     "nixpkgs_7": {
       "locked": {
-        "lastModified": 1794042290,
-        "narHash": "sha256-VZ8WvA9m3XN36juXyg/GwbDRU2OezOHJlXpJCXkccv0=",
-        "rev": "f4a03c008967841f2a0b3cb7c436fc6fc31671f6",
+        "lastModified": 1794750194,
+        "narHash": "sha256-1qOtz5nZG+3hsBEqeKtUx+T5gSaJ+hONlBWWSbH+mJ8=",
+        "rev": "1a08097fc1ed85575db39763b2c4a5d8970a37ba",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1113206.f4a03c008967/nixexprs.tar.zst"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1121687.1a08097fc1ed/nixexprs.tar.zst"
       },
       "original": {
         "type": "tarball",
@@ -298,11 +298,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1793530215,
-        "narHash": "sha256-rXBx+z9KptvV+hm987LjbN13uJ5OV2kwY1Q0f78gJVg=",
+        "lastModified": 1794619036,
+        "narHash": "sha256-qtEvNBtgRcpC+K84zMprIkn82U902RLN7HhF2xkyGuk=",
         "owner": "pedorich-n",
         "repo": "playit-nixos-module",
-        "rev": "29606a144260bf5c9f864cf218b1f41fa193461f",
+        "rev": "2174c0960ca53c987b3dd17e5d9dadb8f686dea4",
         "type": "github"
       },
       "original": {
@@ -330,11 +330,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1794261845,
-        "narHash": "sha256-Ivif/kuD68yEOKcZZG3zSwNMFUuIgzUgeJuzcHrQy+8=",
+        "lastModified": 1794866654,
+        "narHash": "sha256-Y28AMB8lyKjASdJ0BVsR2AqR1cUsVuo8RVVpzHoECho=",
         "owner": "Mic92",
         "repo": "sops-nix",
-        "rev": "fe7b4228405aeac2ce7192c2049a6e2bc8637082",
+        "rev": "7c637afdccdf9bcf35c4a2d67b58a77c1fd843a4",
         "type": "github"
       },
       "original": {
