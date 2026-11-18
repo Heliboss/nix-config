@@ -7,6 +7,6 @@
   };
 
   home.persistence."/persist" = {
-    directories = [ ".config/OpenTabletDriver/settings.json" ];
+    files = [ ".config/OpenTabletDriver/settings.json" ];
   };
 }
