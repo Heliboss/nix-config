@@ -75,9 +75,13 @@
       "transition-left-to-right": false
     },
     "modules": [
-      "custom/dmark",
+      "custom/dmark-utils",
       "custom/note",
     ]
+  },
+  "custom/dmark-utils": {
+    "format": "",
+    "tooltip": false,
   },
   "custom/note": {
     "format": "󰎞",

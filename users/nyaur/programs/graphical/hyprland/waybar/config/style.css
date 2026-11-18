@@ -81,7 +81,7 @@ tooltip label {
 
 #custom-nixos {
   font-size: 17px;
-  padding: 2px 2px 2px 0px;
+  padding: 2px 9px 2px 6px;
 }
 
 #bat {
@@ -132,6 +132,12 @@ tooltip label {
   padding: 6px 0px 0px 0px;
 }
 
+#custom-dmark-utils {
+  font-size: 10px;
+  color: alpha(@foreground, 0.3);
+  padding: 0px 0px 0px 6px;
+}
+
 #custom-note {
   margin-right: 2px;
 }
@@ -173,6 +179,7 @@ tooltip label {
 #custom-dmark {
   font-size: 10px;
   color: alpha(@foreground, 0.3);
+  padding: 0px 0px 0px 8px;
 }
 
 #submap {
@@ -284,7 +291,7 @@ tooltip label {
 
 #custom-notification {
   font-size: 15px;
-  padding: 2px 2px 2px 0px;
+  padding: 2px 9px 2px 7px;
 }
 
 @keyframes blink-active {
