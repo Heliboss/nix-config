@@ -2,7 +2,7 @@
 let
   modpack = pkgs.fetchModrinthModpack {
     url = "https://asphodel.cc/resources/cf/Raspberry-Flavoured-3.3.1-Server-Pack.mrpack";
-    packHash = "";
+    packHash = "sha256-8Ulaw/gUrBdKwMHZS1P+Yhhl92SaAA3QnmBdDPpGNBU=";
   };
 in
 {
