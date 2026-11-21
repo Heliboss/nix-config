@@ -1,16 +1,19 @@
 {
   lib,
   stdenvNoCC,
-  fetchzip,
-  jre_headless,
+  fetchurl,
+  jdk17,
 }:
+let
+  jre = jdk17;
+in
 stdenvNoCC.mkDerivation rec {
   pname = "forge";
   version = "1.19.2-43.5.1";
 
-  src = fetchzip {
-    url = "https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.2-43.5.1/forge-1.19.2-43.5.1-installer.jar";
-    hash = "";
+  src = fetchurl {
+    url = "https://maven.minecraftforge.net/net/minecraftforge/forge/${version}/forge-${version}-installer.jar";
+    hash = "sha256-jeO+ArdLDMWCxTmjOOBNHLiaKeNYv3mArGZHMENBT80=";
   };
 
   preferLocalBuild = true;
@@ -29,13 +32,13 @@ stdenvNoCC.mkDerivation rec {
         echo "Running Forge..."
       else
         echo "Installing Forge..."
-        ${lib.getExe jre_headless} -jar $out/lib/minecraft/installer.jar --installServer
+        ${lib.getExe jre} -jar $out/lib/minecraft/installer.jar --installServer
       fi
 
       if [ -e "forge-${version}*.jar" ] || [ -e "forge-${version}.jar" ]; then
-        exec ${lib.getExe jre_headless} \$@ -jar forge-${version}*.jar nogui
+        exec ${lib.getExe jre} \$@ -jar forge-${version}*.jar nogui
       else
-        exec ${lib.getExe jre_headless} \$@ @${forgeJarAlternate}/unix_args.txt
+        exec ${lib.getExe jre} \$@ @${forgeJarAlternate}/unix_args.txt
       fi
       EOF
 
@@ -43,4 +46,13 @@ stdenvNoCC.mkDerivation rec {
     '';
 
   dontUnpack = true;
+
+  meta = with lib; {
+    description = "Massive API and mod loader used by modders to hook into Minecraft's code.";
+    homepage = "https://minecraftforge.net";
+    license = licenses.gpl3Only;
+    platforms = platforms.unix;
+    maintainers = with maintainers; [ heliboss ];
+    mainProgram = "minecraft-server";
+  };
 }
