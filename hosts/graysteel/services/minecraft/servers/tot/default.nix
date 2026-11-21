@@ -9,7 +9,7 @@ let
 in
 {
   services.minecraft-servers.servers.tot = {
-    enable = true;
+    enable = false;
     jvmOpts = "-Xms6860m -Xmx6860m -XX:+AlwaysPreTouch -XX:+DisableExplicitGC";
     package = pkgs.neoforgeServers.neoforge-1_21_1-21_1_256;
     serverProperties = {
