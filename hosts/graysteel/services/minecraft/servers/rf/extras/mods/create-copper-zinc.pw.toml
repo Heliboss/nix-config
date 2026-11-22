@@ -1,6 +1,6 @@
 name = "Create: Copper & Zinc"
 filename = "create_copper_and_zinc-1.6.0-forge-1.19.2.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/aqYNR6rI/versions/yNGbl5vY/create_copper_and_zinc-1.6.0-forge-1.19.2.jar"

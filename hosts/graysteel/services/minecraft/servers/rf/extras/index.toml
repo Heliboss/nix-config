@@ -22,12 +22,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-copper-zinc.pw.toml"
-hash = "e4075489fce566babadf534062eb4505de08699061b798cdfaf2e6208f989f52"
+hash = "fa16777d78805f2d38b9c554553501e82acce1d8d84ccdb9fc6f86a22abb16d5"
 metafile = true
 
 [[files]]
 file = "mods/create-ultimate-factory.pw.toml"
-hash = "373e77aefeceee70372daefb66a7018747e12bbbd6ce727959fb3eb5da5245c5"
+hash = "47a3701bd62ff6cb14def8d1b1ae4d1c4638ef346876c237ad095fea259a4f22"
 metafile = true
 
 [[files]]
