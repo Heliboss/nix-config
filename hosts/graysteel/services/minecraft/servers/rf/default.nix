@@ -35,6 +35,9 @@ in
     };
     files = {
       "config" = "${modpack}/config";
+      "config/voicechat/voicechat-server.properties".value = {
+        voice_host = "@voice_host@";
+      };
       "kubejs" = "${modpack}/kubejs";
     };
   };
