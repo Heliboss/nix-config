@@ -46,9 +46,8 @@ hash = "386f8465cca16cacc97abdf4217741bb9c549e039735169c02f5cafcee9f36e0"
 metafile = true
 
 [[files]]
-file = "mods/simplewhitelist.pw.toml"
-hash = "8eee8b5b230eab27033ad91833d2fe1165081b986293575a489d1a0f2ee5576d"
-metafile = true
+file = "mods/simplewhitelist-forge-2.1.0.jar"
+hash = "b7457701cdd01cf7deef58b5f82839ee1436db8717e091fa7372dfbf9dd91ab1"
 
 [[files]]
 file = "mods/skinrestorer.pw.toml"
