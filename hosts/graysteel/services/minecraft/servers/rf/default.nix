@@ -21,10 +21,13 @@ in
     package = pkgs.callPackage ./forge.nix { };
     serverProperties = {
       difficulty = 3;
-      level-seed = "-6421977643854912028";
+      level-seed = "-83849377387518384";
       motd = "Now with Verity!";
       online-mode = false;
+      resource-pack = "https://cdn.modrinth.com/data/KxcF22pG/versions/Qo2dTR5E/ccc.zip";
+      resource-pack-sha1 = "cf6cf368ade9e88a129e00d103d0e9a91a053da3";
       spawn-protection = 0;
+      view-distance = 6;
     };
     symlinks = {
       "mods" = "${modpack-with-extras}/mods";
