@@ -7,12 +7,12 @@
   ];
   nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
 
-  sops.secrets.voice-host = { };
+  sops.secrets.graysteel-mc-env = { };
 
   services.minecraft-servers = {
     enable = true;
     eula = true;
     openFirewall = true;
-    environmentFile = config.sops.secrets.voice-host.path;
+    environmentFile = config.sops.secrets.graysteel-mc-env.path;
   };
 }

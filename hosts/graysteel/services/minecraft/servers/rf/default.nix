@@ -35,6 +35,9 @@ in
     };
     files = {
       "config" = "${modpack}/config";
+      "config/simplewhitelist/whitelist.txt".value = [
+        "@whitelist@"
+      ];
       "config/voicechat/voicechat-server.properties".value = {
         voice_host = "@voice_host@";
       };
