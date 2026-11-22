@@ -24,11 +24,7 @@ in
       level-seed = "-83849377387518384";
       motd = "Now with Verity!";
       online-mode = false;
-      resource-pack = "https://cdn.modrinth.com/data/KxcF22pG/versions/Qo2dTR5E/ccc.zip";
-      resource-pack-sha1 = "cf6cf368ade9e88a129e00d103d0e9a91a053da3";
       spawn-protection = 0;
-      view-distance = 6;
-      white-list = false;
     };
     symlinks = {
       "mods" = "${modpack-with-extras}/mods";
