@@ -1,0 +1,13 @@
+name = "Create: Copper & Zinc"
+filename = "create_copper_and_zinc-1.6.0-forge-1.19.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/aqYNR6rI/versions/yNGbl5vY/create_copper_and_zinc-1.6.0-forge-1.19.2.jar"
+hash-format = "sha512"
+hash = "6a1da4c0aeb0f14ee06472e49eed62ee8bdb36fb646fb49a3d3d829a09260b9ce760ccbda12e587ce685df18e08a5b0c12201e222d831199f074b6818e294664"
+
+[update]
+[update.modrinth]
+mod-id = "aqYNR6rI"
+version = "yNGbl5vY"

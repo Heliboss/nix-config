@@ -1,0 +1,13 @@
+name = "No Chat Reports"
+filename = "NoChatReports-FORGE-MC1.19.2-v1.5.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qQyHxfxd/versions/2hNRGxzS/NoChatReports-FORGE-MC1.19.2-v1.5.4.jar"
+hash-format = "sha512"
+hash = "f2efebba51cf4b75ae5e94fbc7828350fbbf96cbec49e522014e9faa6212c4310fcbac63cb154dc3188ae8171bbf722ff5d07262b786d046da3ba35aeef4af30"
+
+[update]
+[update.modrinth]
+mod-id = "qQyHxfxd"
+version = "2hNRGxzS"

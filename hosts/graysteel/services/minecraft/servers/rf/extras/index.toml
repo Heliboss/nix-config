@@ -1,0 +1,66 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/cc-tweaked.pw.toml"
+hash = "4256c40ebcc8524486b6d00f43db4f37081599b0050ea0a1ff6cc6d72843d205"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "1b350712956d8f2e28d03a797a2d2dac6c9e791609d4cdbe6cc8fd66beaee063"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "a52f1e092222ef300f02cdf2a3043bbd9a2ba31f341aa4dabf36b618d952d034"
+metafile = true
+
+[[files]]
+file = "mods/cosmetic-armor-reworked.pw.toml"
+hash = "c98b92c96eb546872a0d203969ddba29a17f6ab0e57ff93081d81a138562e8b7"
+metafile = true
+
+[[files]]
+file = "mods/create-copper-zinc.pw.toml"
+hash = "e4075489fce566babadf534062eb4505de08699061b798cdfaf2e6208f989f52"
+metafile = true
+
+[[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "373e77aefeceee70372daefb66a7018747e12bbbd6ce727959fb3eb5da5245c5"
+metafile = true
+
+[[files]]
+file = "mods/estrogen.pw.toml"
+hash = "c182ebfb92b21eda7a3f1a3da8a14c09f49d3a3bc7d40b8006db1e86bbc2a00b"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "df353566113e870bedae6a3ba74b2e98faf38eea0c59588592adf6ccf4c92375"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "386f8465cca16cacc97abdf4217741bb9c549e039735169c02f5cafcee9f36e0"
+metafile = true
+
+[[files]]
+file = "mods/simplewhitelist.pw.toml"
+hash = "8eee8b5b230eab27033ad91833d2fe1165081b986293575a489d1a0f2ee5576d"
+metafile = true
+
+[[files]]
+file = "mods/skinrestorer.pw.toml"
+hash = "e9ddfe2d348a674e6d1aae3609d041b89f40934eb21b0c3df91e698eeed2a4bc"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "7a3af3978c0fb0e5322b5de3a56d8fc7b0ad1b2cefd4753417c28b71e6ce9b09"
+metafile = true
+
+[[files]]
+file = "mods/world-border.pw.toml"
+hash = "6f3f148684515a0a15f74f02a882708551d8599416236932b64180c353f5967e"
+metafile = true

@@ -4,6 +4,15 @@ let
     url = "https://asphodel.cc/resources/cf/Raspberry-Flavoured-3.3.1-Server-Pack.mrpack";
     packHash = "sha256-8Ulaw/gUrBdKwMHZS1P+Yhhl92SaAA3QnmBdDPpGNBU=";
   };
+  extras = pkgs.fetchPackwizModpack {
+    src = ./extras;
+    packHash = "sha256-X5lFvfPnHVMO2dgKMOT+x1LyPNTj8SIBP620rXsj+vc=";
+  };
+  modpack-with-extras = pkgs.runCommand "modpack-with-extras" { } ''
+    mkdir -p $out/mods
+    cp -r ${modpack}/mods/. $out/mods
+    cp -r ${extras}/mods/. $out/mods
+  '';
 in
 {
   services.minecraft-servers.servers.rf = {
@@ -18,7 +27,7 @@ in
       spawn-protection = 0;
     };
     symlinks = {
-      "mods" = "${modpack}/mods";
+      "mods" = "${modpack-with-extras}/mods";
     };
     files = {
       "config" = "${modpack}/config";

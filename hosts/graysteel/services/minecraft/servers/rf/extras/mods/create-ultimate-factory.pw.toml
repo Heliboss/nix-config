@@ -1,0 +1,13 @@
+name = "Create: Ultimate Factory"
+filename = "create_ultimate_factory-1.9.0-forge-1.19.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/N9QToVpw/versions/DgbBwr4p/create_ultimate_factory-1.9.0-forge-1.19.2.jar"
+hash-format = "sha512"
+hash = "683c72e9ae25d792c7c4a2d264a393cfa771ace2ce7dd76e4def17b43e638e1cd93394951dad3dde9d5b04bcec659e30c30669b76088593f9c4ddf0232a0d2a8"
+
+[update]
+[update.modrinth]
+mod-id = "N9QToVpw"
+version = "DgbBwr4p"

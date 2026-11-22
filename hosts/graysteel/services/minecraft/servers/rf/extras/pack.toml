@@ -1,0 +1,13 @@
+name = "RF Extras"
+author = "heliboss"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "a4b371e346ff266f07dfb833c4bd91eeef2fcbd233d773f37f7f8177560a41f3"
+
+[versions]
+forge = "43.5.1"
+minecraft = "1.19.2"

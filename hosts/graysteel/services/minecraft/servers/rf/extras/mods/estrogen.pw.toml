@@ -1,0 +1,13 @@
+name = "Estrogen"
+filename = "Estrogen-4.1.1+1.19.2-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HhIJW8n1/versions/egocrArd/Estrogen-4.1.1%2B1.19.2-forge.jar"
+hash-format = "sha512"
+hash = "4004820c79cd6159b16ddc004183a47b115f58dde800a6a8b1761c1fef30c1d6fb7184066453dcbea8c68d87c4e78d8d9e060059aae7b813fba81a5215c09020"
+
+[update]
+[update.modrinth]
+mod-id = "HhIJW8n1"
+version = "egocrArd"
