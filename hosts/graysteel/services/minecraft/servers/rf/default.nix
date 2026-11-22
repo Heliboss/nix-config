@@ -6,7 +6,7 @@ let
   };
   extras = pkgs.fetchPackwizModpack {
     src = ./extras;
-    packHash = "sha256-X5lFvfPnHVMO2dgKMOT+x1LyPNTj8SIBP620rXsj+vc=";
+    packHash = "sha256-d9Zfk+sNYl0zVlob//khKjRQav5c+mJjezMxr8+HvTw=";
   };
   modpack-with-extras = pkgs.runCommand "modpack-with-extras" { } ''
     mkdir -p $out/mods
