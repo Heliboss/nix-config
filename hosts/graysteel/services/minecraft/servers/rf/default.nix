@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 let
   modpack = pkgs.fetchModrinthModpack {
     url = "https://asphodel.cc/resources/cf/Raspberry-Flavoured-3.3.1-Server-Pack.mrpack";
@@ -13,6 +13,10 @@ let
     cp -r ${modpack}/mods/. $out/mods
     cp -r ${extras}/mods/. $out/mods
   '';
+  json5 = { }: {
+    type = lib.types.attrs;
+    generate = name: value: pkgs.writeText name (builtins.toJSON value);
+  };
 in
 {
   services.minecraft-servers.servers.rf = {
@@ -36,6 +40,18 @@ in
       ];
       "config/voicechat/voicechat-server.properties".value = {
         voice_host = "@voice_host@";
+      };
+      "config/worldborder.json5" = {
+        format = json5 { };
+        value = {
+          enableCustomOverworldBorder = false;
+          enableCustomeNetherBorder = true;
+          shouldLoopToOppositeBorder = false;
+          netherBorderPositiveX = 959;
+          netherBorderNegativeX = -1040;
+          netherBorderPositiveZ = 1009;
+          netherBorderNegativeZ = -990;
+        };
       };
       "kubejs" = "${modpack}/kubejs";
     };
