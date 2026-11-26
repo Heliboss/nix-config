@@ -256,9 +256,10 @@ hl.window_rule {
 hl.window_rule {
   name = 'minecraft',
   match = {
-    title = 'Minecraft.*',
+    title = 'Minecraft.*|Raspberry Flavoured.*',
   },
   rounding = 0,
+  confine_pointer = true,
 }
 hl.window_rule {
   name = 'reaper',
