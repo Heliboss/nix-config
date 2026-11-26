@@ -24,11 +24,14 @@ in
     jvmOpts = "-Xms6860m -Xmx6860m -XX:+AlwaysPreTouch -XX:+DisableExplicitGC";
     package = pkgs.callPackage ./forge.nix { };
     serverProperties = {
+      allow-flight = true;
       difficulty = 3;
       level-seed = "-83849377387518384";
       motd = "Now with Verity!";
       online-mode = false;
+      simulation-distance = 6;
       spawn-protection = 0;
+      view-distance = 6;
     };
     symlinks = {
       "mods" = "${modpack-with-extras}/mods";
