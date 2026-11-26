@@ -50,9 +50,9 @@ in
           enableCustomOverworldBorder = false;
           enableCustomeNetherBorder = true;
           shouldLoopToOppositeBorder = false;
-          netherBorderPositiveX = 959;
+          netherBorderPositiveX = 960;
           netherBorderNegativeX = -1040;
-          netherBorderPositiveZ = 1009;
+          netherBorderPositiveZ = 1010;
           netherBorderNegativeZ = -990;
         };
       };
